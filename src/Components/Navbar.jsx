@@ -11,7 +11,7 @@ export default function Navbar() {
   );
 
   return (
-    <div className="navbar bg-base-100 max-w-[1200px] mx-auto">
+    <nav className="navbar bg-base-100 max-w-[1200px] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -85,6 +85,6 @@ export default function Navbar() {
         </button>
         <a className="btn btn-outline rounded-xl px-9">Login</a>
       </div>
-    </div>
+    </nav>
   );
 }

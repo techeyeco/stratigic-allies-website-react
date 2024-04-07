@@ -64,38 +64,36 @@ export default function BusinessConsulting() {
   }
 
   return (
-    <section>
-      {" "}
-      <div className="ptext-center py-20 px-10" id="busTrain">
-        <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
-          Business Consulting
-        </p>
+    <section
+      className="text-center py-20 px-10 max-w-[1200px] mx-auto"
+      id="busTrain"
+    >
+      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+        Business Consulting
+      </p>
 
-        <div className="flex flex-col lg:flex-row flex-warp gap-10 py-10">
-          {busCon.map((item, index) => {
-            return (
+      <div className="flex flex-col lg:flex-row flex-warp gap-10 py-10">
+        {busCon.map((item, index) => {
+          return (
+            <div
+              onMouseEnter={() => mouseEnterHandler(item)}
+              onMouseLeave={() => mouseLeaveHandler(item)}
+              key={index}
+              data-aos-duration="1500"
+              data-aos={item.fade}
+              className={`w-full `}
+            >
               <div
-                onMouseEnter={() => mouseEnterHandler(item)}
-                onMouseLeave={() => mouseLeaveHandler(item)}
-                key={index}
-                data-aos-duration="1500"
-                data-aos={item.fade}
-                className={`w-full `}
-              >
-                <div
-                  className="flex flex-col gap-2 w-full h-full items-center text-center border-2 p-5 
+                className="flex flex-col gap-2 w-full h-full items-center text-center border-2 p-5 
                             rounded-lg hover:border-primary hover:drop-shadow duration-200 ease-in-out"
-                >
-                  {item.icon}
-                  <p className="text-2xl text-primary font-bold ">
-                    {item.title}
-                  </p>
-                  <p>{item.dec}</p>
-                </div>
+              >
+                {item.icon}
+                <p className="text-2xl text-primary font-bold ">{item.title}</p>
+                <p>{item.dec}</p>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
