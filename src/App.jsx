@@ -5,14 +5,16 @@ import AboutUs from "./Components/AboutUs";
 import BusinessTrainings from "./Components/BusinessTrainings";
 import Product from "./Components/Product";
 import BusinessConsulting from "./Components/BusinessConsulting";
+import Ourworks from "./Components/Ourworks";
 
 function App() {
   return (
     <main className="text-light max-w-[1200px] mx-auto">
       <Navbar />
       <AboutUs />
-      <BusinessTrainings />
       <Product />
+      <Ourworks />
+      <BusinessTrainings />
       <BusinessConsulting />
     </main>
   );
