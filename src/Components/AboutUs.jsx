@@ -110,7 +110,10 @@ const data = [
 
 export default function AboutUs() {
   return (
-    <section className="text-center py-20 px-10" id="about">
+    <section
+      className="text-center py-20 px-10 max-w-[1200px] mx-auto"
+      id="about"
+    >
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         About Us
       </p>

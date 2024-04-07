@@ -6,16 +6,18 @@ import BusinessTrainings from "./Components/BusinessTrainings";
 import Product from "./Components/Product";
 import BusinessConsulting from "./Components/BusinessConsulting";
 import Ourworks from "./Components/Ourworks";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
-    <main className="text-light max-w-[1200px] mx-auto">
+    <main className="text-light ">
       <Navbar />
       <AboutUs />
       <Product />
       <Ourworks />
       <BusinessTrainings />
       <BusinessConsulting />
+      <Contact />
     </main>
   );
 }

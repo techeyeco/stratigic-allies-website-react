@@ -3,24 +3,8 @@ import { CiCoinInsert } from "react-icons/ci";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function ourworks() {
-  const data = [
-    {
-      title: "Management and Successful Managers",
-      detail: "Introduce key management ideas and work your way to success.",
-    },
-    {
-      title: "Planning & Business Plan",
-      detail:
-        "Discuss planning and business plans, as well as how to create effective business plans.",
-    },
-    {
-      title: "Marketing and Branding",
-      detail: "Understanding marketing and its importance in today's industry.",
-    },
-  ];
-
   return (
-    <section>
+    <section className="text-center py-20 px-10 max-w-[1200px] mx-auto">
       {" "}
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         What makes us Greate to work for

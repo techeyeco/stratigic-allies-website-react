@@ -37,7 +37,10 @@ const data = [
 
 export default function Service() {
   return (
-    <section className="text-center py-20 px-10" id="service">
+    <section
+      className="text-center py-20 px-10 max-w-[1200px] mx-auto"
+      id="service"
+    >
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         Business Trainings{" "}
       </p>
