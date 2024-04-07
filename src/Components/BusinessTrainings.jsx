@@ -1,4 +1,3 @@
-import React from "react";
 import { MdManageAccounts } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { LiaIndustrySolid } from "react-icons/lia";
@@ -63,7 +62,7 @@ export default function Service() {
                             h-16 text-3xl text-white rounded-full z-10"
               >
                 <div className="p-2 rounded-full z-10 ">
-                  <p className="ordinal">
+                  <p className="flex items-center justify-center">
                     {item.week}
                     <sup className="">{item.weekShort}</sup>
                   </p>
