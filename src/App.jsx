@@ -8,7 +8,7 @@ import BusinessConsulting from "./Components/BusinessConsulting";
 
 function App() {
   return (
-    <main className=" max-w-[1200px] mx-auto">
+    <main className="text-light max-w-[1200px] mx-auto">
       <Navbar />
       <AboutUs />
       <BusinessTrainings />
