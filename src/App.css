@@ -9,14 +9,14 @@ html {
   background-size: 75%;
 }
 .herobg::after {
+  overflow-x: hidden;
   content: "";
-  height: 100%;
-  width: 100%;
+  width: 90%;
   background: linear-gradient(
     132deg,
     rgba(163, 25, 25, 1) 0%,
     rgba(92, 30, 86, 0) 50%,
-    rgba(11, 35, 154, 1) 91%
+    rgb(21, 47, 176) 100%
   );
 
   position: absolute;
