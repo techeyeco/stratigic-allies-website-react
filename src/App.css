@@ -1,3 +1,27 @@
 html {
   scroll-behavior: smooth;
 }
+.herobg {
+  position: relative;
+  background-image: url("assets/world.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 75%;
+}
+.herobg::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    132deg,
+    rgba(163, 25, 25, 1) 0%,
+    rgba(92, 30, 86, 0) 50%,
+    rgba(11, 35, 154, 1) 91%
+  );
+
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  bottom: -20px;
+  filter: blur(150px);
+}
