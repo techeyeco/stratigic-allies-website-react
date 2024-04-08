@@ -26,13 +26,13 @@ const data = [
     week: "3",
     weekShort: "rd",
   },
-  {
-    title: "Success Secrets in Sales",
-    detail: "Identify the keys of sales success and how to get there.",
-    icon: <CiCoinInsert size={30} />,
-    week: "4",
-    weekShort: "th",
-  },
+  // {
+  //   title: "Success Secrets in Sales",
+  //   detail: "Identify the keys of sales success and how to get there.",
+  //   icon: <CiCoinInsert size={30} />,
+  //   week: "4",
+  //   weekShort: "th",
+  // },
 ];
 
 export default function Service() {
@@ -51,16 +51,16 @@ export default function Service() {
         to accomplish the following objectives based on weeks:
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 gap-10 lg:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 my-20 gap-10 lg:gap-16">
         {data.map((item, index) => {
           return (
             <div
               key={index}
-              className="card bg-gray-700/50 text-light-content backdrop-blur-2xl rounded-lg 
+              className="card bg-neutral/50 text-light-content backdrop-blur-2xl rounded-lg 
                         flex flex-col  justify-center items-center
-                        hover:bg-gray-600/80 duration-200 ease-in-out lg:hover:-translate-y-8 "
+                        hover:bg-neutral duration-200 ease-in-out lg:hover:-translate-y-8 "
             >
-              <div
+              {/* <div
                 className="bg-primary flex items-center justify-center m-[-30px] p-5 w-16 
                             h-16 text-3xl text-white rounded-full z-10"
               >
@@ -70,11 +70,11 @@ export default function Service() {
                     <sup className="">{item.weekShort}</sup>
                   </p>
                 </div>
-              </div>
-              <div className="card-body items-center text-center flex flex-col items-center gap-3 p-10">
-                <h2 className="card-title flex items-center gap-4">
-                  {item.title} {item.icon}
-                </h2>
+              </div> */}
+              <div className="card-body items-center text-center flex flex-col items-center gap-10 p-10">
+                <p className="card-title flex items-center gap-4 text-2xl">
+                  {item.title}
+                </p>
                 <p>{item.detail}</p>
               </div>
             </div>

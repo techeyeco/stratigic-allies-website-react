@@ -7,15 +7,17 @@ import Product from "./Components/Product";
 import BusinessConsulting from "./Components/BusinessConsulting";
 import Ourworks from "./Components/Ourworks";
 import Contact from "./Components/Contact";
+import Hero from "./Components/Hero";
 
 function App() {
   return (
-    <main className="text-light ">
+    <main className="text-light">
       <Navbar />
-      <AboutUs />
+      <Hero />
+      {/* <AboutUs /> */}
+      <BusinessTrainings />
       <Product />
       <Ourworks />
-      <BusinessTrainings />
       <BusinessConsulting />
       <Contact />
     </main>

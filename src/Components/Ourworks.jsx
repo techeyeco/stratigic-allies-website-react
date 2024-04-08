@@ -11,7 +11,7 @@ export default function ourworks() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div
-          className="card bg-gray-700/50 text-light-content backdrop-blur-2xl rounded-lg 
+          className="card bg-neutral/50 text-light-content backdrop-blur-2xl rounded-lg 
                      flex flex-col justify-center items-center "
         >
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
@@ -31,7 +31,7 @@ export default function ourworks() {
         </div>
 
         <div
-          className="card bg-gray-700/50 text-light-content backdrop-blur-2xl rounded-lg 
+          className="card bg-neutral/50 text-light-content backdrop-blur-2xl rounded-lg 
                      flex flex-col justify-center items-center row-span-2"
         >
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
@@ -60,7 +60,7 @@ export default function ourworks() {
         </div>
 
         <div
-          className="card bg-gray-700/50 text-light-content backdrop-blur-2xl rounded-lg 
+          className="card bg-neutral/50 text-light-content backdrop-blur-2xl rounded-lg 
                      flex flex-col justify-center items-center "
         >
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
