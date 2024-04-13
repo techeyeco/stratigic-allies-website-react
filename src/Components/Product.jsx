@@ -32,27 +32,27 @@ export default function Product() {
       title: "Developer",
       active: active.item3,
     },
-    {
-      id: "item4",
-      img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
-      name: "Jim smith",
-      title: "Developer",
-      active: active.item4,
-    },
-    {
-      id: "item5",
-      img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
-      name: "Jim smith",
-      title: "Developer",
-      active: active.item5,
-    },
-    {
-      id: "item6",
-      img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
-      name: "Jim smith",
-      title: "Developer",
-      active: active.item6,
-    },
+    // {
+    //   id: "item4",
+    //   img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
+    //   name: "Jim smith",
+    //   title: "Developer",
+    //   active: active.item4,
+    // },
+    // {
+    //   id: "item5",
+    //   img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
+    //   name: "Jim smith",
+    //   title: "Developer",
+    //   active: active.item5,
+    // },
+    // {
+    //   id: "item6",
+    //   img: "https://th.bing.com/th/id/OIP.qeffvHdSUkQYLj5YDjZRfwHaJl?rs=1&pid=ImgDetMain",
+    //   name: "Jim smith",
+    //   title: "Developer",
+    //   active: active.item6,
+    // },
   ];
 
   const mouseEnterHandler = (item) => {
