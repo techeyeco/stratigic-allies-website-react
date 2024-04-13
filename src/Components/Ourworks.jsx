@@ -5,7 +5,6 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 export default function ourworks() {
   return (
     <section className="text-center py-20 px-10 max-w-[1200px] mx-auto">
-      {" "}
       <p className="md:text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         What makes us Greate to work for
       </p>
