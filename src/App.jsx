@@ -9,6 +9,7 @@ import Contact from "./Components/Contact";
 import Hero from "./Components/Hero";
 import MainLayout from "./Pages/MainLayout";
 import {
+  HashRouter as Router,
   Route,
   RouterProvider,
   createBrowserRouter,
@@ -17,14 +18,14 @@ import {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
+    <Router path="/" element={<MainLayout />}>
       <Route index element={<Hero />} />
       <Route path="about" element={<AboutUs />} />
       <Route path="tranining" element={<BusinessTrainings />} />
       <Route path="products" element={<Product />} />
       <Route path="ourworks" element={<Ourworks />} />
       <Route path="consulting" element={<BusinessConsulting />} />
-    </Route>
+    </Router>
   )
 );
 
