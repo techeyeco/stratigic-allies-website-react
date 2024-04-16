@@ -1,5 +1,5 @@
 import React from "react";
-import logonav from "../assets/logonav.png";
+import logonav from "../assets/logo/logonav.png";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {

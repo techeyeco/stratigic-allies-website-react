@@ -4,24 +4,40 @@ import { Link } from "react-router-dom";
 export default function toRoute() {
   const data = [
     {
-      title: "About Us",
-      route: "/about",
-    },
-    {
       title: "Bussniess Consulting",
       route: "/consulting",
+      translate: "translate-y-5",
+    },
+    {
+      title: "Strategic Allies",
+      route: "/about",
+      translate: "-translate-y-5",
     },
     {
       title: "Bussniess Training",
       route: "/tranining",
+      translate: "translate-y-5",
     },
     {
-      title: "Product",
-      route: "/products",
+      title: "Strategic Partners",
+      route: "/strategicPartners",
+      translate: "translate-y-10",
     },
     {
-      title: "Our Work",
-      route: "/ourworks",
+      title: "Gallery",
+      route: "/gallery",
+      translate: "-translate-y-6",
+    },
+    {
+      title: "Course in the UK",
+      route: "/ukCourse",
+      translate: "translate-y-10",
+    },
+    {
+      title: "Modern Marketing",
+      route: "/essentialsMarketing",
+      translate: "-translate-y-5",
+      span: "col-span-3",
     },
   ];
   return (
@@ -36,13 +52,14 @@ export default function toRoute() {
         blanditiis magni eligendi!
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-20 p-10  justify-center items-center ">
+      <div className="grid  grid-cols-1 md:grid-cols-3 gap-10 p-20 justify-items-center  text-light">
         {data.map((route, index) => {
           return (
             <Link
               key={index}
               to={route.route}
-              className="border border-primary rounded-full text-lg p-5 w-52"
+              className={`border border-primary rounded-2xl text-lg p-5 w-52 h-20  ${route.translate} ${route.span} 
+                        flex flex-col justify-center items-center hover:bg-primary duration-200 ease-in-out`}
             >
               {route.title}
             </Link>
