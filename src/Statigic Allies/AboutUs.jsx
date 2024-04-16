@@ -115,7 +115,7 @@ export default function AboutUs() {
       {/* About */}
       <div className="p-10  max-w-[1200px] mx-auto ">
         <p className="text-3xl lg:text-5xl font-bold mb-5 ">
-          <div className="overflow-hidden w-max mx-auto">
+          <div className="overflow-hidden ">
             <img
               className="h-40 w-full object-contain hover:scale-105 duration-200 ease-in-out p-3 pb-5 border-b-4 border-primary"
               src={sLogo}
