@@ -41,7 +41,7 @@ export default function toRoute() {
     },
   ];
   return (
-    <section className="py-20 text-center">
+    <section className=" text-center p-10 max-w-[1200px] mx-auto">
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto">
         Explore With Us
       </p>
@@ -52,13 +52,13 @@ export default function toRoute() {
         blanditiis magni eligendi!
       </p>
 
-      <div className="grid  grid-cols-1 md:grid-cols-3 gap-10 p-20 justify-items-center  text-light">
+      <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 p-5 lg:p-20 justify-items-center  text-light">
         {data.map((route, index) => {
           return (
             <Link
               key={index}
               to={route.route}
-              className={`border border-primary rounded-2xl text-lg p-5 w-52 h-20  ${route.translate} ${route.span} 
+              className={`border border-primary rounded-2xl text-lg p-5 w-72 md:w-96 lg:w-52 h-20  lg:${route.translate} lg:${route.span} 
                         flex flex-col justify-center items-center hover:bg-primary duration-200 ease-in-out`}
             >
               {route.title}
