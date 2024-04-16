@@ -5,10 +5,9 @@ export default function Hero() {
     <section className="text-start max-w-[1200px] mx-auto">
       <div className="py-20 px-10 flex flex-col justify-start items-start gap-8 herobg z-10 ">
         <div className="text-7xl font-bold z-10">
-          <p>Reliable </p>
-          <p>Cloud </p>
-          <p>Computing </p>
-          <p>Solutions</p>
+          <p>Sustain </p>
+          <p>Your </p>
+          <p>Success </p>
         </div>
         <p className="z-10">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam,

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import AboutUs from "./Components/AboutUs";
+import AboutUs from "./Statigic Allies/AboutUs";
 import BusinessTrainings from "./Components/BusinessTrainings";
 import Product from "./Components/Product";
 import BusinessConsulting from "./Components/BusinessConsulting";
