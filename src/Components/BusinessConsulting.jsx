@@ -2,6 +2,7 @@ import React from "react";
 import { MdOutlineBusinessCenter } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
+import dbc from "../assets/dbc.png";
 
 export default function BusinessConsulting() {
   const [activeUs, setActiveUs] = React.useState({
@@ -18,7 +19,7 @@ export default function BusinessConsulting() {
       icon: (
         <MdOutlineBusinessCenter
           className={`fill-${
-            activeUs.u1 ? "[#7480FF]" : ""
+            activeUs.u1 ? "[#347BFF]" : ""
           } duration-300 ease-in-out  size-[60px]`}
         />
       ),
@@ -31,7 +32,7 @@ export default function BusinessConsulting() {
       icon: (
         <MdOutlineSupportAgent
           className={`fill-${
-            activeUs.u2 ? "[#7480FF]" : ""
+            activeUs.u2 ? "[#347BFF]" : ""
           } duration-300 ease-in-out  size-[60px]`}
         />
       ),
@@ -44,7 +45,7 @@ export default function BusinessConsulting() {
       icon: (
         <GiSkills
           className={`fill-${
-            activeUs.u3 ? "[#7480FF]" : ""
+            activeUs.u3 ? "[#347BFF]" : ""
           } duration-300 ease-in-out  size-[60px]`}
         />
       ),
@@ -94,6 +95,13 @@ export default function BusinessConsulting() {
             </div>
           );
         })}
+      </div>
+      <div className="flex justify-center ">
+        <img
+          src={dbc}
+          alt=""
+          className="rounded-xl h-96 object-cover hover:rounded-3xl duration-300 ease-in-out"
+        />
       </div>
     </section>
   );
