@@ -4,6 +4,9 @@ import mission from "../assets/mission.png";
 import vision from "../assets/vision.png";
 import sLogo from "../assets/logo/Vertical 01.png";
 import CEOcontact from "./CEOcontact";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 const data = [
   {
     title: "Development",
@@ -110,20 +113,31 @@ const data = [
 ];
 
 export default function AboutUs() {
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <section className="text-center flex flex-col " id="about">
       {/* About */}
       <div className="p-10  max-w-[1200px] mx-auto ">
-        <p className="text-3xl lg:text-5xl font-bold mb-5 ">
-          <div className="overflow-hidden ">
-            <img
-              className="h-40 w-full object-contain hover:scale-105 duration-200 ease-in-out p-3 pb-5 border-b-4 border-primary"
-              src={sLogo}
-              alt=""
-            />
-          </div>{" "}
-        </p>
-        <p className="lg:text-xl text-justify lg:text-center">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="overflow-hidden mb-5"
+        >
+          <img
+            className="h-40 w-full object-contain hover:scale-105 duration-200 ease-in-out p-3 pb-5 border-b-4 border-primary"
+            src={sLogo}
+            alt=""
+          />
+        </div>{" "}
+        <p
+          className="lg:text-xl text-justify lg:text-center"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
           Strategic Allies is a premier business development service provider
           headquartered in Erbil, Iraq, with a strategic foothold in the global
           market through key partnerships in the Canada and United Kingdom.
@@ -133,14 +147,22 @@ export default function AboutUs() {
           strategic partnerships.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20 py-10 ">
-          <div className="md:col-span-2 overflow-hidden ">
+          <div
+            className="md:col-span-2 overflow-hidden "
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <img
               className="h-96 w-full object-cover hover:scale-105 duration-200 ease-in-out"
               src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
               alt=""
             />
           </div>
-          <div className="overflow-hidden ">
+          <div
+            className="overflow-hidden "
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <img
               className="h-96 w-full object-cover hover:scale-105 duration-200 ease-in-out"
               src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
@@ -154,7 +176,11 @@ export default function AboutUs() {
       <div className="bg-gradient-to-r from-primary/80 to-primary ">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-24 p-10 ">
           {/* Mission */}
-          <div className="md:col-span-3 flex flex-col md:flex-row justify-between items-center">
+          <div
+            className="md:col-span-3 flex flex-col md:flex-row justify-between items-center"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <div className="basis-1/2">
               <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
                 Mission
@@ -176,7 +202,11 @@ export default function AboutUs() {
             </div>
           </div>
           {/* Vision */}
-          <div className="md:col-span-3 flex flex-col-reverse md:flex-row justify-between items-center">
+          <div
+            className="md:col-span-3 flex flex-col-reverse md:flex-row justify-between items-center"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <div className="overflow-hidden h-full w-max">
               <img
                 className="h-48 w-full object-contain rotate-180 mt-5"
