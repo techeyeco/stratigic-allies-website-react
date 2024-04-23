@@ -67,7 +67,7 @@ export default function Product() {
   };
 
   return (
-    <section className="text-center py-20 px-10 max-w-[1200px] mx-auto">
+    <section className="text-center p-10 max-w-[1400px] mx-auto">
       {" "}
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         Products

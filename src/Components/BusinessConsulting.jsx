@@ -25,6 +25,7 @@ export default function BusinessConsulting() {
       ),
       title: "Business Development",
       active: activeUs.u1,
+      fade: "fade-right",
     },
     {
       id: "u2",
@@ -38,6 +39,7 @@ export default function BusinessConsulting() {
       ),
       title: "Support Business",
       active: activeUs.u2,
+      fade: "fade-up",
     },
     {
       id: "u3",
@@ -51,6 +53,7 @@ export default function BusinessConsulting() {
       ),
       title: "Improve Skills",
       active: activeUs.u3,
+      fade: "fade-left",
     },
   ];
 
@@ -65,11 +68,12 @@ export default function BusinessConsulting() {
   }
 
   return (
-    <section
-      className="text-center py-20 px-10 max-w-[1200px] mx-auto"
-      id="busTrain"
-    >
-      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+    <section className="text-center p-10 max-w-[1400px] mx-auto" id="busTrain">
+      <p
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto"
+      >
         Business Consulting
       </p>
 
@@ -80,8 +84,8 @@ export default function BusinessConsulting() {
               onMouseEnter={() => mouseEnterHandler(item)}
               onMouseLeave={() => mouseLeaveHandler(item)}
               key={index}
-              data-aos-duration="1500"
               data-aos={item.fade}
+              data-aos-duration="1000"
               className={`w-full `}
             >
               <div
