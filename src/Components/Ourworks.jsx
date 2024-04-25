@@ -4,7 +4,72 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function ourworks() {
   return (
-    <section className="text-center p-10 max-w-[1400px] mx-auto">
+    <section className="text-center p-10 max-w-[1200px] mx-auto">
+      {" "}
+      {/* 1 */}
+      <div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+        >
+          Peshang
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="lg:text-xl text-justify  "
+        >
+          Peshang is a practical development course that helps young people
+          improve their talents by transforming ideas into real-world
+          enterprises. Peshang is a 24 hour training course.
+        </p>
+      </div>
+      {/* 3 */}
+      <div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+        >
+          Certificated Course
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="lg:text-xl text-justify  "
+        >
+          Certificate, Peshang. The course certificate has been recognized by
+          both Erbil Polytechnic University (academic institution) and the Erbil
+          Chamber of Commerce and Industry (private sector).
+        </p>
+      </div>
+      {/* 5 */}
+      <div>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max  "
+        >
+          Sponsorship.
+        </p>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+          className="lg:text-xl text-justify  "
+        >
+          Peshang training has been funded by several foreign and local
+          organizations, including the American Consulate in Erbil, Erbil
+          Polytechnic University, IREX, Erbil Chamber of Commerce and Industry,
+          Plan Organization, The Book Café, and Rebaz Foundation.
+        </p>
+      </div>
       <p className="md:text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         What makes us Greate to work for
       </p>

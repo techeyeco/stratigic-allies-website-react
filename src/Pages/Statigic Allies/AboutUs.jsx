@@ -119,7 +119,7 @@ export default function AboutUs() {
   return (
     <section className="text-center flex flex-col " id="about">
       {/* About */}
-      <div className="p-10  max-w-[1400px] mx-auto ">
+      <div className="p-10  max-w-[1200px] mx-auto ">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -173,7 +173,7 @@ export default function AboutUs() {
 
       {/* mission, vision */}
       <div className="bg-gradient-to-r from-primary/80 to-primary ">
-        <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-24 p-10 ">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-24 p-10 ">
           {/* Mission */}
           <div
             className="md:col-span-3 flex flex-col md:flex-row justify-between items-center"
@@ -225,7 +225,7 @@ export default function AboutUs() {
           </div>
         </div>
         {/* Commitment Excellence */}
-        <div className="p-10 max-w-[1400px] mx-auto ">
+        <div className="p-10 max-w-[1200px] mx-auto ">
           <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max mx-auto">
             Commitment Excellence
           </p>

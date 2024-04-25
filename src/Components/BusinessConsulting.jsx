@@ -68,7 +68,7 @@ export default function BusinessConsulting() {
   }
 
   return (
-    <section className="text-center p-10 max-w-[1400px] mx-auto" id="busTrain">
+    <section className="text-center p-10 max-w-[1200px] mx-auto" id="busTrain">
       <p
         data-aos="fade-down"
         data-aos-duration="1000"

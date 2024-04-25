@@ -76,7 +76,7 @@ export default function Contact() {
       id="contact"
       className="bg-gradient-to-r from-primary/80 to-primary p-10"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <p className="text-white font-bold text-4xl text-center mb-3">
           Contact Us
         </p>

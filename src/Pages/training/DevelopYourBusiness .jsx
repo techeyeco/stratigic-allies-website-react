@@ -56,7 +56,7 @@ export default function DevelopYourBusiness() {
 
   return (
     <section
-      className=" p-10 my-5 max-w-[1400px] mx-auto"
+      className=" md:p-10 py-20 max-w-[1200px] mx-auto overflow-hidden"
       id="DevelopYourBusiness"
     >
       <p className="text-2xl lg:text-4xl font-bold mb-5 pb-5 border-b-4 border-primary w-max ">
