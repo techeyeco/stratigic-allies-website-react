@@ -43,7 +43,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <nav className="navbar bg-base-100 max-w-[1400px] mx-auto ">
+    <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
       <div className="navbar-start">
         {pathname != "/" && (
           <div className="dropdown">

@@ -47,7 +47,7 @@ export default function CEOcontact() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10  justify-center items-center p-10 pb-0 max-w-[1400px] mx-auto ">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10  justify-center items-center p-10 pb-0 max-w-[1200px] mx-auto ">
       <div className="hidden md:block">
         <img src={person} alt="" className="w-60 lg:w-96 saturate-0" />
       </div>

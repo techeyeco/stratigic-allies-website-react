@@ -38,7 +38,7 @@ export default function TrainingLayout() {
   ];
 
   return (
-    <section className="max-w-[1400px] mx-auto p-10">
+    <section className="max-w-[1200px] mx-auto p-10">
       <div>
         {" "}
         <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
