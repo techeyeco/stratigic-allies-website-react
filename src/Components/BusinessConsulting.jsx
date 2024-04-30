@@ -3,6 +3,8 @@ import { MdOutlineBusinessCenter } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import dbc from "../assets/dbc.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function BusinessConsulting() {
   const [activeUs, setActiveUs] = React.useState({
@@ -67,6 +69,9 @@ export default function BusinessConsulting() {
     setActiveUs(false);
   }
 
+  React.useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <section className="text-center p-10 max-w-[1200px] mx-auto" id="busTrain">
       <p
@@ -77,7 +82,7 @@ export default function BusinessConsulting() {
         Business Consulting
       </p>
 
-      <div className="flex flex-col lg:flex-row flex-warp gap-10 py-10">
+      <div className="flex flex-col lg:flex-row flex-warp gap-10 my-10 px-10">
         {busCon.map((item, index) => {
           return (
             <div
@@ -90,7 +95,7 @@ export default function BusinessConsulting() {
             >
               <div
                 className="flex flex-col gap-2 w-full h-full items-center text-center border-2 p-5 
-                            rounded-lg hover:border-primary hover:drop-shadow duration-200 ease-in-out"
+                            rounded-lg hover:border-primary hover:drop-shadow duration-300 ease-in-out"
               >
                 {item.icon}
                 <p className="text-2xl text-primary font-bold ">{item.title}</p>

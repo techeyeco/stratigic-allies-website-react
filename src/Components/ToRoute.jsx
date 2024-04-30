@@ -34,8 +34,8 @@ export default function ToRoute() {
       delay: 500,
     },
     {
-      title: "Strategic Partners",
-      route: "/strategicPartners",
+      title: "Our Partners",
+      route: "/partners",
       translate: "translate-y-10",
       fade: "zoom-out-right",
       duration: 2000,
@@ -67,8 +67,8 @@ export default function ToRoute() {
     },
   ];
   return (
-    <section className=" text-center p-10 max-w-[1200px] mx-auto">
-      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto">
+    <section className=" text-center m-10 max-w-[1200px] mx-auto">
+      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden">
         Explore With Us
       </p>
       <p className="lg:text-xl text-justify lg:text-center ">
@@ -80,7 +80,7 @@ export default function ToRoute() {
 
       <div
         data-aos-duration="1500"
-        className="grid  grid-cols-1 lg:grid-cols-3 gap-10 p-5 lg:p-20 justify-items-center  text-light"
+        className="grid  grid-cols-1 lg:grid-cols-3 gap-10 m-5 lg:m-20 justify-items-center text-light"
       >
         {data.map((route, index) => {
           return (
@@ -97,7 +97,7 @@ export default function ToRoute() {
               >
                 <div
                   className={`border border-primary rounded-2xl text-lg p-5 w-72 md:w-96 lg:w-52 h-20  
-                hover:bg-primary duration-200 ease-in-out flex flex-col justify-center items-center `}
+                hover:bg-primary duration-300 ease-in-out flex flex-col justify-center items-center `}
                 >
                   {route.title}
                 </div>

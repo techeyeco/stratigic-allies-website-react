@@ -126,7 +126,7 @@ export default function AboutUs() {
           className="overflow-hidden mb-5"
         >
           <img
-            className="h-40 w-full object-contain hover:scale-105 duration-200 ease-in-out p-3 pb-5 border-b-4 border-primary"
+            className="h-40 w-full object-contain hover:scale-105 duration-300 ease-in-out p-3 pb-5 border-b-4 border-primary"
             src={sLogo}
             alt=""
           />
@@ -152,7 +152,7 @@ export default function AboutUs() {
             data-aos-duration="1500"
           >
             <img
-              className="h-96 w-full object-cover hover:scale-105 duration-200 ease-in-out"
+              className="h-96 w-full object-cover hover:scale-105 duration-300 ease-in-out"
               src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
               alt=""
             />
@@ -163,7 +163,7 @@ export default function AboutUs() {
             data-aos-duration="1500"
           >
             <img
-              className="h-96 w-full object-cover hover:scale-105 duration-200 ease-in-out"
+              className="h-96 w-full object-cover hover:scale-105 duration-300 ease-in-out"
               src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
               alt=""
             />

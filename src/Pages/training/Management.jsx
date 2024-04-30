@@ -47,7 +47,7 @@ export default function Management() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto md:p-10 py-20 overflow-hidden">
+    <section className="max-w-[1200px] mx-auto md:m-10 my-20 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div className="">

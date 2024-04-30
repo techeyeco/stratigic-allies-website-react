@@ -9,6 +9,11 @@ import pic1 from "../../assets/sponsores/Picture1.jpg";
 import pic2 from "../../assets/sponsores/Picture2.png";
 import pic3 from "../../assets/sponsores/Picture3.jpg";
 import pic4 from "../../assets/sponsores/Picture4.png";
+
+import img1 from "../../assets/training/devleop/1.jpg";
+import img2 from "../../assets/training/devleop/2.jpg";
+import img3 from "../../assets/training/devleop/3.png";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -56,27 +61,40 @@ export default function DevelopYourBusiness() {
 
   return (
     <section
-      className=" md:p-10 py-20 max-w-[1200px] mx-auto overflow-hidden"
+      className="md:m-10 my-20 max-w-[1200px] mx-auto overflow-hidden"
       id="DevelopYourBusiness"
     >
       <p className="text-2xl lg:text-4xl font-bold mb-5 pb-5 border-b-4 border-primary w-max ">
         Develop Your Business
       </p>
-      <p className="lg:text-xl text-justify  ">
-        Develop Your Business Training Course is a unique initiative that
-        promotes firms, enterprises, and projects while also providing a chance
-        for people who want to improve their abilities. This course will attempt
-        to accomplish the following objectives based on weeks:
-      </p>
+      <div className="flex flex-col justify-center items-center gap-5">
+        <p className="lg:text-xl text-justify  ">
+          Develop Your Business Training Course is a unique initiative that
+          promotes firms, enterprises, and projects while also providing a
+          chance for people who want to improve their abilities. This course
+          will attempt to accomplish the following objectives based on weeks:
+        </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-20 gap-10 lg:gap-16">
+        <div className="overflow-hidden rounded-lg ">
+          <img
+            src={img3}
+            alt=""
+            className="w-full hover:scale-105 duration-300 ease-in-out"
+          />
+        </div>
+      </div>
+
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 my-10 md:my-20 gap-10 lg:gap-16 
+      "
+      >
         {data.map((item, index) => {
           return (
             <div key={index} data-aos={item.fade} data-aos-duration="1500">
               <div
                 className="card bg-neutral/50 text-light-content backdrop-blur-2xl rounded-lg 
-                        flex flex-col  justify-center items-center
-                        hover:bg-neutral duration-200 ease-in-out lg:hover:-translate-y-8 "
+                        flex flex-col  justify-center items-center 
+                        hover:bg-neutral duration-300 ease-in-out lg:hover:-translate-y-8 "
               >
                 <div
                   className="bg-primary flex items-center justify-center m-[-30px] p-5 w-16 
@@ -100,13 +118,21 @@ export default function DevelopYourBusiness() {
           );
         })}
       </div>
-      <p className="lg:text-xl text-justify ">
-        The primary purpose of this program is to create long-term value for
-        businesses and employers while also promoting growth. By learning about
-        the four key components of every company's or business's success:
-        management practices , planning, marketing, and sales.
-      </p>
-
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
+        <p className="lg:text-2xl text-justify ">
+          The primary purpose of this program is to create long-term value for
+          businesses and employers while also promoting growth. By learning
+          about the four key components of every company's or business's
+          success: management practices , planning, marketing, and sales.
+        </p>
+        <div className="h-60  overflow-hidden rounded-lg">
+          <img
+            src={img1}
+            alt=""
+            className="h-full w-full object-cover hover:scale-105 duration-300 ease-in-out"
+          />
+        </div>
+      </div>
       <div className="mt-10 md:mt-20">
         <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
           Sponsors
@@ -126,7 +152,7 @@ export default function DevelopYourBusiness() {
                 className="w-full h-48 overflow-hidden rounded-xl bg-light flex justify-center items-center"
               >
                 <img
-                  className="rounded-xl object-contain hover:scale-105 duration-200 ease-in-out"
+                  className="rounded-xl object-contain hover:scale-105 duration-300 ease-in-out"
                   src={pic}
                   alt=""
                 />
