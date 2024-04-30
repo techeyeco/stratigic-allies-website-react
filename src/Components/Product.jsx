@@ -80,7 +80,7 @@ export default function Product() {
               onMouseLeave={() => mouseLeaveHandler(item)}
               key={index}
               className="w-full h-80 relative overflow-hidden
-              duration-200 ease-in-out after:duration-200 after:ease-in-out
+              duration-300 ease-in-out after:duration-300 after:ease-in-out
               after:bg-gradient-to-t after:from-black/90 after:hover:via-black/50
               after:scale-[1] after:p-20 after:absolute after:bottom-[-75px] after:right-0
               after:left-0 after:origin-center after:z-0 after:hover:bottom-0"

@@ -1,6 +1,8 @@
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import img1 from "../../assets/training/peshang/img1.jpg";
+import img2 from "../../assets/training/peshang/img2.jpg";
 
 const second = [
   {
@@ -79,11 +81,21 @@ import { CiCoinInsert } from "react-icons/ci";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function Peshang() {
+  const [active, setActive] = React.useState({
+    item1: false,
+    item2: false,
+  });
+  console.log(active);
+
+  const mouseLeaveHandler = () => {
+    setActive(false);
+  };
+
   React.useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto md:p-10 py-20 overflow-hidden">
+    <section className="max-w-[1200px] mx-auto md:m-10 my-20 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div>
@@ -164,7 +176,47 @@ export default function Peshang() {
             </div>
           </div>
         </div>
-
+        <div
+          onMouseEnter={() =>
+            setActive({
+              ...active,
+              item1: true,
+            })
+          }
+          onMouseLeave={() => mouseLeaveHandler()}
+          className="w-full  relative overflow-hidden
+              duration-300 ease-in-out after:duration-300 after:ease-in-out
+              after:bg-gradient-to-t after:from-black/90 after:hover:via-black/50
+              after:scale-[1] after:p-20 after:absolute after:bottom-[-50px] after:right-0
+              after:left-0 after:origin-center after:z-0 after:hover:bottom-0 rounded-lg"
+        >
+          <img
+            src={img1}
+            alt=""
+            className={`saturate-0 rounded-lg top-0 left-0 
+                      ${active.item1 && "scale-105"} duration-300 ease-in-out`}
+          />
+          <div
+            className="absolute bottom-0 left-0 right-0 top-0 text-start z-10 hover:-translate-y-3 
+                              flex flex-col justify-end p-6 px-20 duration-500 ease-in-out"
+          >
+            <div className="">
+              <p className="text-xl font-bold">Peshange</p>
+              {active.item1 && (
+                <p
+                  className="text hidden md:block"
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum cumque commodi a illo porro dolorum quos architecto ex
+                  recusandae aperiam totam voluptatibus minus, cupiditate
+                  asperiores explicabo. Quia modi hic delectus?
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
         {/* 2 */}
         <div className="md:text-start">
           <p
@@ -206,21 +258,29 @@ export default function Peshang() {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+            className="text-2xl lg:text-3xl font-bold mb-10 border-b-4 border-primary w-max "
           >
             Course Organization{" "}
           </p>
-          <p
+          <div
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="lg:text-xl text-justify  "
+            className="flex flex-col justify-between items-center gap-5"
           >
-            This course focuses on both practical and professional aspects of
-            entrepreneurship. Candidates will participate in various activities,
-            including small group activities, group discussions, and watching
-            relevant video clips. The main activity is the group project.
-          </p>
+            <img
+              src={img2}
+              alt=""
+              className={`saturate-0 rounded-lg w-full h-96 object-cover duration-300 ease-in-out `}
+            />
+            <p className="lg:text-xl text-justify ">
+              This course focuses on both practical and professional aspects of
+              entrepreneurship. Candidates will participate in various
+              activities, including small group activities, group discussions,
+              and watching relevant video clips. The main activity is the group
+              project.
+            </p>
+          </div>
           <ul className="px-10 list-disc	">
             {third.map((items, index) => {
               return (

@@ -21,6 +21,9 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import PartnersLayout from "./Pages/Partners/PartnersLayout";
+import International from "./Pages/Partners/International";
+import Stratigic from "./Pages/Partners/Stratigic";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,11 +31,15 @@ const router = createBrowserRouter(
       <Route index element={<Hero />} />
       <Route path="about" element={<AboutUs />} />
       <Route path="tranining" element={<TrainingLayout />}>
-        <Route path="develop" element={<DevelopYourBusiness />} />
+        <Route index element={<DevelopYourBusiness />} />
         <Route path="management" element={<Management />} />
         <Route path="peshang" element={<Peshang />} />
         <Route path="BSS" element={<BSS />} />
         <Route path="SCS" element={<SCS />} />
+      </Route>
+      <Route path="/partners" element={<PartnersLayout />}>
+        <Route index element={<International />} />
+        <Route path="products" element={<Stratigic />} />
       </Route>
 
       <Route path="products" element={<Product />} />
