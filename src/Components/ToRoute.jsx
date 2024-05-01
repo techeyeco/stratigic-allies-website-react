@@ -58,7 +58,7 @@ export default function ToRoute() {
     },
     {
       title: "Modern Marketing",
-      route: "/modernMarketing",
+      route: "/essentialsMarketing",
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
@@ -80,23 +80,24 @@ export default function ToRoute() {
 
       <div
         data-aos-duration="1500"
-        className="grid  grid-cols-1 lg:grid-cols-3 gap-10 my-20 lg:m-20 justify-items-center text-light"
+        className="grid  grid-cols-1 lg:grid-cols-3 gap-5 m-5 lg:m-20 justify-items-center text-light"
       >
         {data.map((route, index) => {
           return (
             <Link
               key={index}
               to={route.route}
-              className={` overflow-hidden md:overflow-visible
+              className={` overflow-hidden
                lg:${route.span} lg:${route.translate}`}
             >
               <div
+                className="p-5"
                 data-aos={route.fade}
                 data-aos-delay={route.delay}
                 data-aos-duration={route.duration}
               >
                 <div
-                  className={`border border-primary rounded-2xl text-lg p-5 w-72 md:w-96 lg:w-52 h-20  
+                  className={`border border-primary rounded-2xl text-lg  w-72 md:w-96 lg:w-52 h-20  
                 hover:bg-primary duration-300 ease-in-out flex flex-col justify-center items-center `}
                 >
                   {route.title}
