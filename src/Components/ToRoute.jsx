@@ -71,7 +71,7 @@ export default function ToRoute() {
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden">
         Explore With Us
       </p>
-      <p className="lg:text-xl text-justify lg:text-center ">
+      <p className="lg:text-xl text-justify lg:text-center m-5">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, culpa!
         Expedita assumenda architecto nam molestiae omnis quod vitae neque,
         tempore optio dolore ad laboriosam similique dignissimos asperiores
@@ -80,7 +80,7 @@ export default function ToRoute() {
 
       <div
         data-aos-duration="1500"
-        className="grid  grid-cols-1 lg:grid-cols-3 gap-10 m-5 lg:m-20 justify-items-center text-light"
+        className="grid  grid-cols-1 lg:grid-cols-3 gap-10 my-20 lg:m-20 justify-items-center text-light"
       >
         {data.map((route, index) => {
           return (
