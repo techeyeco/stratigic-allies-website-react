@@ -58,7 +58,7 @@ export default function ToRoute() {
     },
     {
       title: "Modern Marketing",
-      route: "/essentialsMarketing",
+      route: "/modernMarketing",
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
