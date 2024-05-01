@@ -12,6 +12,9 @@ import TrainingLayout from "./Pages/training/TrainingLayout";
 import DevelopYourBusiness from "./Pages/training/DevelopYourBusiness ";
 import Management from "./Pages/training/Management";
 import Peshang from "./Pages/training/Peshang";
+
+import ModernMarketing from "./Pages/ModernMarketing/ModernMarketing";
+
 import BSS from "./Pages/training/BSS";
 import SCS from "./Pages/training/SCS";
 
@@ -42,7 +45,7 @@ const router = createBrowserRouter(
         <Route path="products" element={<Stratigic />} />
       </Route>
 
-      <Route path="products" element={<Product />} />
+      <Route path="modernMarketing" element={<ModernMarketing />} />
       <Route path="ourworks" element={<Ourworks />} />
       <Route path="consulting" element={<BusinessConsulting />} />
     </Route>
