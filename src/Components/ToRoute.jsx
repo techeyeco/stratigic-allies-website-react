@@ -68,7 +68,7 @@ export default function ToRoute() {
   ];
   return (
     <section className=" text-center m-10 max-w-[1200px] mx-auto">
-      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden">
+      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden ">
         Explore With Us
       </p>
       <p className="lg:text-xl text-justify lg:text-center m-5">

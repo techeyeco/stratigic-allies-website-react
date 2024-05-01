@@ -11,12 +11,12 @@ export default function ModernMarketing() {
       <p
         data-aos="fade-down"
         data-aos-duration="1000"
-        className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto"
+        className="text-3xl lg:text-5xl font-bold m-5 pb-5 border-b-4 border-primary w-max mx-auto "
       >
         Essentials of Modern Marketing
       </p>
       <p
-        className="text-xl lg:text-2xl text-center"
+        className="text-xl lg:text-2xl text-center m-5"
         data-aos="fade-down"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
