@@ -7,11 +7,11 @@ export default function ModernMarketing() {
     Aos.init();
   }, []);
   return (
-    <section className="text-center my-10  mx-auto">
+    <section className="text-center my-10 mx-auto">
       <p
         data-aos="fade-down"
         data-aos-duration="1000"
-        className="text-3xl lg:text-5xl font-bold m-5 pb-5 border-b-4 border-primary w-max mx-auto "
+        className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
       >
         Essentials of Modern Marketing
       </p>
