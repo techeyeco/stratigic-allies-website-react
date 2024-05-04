@@ -13,6 +13,10 @@ import DevelopYourBusiness from "./Pages/training/DevelopYourBusiness ";
 import Management from "./Pages/training/Management";
 import Peshang from "./Pages/training/Peshang";
 
+import Board from "./Pages/ModernMarketing/Board";
+import Edition from "./Pages/ModernMarketing/Edition";
+import Success from "./Pages/ModernMarketing/Success";
+
 import ModernMarketing from "./Pages/ModernMarketing/ModernMarketing";
 
 import BSS from "./Pages/training/BSS";
@@ -46,6 +50,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="modernMarketing" element={<ModernMarketing />} />
+
       <Route path="ourworks" element={<Ourworks />} />
       <Route path="consulting" element={<BusinessConsulting />} />
     </Route>

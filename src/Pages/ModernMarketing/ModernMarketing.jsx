@@ -2,26 +2,12 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import PK from "../../assets/PK.png";
+import { Outlet, useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
-import google from "../../assets/companies/google.png";
-import lays from "../../assets/companies/lays.png";
-import forbes from "../../assets/companies/forbes.png";
-import lotto from "../../assets/companies/lotto.png";
-import bnal from "../../assets/companies/bnal.png";
-import kozminski from "../../assets/companies/kozminski.jpg";
-import lambo from "../../assets/companies/lambo.png";
-import enterpreneur from "../../assets/companies/enterpreneur.png";
-import knauf from "../../assets/companies/knauf.png";
-import wwf from "../../assets/companies/wwf.png";
-import meta from "../../assets/companies/meta.png";
-import cocacola from "../../assets/companies/cocacola.png";
-import danone from "../../assets/companies/danone.png";
-import shein from "../../assets/companies/shein.png";
-import mwm from "../../assets/companies/mwm.png";
-import mas from "../../assets/companies/mas.jpg";
-import bright from "../../assets/companies/bright.png";
-import zom from "../../assets/companies/zom.png";
-import rudaw from "../../assets/companies/rudaw.png";
+import Success from "./Success";
+import Board from "./Board";
+import Edition from "./Edition";
 
 const infoPK = [
   {
@@ -72,31 +58,28 @@ const infoPK = [
     delay: 1400,
   },
 ];
-const comp = [
-  google,
-  lays,
-  forbes,
-  lotto,
-  bnal,
-  kozminski,
-  lambo,
-  enterpreneur,
-  knauf,
-  wwf,
-  meta,
-  cocacola,
-  danone,
-  shein,
-  mwm,
-  mas,
-  bright,
-  zom,
-  rudaw,
-];
+
 export default function ModernMarketing() {
   React.useEffect(() => {
     Aos.init();
   }, []);
+
+  const [activeTap, setAtiveTap] = React.useState("");
+  const routes = [
+    {
+      title: "Share Your Success",
+      route: "",
+    },
+    {
+      title: "EOMM Editions",
+      route: "Edition",
+    },
+    {
+      title: "Kotler Impace Board",
+      route: "Board",
+    },
+  ];
+
   return (
     <section className="text-center py-10 overflow-hidden">
       <div className="max-w-[1200px] mx-auto mb-10 p-10">
@@ -134,7 +117,7 @@ export default function ModernMarketing() {
       </div>
       <div className="mb-10">
         <p
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="1000"
           className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
@@ -142,7 +125,7 @@ export default function ModernMarketing() {
         </p>
         <p
           className="text-xl lg:text-2xl text-center m-5"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
@@ -181,41 +164,35 @@ export default function ModernMarketing() {
           </div>
         </div>
       </div>
+
       <div className="max-w-[1200px] mx-auto mb-10 p-10">
-        <p
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
-          Success Stories{" "}
-        </p>
-        <p
-          className="text-xl lg:text-2xl text-center m-5"
-          data-aos="fade-down"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="1000"
-        >
-          from successful and leading brands and corporations
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 ">
-          {comp.map((item, index) => {
+        <div className="grid grid-cols-3 justify-center items-center bg-white">
+          {routes.map((route, index) => {
             return (
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
+              <button
                 key={index}
-                className="w-80 h-40 bg-white overflow-hidden mx-auto"
+                onClick={() => setAtiveTap(route.route)}
+                className={` md:text-xl lg:text-2xl border-2 ${
+                  activeTap == route.route
+                    ? "bg-primary border-primary text-white"
+                    : "text-neutral"
+                }`}
               >
-                <img
-                  src={item}
-                  alt=""
-                  className="w-full h-full p-5 object-contain saturate-0 hover:saturate-100 duration-300 ease-in-out hover:scale-105"
-                />
-              </div>
+                {route.title}
+              </button>
             );
           })}
         </div>
       </div>
+
+      {activeTap == "Board" ? (
+        <Board />
+      ) : activeTap == "Edition" ? (
+        <Edition />
+      ) : (
+        <Success />
+      )}
+
       <div className="flex items-center justify-center mb-10 p-10">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSeE46ssWvix-2bDxazIViCj7RsPBygzoHj6eKXUxGy1KsPqTg/viewform?vc=0&c=0&w=1&flr=0&pli=1"
