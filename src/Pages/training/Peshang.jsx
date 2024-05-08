@@ -144,12 +144,12 @@ export default function Peshang() {
                 </div>
                 <div className="bg-primary flex flex-col w-full gap-5 p-5 rounded-lg">
                   <p className="text-3xl font-bold">We are open to work</p>
-                  <p className="text-sm">
+                  {/* <p className="text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     <br />
                     iste facilis inventore rerum a itaque. At consectetur
                     aliquid
-                  </p>
+                  </p> */}
                   <HiOutlineArrowLongRight size={50} className="self-end" />
                 </div>
               </div>

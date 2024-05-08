@@ -84,12 +84,7 @@ export default function ourworks() {
               <p className="card-title gap-4 text-2xl font-bold">
                 Successful Managers
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                ullam voluptatibus dolorem nobis, nesciunt aliquam molestiae
-                facere. In temporibus, iusto ut dicta ex excepturi odit
-                obcaecati facilis iure harum
-              </p>
+              <p></p>
             </div>
           </div>
         </div>
@@ -104,20 +99,11 @@ export default function ourworks() {
               <p className="card-title gap-4 text-2xl font-bold">
                 Successful Managers
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                ullam voluptatibus dolorem nobis, nesciunt aliquam molestiae
-                facere. In temporibus, iusto ut dicta ex excepturi odit
-                obcaecati facilis iure harum
-              </p>
+              <p></p>
             </div>
             <div className="bg-primary flex flex-col w-full gap-5 p-5 rounded-lg">
               <p className="text-3xl font-bold">We are open to work</p>
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br />
-                iste facilis inventore rerum a itaque. At consectetur aliquid
-              </p>
+
               <HiOutlineArrowLongRight size={50} className="self-end" />
             </div>
           </div>
@@ -133,12 +119,7 @@ export default function ourworks() {
               <p className="card-title gap-4 text-2xl font-bold">
                 Successful Managers
               </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-                ullam voluptatibus dolorem nobis, nesciunt aliquam molestiae
-                facere. In temporibus, iusto ut dicta ex excepturi odit
-                obcaecati facilis iure harum
-              </p>
+              <p></p>
             </div>
           </div>
         </div>

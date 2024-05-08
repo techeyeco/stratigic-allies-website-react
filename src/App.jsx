@@ -19,6 +19,10 @@ import Success from "./Pages/ModernMarketing/Success";
 
 import ModernMarketing from "./Pages/ModernMarketing/ModernMarketing";
 
+import Gallary from "./Pages/Gallary/Gallary";
+
+import UK from "./Pages/UK/UK";
+
 import BSS from "./Pages/training/BSS";
 import SCS from "./Pages/training/SCS";
 
@@ -51,7 +55,8 @@ const router = createBrowserRouter(
 
       <Route path="modernMarketing" element={<ModernMarketing />} />
 
-      <Route path="ourworks" element={<Ourworks />} />
+      <Route path="ukCourse" element={<UK />} />
+      <Route path="gallery" element={<Gallary />} />
       <Route path="consulting" element={<BusinessConsulting />} />
     </Route>
   )
