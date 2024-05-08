@@ -137,13 +137,12 @@ export default function AboutUs() {
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
-          Strategic Allies is a premier business development service provider
-          headquartered in Erbil, Iraq, with a strategic foothold in the global
-          market through key partnerships in the Canada and United Kingdom.
-          Established in January 2024, we strive to become a leader in fostering
-          business growth and innovation within Iraq and extending our expertise
-          to the international arena through our local and international
-          strategic partnerships.
+          Strategic Allies is a business development service provider based in
+          Erbil, Iraq, with a strategic footing in the worldwide market via
+          significant alliances in Canada and the United Kingdom. Through our
+          local and international strategic collaborations, we want to become a
+          pioneer in supporting corporate development and innovation in Iraq
+          while also expanding our knowledge into the worldwide arena.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20 py-10 ">
           <div

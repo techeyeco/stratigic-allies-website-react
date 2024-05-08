@@ -14,59 +14,114 @@ export default function Navbar() {
   );
   const data = [
     {
-      title: "Bussniess Consulting",
-      route: "/consulting",
-    },
-    {
       title: "Strategic Allies",
       route: "/about",
+      translate: "-translate-y-5",
+      fade: "zoom-out-down",
+      duration: 1500,
+      delay: 300,
     },
+    {
+      title: "Bussniess Consulting",
+      route: "/consulting",
+      translate: "translate-y-5",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1500,
+    },
+
     {
       title: "Bussniess Training",
       route: "/tranining",
+      translate: "translate-y-5",
+      fade: "zoom-out-left",
+      duration: 1500,
+      delay: 500,
     },
     {
-      title: "Strategic Partners",
-      route: "/strategicPartners",
+      title: "Modern Marketing",
+      route: "/modernMarketing",
+      translate: "-translate-y-5",
+      span: "col-span-3",
+      fade: "zoom-out-up",
+      duration: 1500,
+      delay: 900,
+    },
+    {
+      title: "Our Partners",
+      route: "/partners",
+      translate: "translate-y-10",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1200,
     },
     {
       title: "Gallery",
       route: "/gallery",
+      translate: "-translate-y-6",
+      fade: "zoom-out",
+      duration: 1000,
     },
     {
       title: "Course in the UK",
       route: "/ukCourse",
-    },
-    {
-      title: "Modern Marketing",
-      route: "/essentialsMarketing",
+      translate: "translate-y-10",
+      fade: "zoom-out-left",
+      duration: 1500,
+      delay: 700,
     },
   ];
+
   return (
-    <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
-      <div className="navbar-start">
-        {pathname != "/" && (
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    pathname !== "/partners" &&
+    pathname !== "/gallery" &&
+    pathname !== "/ukCourse" && (
+      <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
+        <div className="navbar-start">
+          {pathname != "/" && (
+            <div className="dropdown">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost lg:hidden"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabIndex={0}
+                className="menu menu-md dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 bg-neutral "
+              >
+                {data.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <Link to={item.route}>{item.title}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-md dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 bg-neutral "
-            >
+          )}
+          <Link
+            to="/"
+            className="btn btn-ghost text-xl py-8 flex flex-col items-center"
+          >
+            <img src={logonav} alt="" className="w-60" />
+          </Link>
+          {pathname != "/" && (
+            <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-2">
               {data.map((item, index) => {
                 return (
                   <li key={index}>
@@ -75,27 +130,9 @@ export default function Navbar() {
                 );
               })}
             </ul>
-          </div>
-        )}
-        <Link
-          to="/"
-          className="btn btn-ghost text-xl py-8 flex flex-col items-center"
-        >
-          <img src={logonav} alt="" className="w-60" />
-        </Link>
-        {pathname != "/" && (
-          <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-2">
-            {data.map((item, index) => {
-              return (
-                <li key={index}>
-                  <Link to={item.route}>{item.title}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-      {/* <div className="navbar-end flex items-center gap-5">
+          )}
+        </div>
+        {/* <div className="navbar-end flex items-center gap-5">
         <button
           className={`${lang === "KU" ? "font-bold" : ""}`}
           onClick={() => langHandler("KU")}
@@ -110,6 +147,7 @@ export default function Navbar() {
         </button>
         <a className="btn btn-outline rounded-xl px-9">Login</a>
       </div> */}
-    </nav>
+      </nav>
+    )
   );
 }

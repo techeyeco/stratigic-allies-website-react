@@ -6,7 +6,7 @@ html {
   background-image: url("assets/world.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 75%;
+  background-size: 70%;
 }
 .herobg::after {
   overflow-x: hidden;
@@ -39,4 +39,28 @@ html {
 .wave3 {
   transform: translate(0, 50px);
   opacity: 0.9;
+}
+
+.bg-animated {
+  animation-name: color_change;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes color_change {
+  0% {
+    background-color: #347bff;
+  }
+  25% {
+    background-color: #349dff;
+  }
+  50% {
+    background-color: #34b5ff;
+  }
+  75% {
+    background-color: #34d0ff;
+  }
+  100% {
+    background-color: rgb(63, 159, 250);
+  }
 }

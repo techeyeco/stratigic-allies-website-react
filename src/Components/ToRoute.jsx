@@ -14,7 +14,7 @@ export default function ToRoute() {
       route: "/consulting",
       translate: "translate-y-5",
       fade: "zoom-out-right",
-      duration: 2000,
+      duration: 1500,
       delay: 1500,
     },
     {
@@ -22,7 +22,7 @@ export default function ToRoute() {
       route: "/about",
       translate: "-translate-y-5",
       fade: "zoom-out-down",
-      duration: 2000,
+      duration: 1500,
       delay: 300,
     },
     {
@@ -30,7 +30,7 @@ export default function ToRoute() {
       route: "/tranining",
       translate: "translate-y-5",
       fade: "zoom-out-left",
-      duration: 2000,
+      duration: 1500,
       delay: 500,
     },
     {
@@ -38,7 +38,7 @@ export default function ToRoute() {
       route: "/partners",
       translate: "translate-y-10",
       fade: "zoom-out-right",
-      duration: 2000,
+      duration: 1500,
       delay: 1200,
     },
     {
@@ -53,7 +53,7 @@ export default function ToRoute() {
       route: "/ukCourse",
       translate: "translate-y-10",
       fade: "zoom-out-left",
-      duration: 2000,
+      duration: 1500,
       delay: 700,
     },
     {
@@ -62,7 +62,7 @@ export default function ToRoute() {
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
-      duration: 2000,
+      duration: 1500,
       delay: 900,
     },
   ];
@@ -70,12 +70,6 @@ export default function ToRoute() {
     <section className=" text-center m-10 max-w-[1200px] mx-auto">
       <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden ">
         Explore With Us
-      </p>
-      <p className="lg:text-xl text-justify lg:text-center m-5">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, culpa!
-        Expedita assumenda architecto nam molestiae omnis quod vitae neque,
-        tempore optio dolore ad laboriosam similique dignissimos asperiores
-        blanditiis magni eligendi!
       </p>
 
       <div
@@ -86,9 +80,10 @@ export default function ToRoute() {
           return (
             <Link
               key={index}
+              id="toroute"
               to={route.route}
               className={` overflow-hidden
-               lg:${route.span} lg:${route.translate}`}
+              lg:${route.span} lg:${route.translate}`}
             >
               <div
                 className="p-5"
