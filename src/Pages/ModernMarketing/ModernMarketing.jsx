@@ -2,8 +2,6 @@ import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import PK from "../../assets/PK.png";
-import { Outlet, useLocation } from "react-router";
-import { Link } from "react-router-dom";
 
 import Success from "./Success";
 import Board from "./Board";
@@ -79,7 +77,7 @@ export default function ModernMarketing() {
       route: "Edition",
     },
     {
-      title: "Kotler Impace Board",
+      title: "Kotler Impact Board Iraq",
       route: "Board",
     },
   ];
@@ -226,7 +224,7 @@ export default function ModernMarketing() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto mb-10 p-10">
+      <div className="max-w-[1200px] mx-auto mb-10 py-10">
         <div className="grid grid-cols-3 justify-center items-center bg-white">
           {routes.map((route, index) => {
             return (
@@ -254,7 +252,24 @@ export default function ModernMarketing() {
         <Success />
       )}
 
-      <div className="flex items-center justify-center mb-10 p-10">
+      <div className="flex flex-col items-center justify-center mb-10 p-10 max-w-[1200px] mx-auto">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+        >
+          Share Your Success
+        </p>
+        <p
+          className="text-xl lg:text-2xl text-center m-5"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
+          Now, there is an opportunity for leading and fruitful corporations and
+          businesses in Iraq and the Kurdistan to share their success stories in
+          this outstanding work.{" "}
+        </p>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSeE46ssWvix-2bDxazIViCj7RsPBygzoHj6eKXUxGy1KsPqTg/viewform?vc=0&c=0&w=1&flr=0&pli=1"
           className="p-5 px-10 border-2 border-primary text-xl rounded-lg text-center hover:bg-primary hover:shadow-2xl hover:shadow-primary/50 duration-300 ease-in-out "

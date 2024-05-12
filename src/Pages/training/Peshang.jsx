@@ -95,7 +95,7 @@ export default function Peshang() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto md:m-10 my-20 overflow-hidden">
+    <section className="max-w-[1200px] mx-auto p-10 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div>
