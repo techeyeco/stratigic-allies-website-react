@@ -94,9 +94,9 @@ export default function Edition() {
                   data-aos-duration="1000"
                   className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
                 >
-                  <p className="bg-primary md:text-xl p-1">{contry.name}</p>
+                  <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                   <img
-                    src={contry.img}
+                    src={contry?.img}
                     alt=""
                     className="w-full h-full p-5 object-contain"
                   />
@@ -125,9 +125,9 @@ export default function Edition() {
                   data-aos-duration="1000"
                   className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
                 >
-                  <p className="bg-primary md:text-xl p-1">{contry.name}</p>
+                  <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                   <img
-                    src={contry.img}
+                    src={contry?.img}
                     alt=""
                     className="w-full h-full p-5 object-contain "
                   />
@@ -158,9 +158,9 @@ export default function Edition() {
                     data-aos-duration="1000"
                     className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
                   >
-                    <p className="bg-primary md:text-xl p-1">{contry.name}</p>
+                    <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                     <img
-                      src={contry.img}
+                      src={contry?.img}
                       alt=""
                       className="w-full h-full p-5 object-contain "
                     />
