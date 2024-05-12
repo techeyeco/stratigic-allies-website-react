@@ -39,7 +39,7 @@ export default function Navbar() {
       delay: 500,
     },
     {
-      title: "Modern Marketing",
+      title: "Essential of Modern Marketing",
       route: "/modernMarketing",
       translate: "-translate-y-5",
       span: "col-span-3",

@@ -9,6 +9,10 @@ import Success from "./Success";
 import Board from "./Board";
 import Edition from "./Edition";
 
+import book from "../../assets/EOMM Book.png";
+import kotlerLogo from "../../assets/kotlerlogo.png";
+import strategicAllies from "../../assets/logo/Horizontal 02.png";
+
 const infoPK = [
   {
     title:
@@ -82,6 +86,56 @@ export default function ModernMarketing() {
 
   return (
     <section className="text-center py-10 overflow-hidden">
+      <div className="mb-10">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-bookColor w-max mx-auto "
+        >
+          Essentails of Modern Marketing
+        </p>
+        <p
+          className="text-xl lg:text-2xl text-center m-5"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="1000"
+        >
+          The World’s first Marketing Book Around Market-specific Success Storie{" "}
+        </p>
+        <div className="grid grid-cols-2">
+          <div className="bg-light p-20 overflow-hidden">
+            <div
+              className="max-w-[1000px] mx-auto "
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+            >
+              <img
+                src={book}
+                alt=""
+                className="w-96 mx-auto hover:scale-110 duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+          <div className="bg-bookColor ">
+            <div
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-4xl p-16 lg:p-20 text-justify"
+            >
+              <p>
+                For the first time, the Iraqi edition of 'Essentials of Modern
+                Marketing' will be published in 2024. Now, there is an
+                opportunity for leading and fruitful corporations and businesses
+                in Iraq and the Kurdistan region to join and share their success
+                stories in this outstanding work via Strategic Allies Company as
+                an exclusive partner of Kotler Impact in Iraq.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="max-w-[1200px] mx-auto mb-10 p-10">
         <p
           data-aos="fade-down"
@@ -131,36 +185,43 @@ export default function ModernMarketing() {
         >
           Essentials of Modern Marketing book (EOMM) – Iraq edition
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center my-5">
-          <div
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000"
-            className="bg-primary text-lg md:text-xl lg:text-2xl p-16 lg:p-20 text-justify"
-          >
-            <p>
-              EOMM is one of the projects that Kotler Impact and Strategic
-              Allies are collaborating on. It is the first marketing book in the
-              world that focuses on market-specific success stories from a
-              variety of nations all over the globe. It is identified as the
-              Marketing Management book for the 21st century and beyond. It’s
-              the world’s first marketing book around market-specific success
-              stories.
-            </p>
-            <p></p>
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-between my-5">
+          <div className="bg-primary">
+            <div
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-3xl p-16 lg:p-20 text-justify"
+            >
+              <p>
+                EOMM is one of the projects that Kotler Impact and Strategic
+                Allies are collaborating on. It is the first marketing book in
+                the world that focuses on market-specific success stories from a
+                variety of nations all over the globe. It is identified as the
+                Marketing Management book for the 21st century and beyond. It’s
+                the world’s first marketing book around market-specific success
+                stories.
+              </p>
+            </div>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-anchor-placement="top-bottom"
-            data-aos-duration="1000"
-            className="text-lg md:text-xl lg:text-2xl p-16 lg:p-20 text-justify"
-          >
-            For the first time, the Iraqi edition of 'Essentials of Modern
-            Marketing' will be published in 2024. Now, there is an opportunity
-            for leading and fruitful corporations and businesses in Iraq and the
-            Kurdistan region to join and share their success stories in this
-            outstanding work via Strategic Allies Company as an exclusive
-            partner of Kotler Impact in Iraq.
+          <div className="bg-light">
+            <div
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1000"
+              className="flex flex-col xl:flex-row items-center justify-center gap-20 max-w-[1000px] mx-auto h-full p-10"
+            >
+              <img
+                src={kotlerLogo}
+                alt=""
+                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
+              />
+              <img
+                src={strategicAllies}
+                alt=""
+                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
+              />
+            </div>
           </div>
         </div>
       </div>

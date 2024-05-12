@@ -57,7 +57,7 @@ export default function ToRoute() {
       delay: 700,
     },
     {
-      title: "Modern Marketing",
+      title: "Essential of Modern Marketing",
       route: "/modernMarketing",
       translate: "-translate-y-5",
       span: "col-span-3",
