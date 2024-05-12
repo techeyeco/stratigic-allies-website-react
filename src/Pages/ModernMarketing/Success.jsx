@@ -53,7 +53,7 @@ export default function Success() {
           data-aos-duration="1000"
           className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
-          Success Stories{" "}
+          Success Stories
         </p>
         <p
           className="text-xl lg:text-2xl text-center m-5"
