@@ -1,5 +1,6 @@
 import React from "react";
-import person from "../../assets/person.png";
+import CEO from "../../assets/CEO.png";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 export default function CEOcontact() {
@@ -49,7 +50,7 @@ export default function CEOcontact() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10  justify-center items-center p-10 pb-0 max-w-[1200px] mx-auto ">
       <div className="hidden md:block">
-        <img src={person} alt="" className="w-60 lg:w-96 saturate-0" />
+        <img src={CEO} alt="" className="w-60 lg:w-96 saturate-0" />
       </div>
       <div className="col-span-2 text-center md:text-start">
         <div className="">
@@ -93,7 +94,7 @@ export default function CEOcontact() {
         </div>
       </div>
       <div className="block md:hidden mx-auto">
-        <img src={person} alt="" className="w-40 saturate-0" />
+        <img src={CEO} alt="" className="w-40 saturate-0" />
       </div>
     </div>
   );
