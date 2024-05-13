@@ -210,7 +210,7 @@ export default function Board() {
       <p
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+        className="text-xl lg:text-5xl mb-5 pb-5 border-b-4 border-primary mx-auto"
       >
         Kotler Impact Advisory Board Iraq
       </p>
@@ -243,7 +243,7 @@ export default function Board() {
                   <ol className="px-10 list-disc text-start">
                     {person.info.map((info) => {
                       return (
-                        <li key={index} className="lg:text-lg mt-2">
+                        <li key={index} className=" lg:text-lg mt-2">
                           {info}
                         </li>
                       );
