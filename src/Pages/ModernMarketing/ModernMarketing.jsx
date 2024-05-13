@@ -100,7 +100,7 @@ export default function ModernMarketing() {
         >
           The World’s first Marketing Book Around Market-specific Success Storie{" "}
         </p>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 ">
           <div className="bg-light p-20 overflow-hidden">
             <div
               className="max-w-[1000px] mx-auto "
@@ -120,7 +120,7 @@ export default function ModernMarketing() {
               data-aos="fade-left"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
-              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-4xl p-16 lg:p-20 text-justify"
+              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-4xl p-10 lg:p-20 text-justify"
             >
               <p>
                 For the first time, the Iraqi edition of 'Essentials of Modern
@@ -224,17 +224,17 @@ export default function ModernMarketing() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto mb-10 py-10">
-        <div className="grid grid-cols-3 justify-center items-center bg-white">
+      <div className="max-w-[1200px] mx-auto mb-10 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-2">
           {routes.map((route, index) => {
             return (
               <button
                 key={index}
                 onClick={() => setAtiveTap(route.route)}
-                className={` md:text-xl lg:text-2xl border-2 ${
+                className={` md:text-xl lg:text-2xl ${
                   activeTap == route.route
-                    ? "bg-primary border-primary text-white"
-                    : "text-neutral"
+                    ? "bg-primary text-white"
+                    : "bg-white text-neutral"
                 }`}
               >
                 {route.title}
