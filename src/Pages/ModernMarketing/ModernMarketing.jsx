@@ -100,7 +100,7 @@ export default function ModernMarketing() {
         >
           The World’s first Marketing Book Around Market-specific Success Storie{" "}
         </p>
-        <div className="grid grid-cols-1 ">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-light p-20 overflow-hidden">
             <div
               className="max-w-[1000px] mx-auto "
