@@ -3,6 +3,10 @@ import React from "react";
 import mission from "../../assets/mission.png";
 import sLogo from "../../assets/logo/Vertical 01.png";
 import CEOcontact from "./CEOcontact";
+
+import office1 from "../../assets/office one.jpeg";
+import office2 from "../../assets/office two.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -152,7 +156,7 @@ export default function AboutUs() {
           >
             <img
               className="h-96 w-full object-cover hover:scale-105 duration-300 ease-in-out"
-              src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
+              src={office2}
               alt=""
             />
           </div>
@@ -163,7 +167,7 @@ export default function AboutUs() {
           >
             <img
               className="h-96 w-full object-cover hover:scale-105 duration-300 ease-in-out"
-              src="https://th.bing.com/th/id/R.ea6a6c06c73b8c515f167ac59a3065ce?rik=t6RwMoyD7j%2bcrA&riu=http%3a%2f%2fwww.holleysolar.cn%2fuploads%2fimg1%2f20200604%2f5ed84f97821a0.jpg&ehk=KcGlp9mpvTqZMBZSiL0GMdkdDIGOG3HbTioTUET4qxU%3d&risl=&pid=ImgRaw&r=0"
+              src={office1}
               alt=""
             />
           </div>

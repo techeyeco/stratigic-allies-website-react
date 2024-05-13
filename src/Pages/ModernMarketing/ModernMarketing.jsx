@@ -7,7 +7,7 @@ import Success from "./Success";
 import Board from "./Board";
 import Edition from "./Edition";
 
-import book from "../../assets/EOMM Book.png";
+import book from "../../assets/EOMM Book2.png";
 import kotlerLogo from "../../assets/kotlerlogo.png";
 import strategicAllies from "../../assets/logo/Horizontal 02.png";
 

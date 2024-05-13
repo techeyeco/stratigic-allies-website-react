@@ -73,9 +73,7 @@ export default function Navbar() {
   ];
 
   return (
-    pathname !== "/partners" &&
-    pathname !== "/gallery" &&
-    pathname !== "/ukCourse" && (
+    (pathname === "/about" || pathname === "/modernMarketing") && (
       <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
         <div className="navbar-start">
           {pathname != "/" && (
