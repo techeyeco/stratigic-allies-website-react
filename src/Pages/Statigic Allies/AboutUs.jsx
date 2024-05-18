@@ -1,6 +1,7 @@
 import React from "react";
 
 import mission from "../../assets/mission.png";
+import vision from "../../assets/vision.png";
 import sLogo from "../../assets/logo/Vertical 01.png";
 import CEOcontact from "./CEOcontact";
 
@@ -211,8 +212,8 @@ export default function AboutUs() {
           >
             <div className="overflow-hidden h-full w-max">
               <img
-                className="h-48 w-full object-contain rotate-180 mt-5"
-                src={mission}
+                className="h-60 w-full object-contain mt-5"
+                src={vision}
                 alt=""
               />
             </div>{" "}

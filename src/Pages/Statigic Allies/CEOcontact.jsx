@@ -1,5 +1,5 @@
 import React from "react";
-import CEO from "../../assets/CEO.png";
+import CEO from "../../assets/CEO1.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -48,9 +48,9 @@ export default function CEOcontact() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10  justify-center items-center p-10 pb-0 max-w-[1200px] mx-auto ">
-      <div className="hidden md:block">
-        <img src={CEO} alt="" className="w-60 lg:w-96 saturate-0" />
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10  justify-center items-center p-10 mb-20 max-w-[1200px] mx-auto overflow-hidden">
+      <div className="hidden lg:block bg-white rounded-lg">
+        <img src={CEO} alt="" className="w-60 lg:w-96 rounded-lg" />
       </div>
       <div className="col-span-2 text-center md:text-start">
         <div className="">
@@ -93,8 +93,8 @@ export default function CEOcontact() {
           </div>
         </div>
       </div>
-      <div className="block md:hidden mx-auto">
-        <img src={CEO} alt="" className="w-40 saturate-0" />
+      <div className=" lg:hidden bg-white rounded-lg flex justify-center">
+        <img src={CEO} alt="" className="w-full rounded-lg" />
       </div>
     </div>
   );

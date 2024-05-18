@@ -11,6 +11,22 @@ import book from "../../assets/EOMM Book2.png";
 import kotlerLogo from "../../assets/kotlerlogo.png";
 import strategicAllies from "../../assets/logo/Horizontal 02.png";
 
+import video1 from "../../assets/video/WhatsApp Video 2024-05-14 at 16.23.40_f34723d2.mp4";
+import video2 from "../../assets/video/video2.mp4";
+import video3 from "../../assets/video/video3.mp4";
+
+const videos = [
+  {
+    video: video1,
+  },
+  {
+    video: video2,
+  },
+  {
+    video: video3,
+  },
+];
+
 const infoPK = [
   {
     title:
@@ -66,6 +82,7 @@ export default function ModernMarketing() {
     Aos.init();
   }, []);
 
+  const [activeVid, setActiveVid] = React.useState(video1);
   const [activeTap, setAtiveTap] = React.useState("");
   const routes = [
     {
@@ -81,6 +98,7 @@ export default function ModernMarketing() {
       route: "Board",
     },
   ];
+  console.log(activeVid);
 
   return (
     <section className="text-center py-10 overflow-hidden">
@@ -111,7 +129,7 @@ export default function ModernMarketing() {
               <img
                 src={book}
                 alt=""
-                className="w-96 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
               />
             </div>
           </div>
@@ -120,15 +138,17 @@ export default function ModernMarketing() {
               data-aos="fade-left"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
-              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-4xl p-10 lg:p-20 text-justify"
+              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-2xl  p-10 lg:p-20 text-justify"
             >
               <p>
                 For the first time, the Iraqi edition of 'Essentials of Modern
-                Marketing' will be published in 2024. Now, there is an
-                opportunity for leading and fruitful corporations and businesses
-                in Iraq and the Kurdistan region to join and share their success
-                stories in this outstanding work via Strategic Allies Company as
-                an exclusive partner of Kotler Impact in Iraq.
+                Marketing' will be published in 2024.
+                <br />
+                <br /> Now, there is an opportunity for leading and fruitful
+                corporations and businesses in Iraq and the Kurdistan region to
+                join and share their success stories in this outstanding work
+                via Strategic Allies Company as an exclusive partner of Kotler
+                Impact in Iraq.
               </p>
             </div>
           </div>
@@ -189,16 +209,16 @@ export default function ModernMarketing() {
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
-              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-3xl xl:text-3xl p-16 lg:p-20 text-justify"
+              className="max-w-[1000px] mx-auto text-lg md:text-xl lg:text-2xl  p-16 lg:p-20 text-justify"
             >
               <p>
                 EOMM is one of the projects that Kotler Impact and Strategic
                 Allies are collaborating on. It is the first marketing book in
                 the world that focuses on market-specific success stories from a
-                variety of nations all over the globe. It is identified as the
-                Marketing Management book for the 21st century and beyond. It’s
-                the world’s first marketing book around market-specific success
-                stories.
+                variety of nations all over the globe. <br />
+                <br /> It is identified as the Marketing Management book for the
+                21st century and beyond. It’s the world’s first marketing book
+                around market-specific success stories.
               </p>
             </div>
           </div>
@@ -212,12 +232,12 @@ export default function ModernMarketing() {
               <img
                 src={kotlerLogo}
                 alt=""
-                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-60 mx-auto hover:scale-110 duration-200 ease-in-out"
               />
               <img
                 src={strategicAllies}
                 alt=""
-                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-60 mx-auto hover:scale-110 duration-200 ease-in-out"
               />
             </div>
           </div>
@@ -252,6 +272,56 @@ export default function ModernMarketing() {
         <Success />
       )}
 
+      <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto mb-10 p-10 lg:px-40 gap-10">
+        {activeVid == video1 && (
+          <video
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full"
+            controls
+          >
+            <source src={video1} type="video/mp4" />
+          </video>
+        )}
+        {activeVid == video2 && (
+          <video
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full"
+            controls
+          >
+            <source src={video2} type="video/mp4" />
+          </video>
+        )}
+        {activeVid == video3 && (
+          <video
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full"
+            controls
+          >
+            <source src={video3} type="video/mp4" />
+          </video>
+        )}
+        <div className="grid grid-cols-3 gap-4">
+          {videos.map((video, index) => (
+            <div
+              data-aos="fade-up"
+              جە
+              data-aos-duration="1000"
+              key={index}
+              className="cursor-pointer"
+            >
+              <video
+                className="w-full h-full"
+                onClick={() => setActiveVid(video.video)}
+              >
+                <source src={video.video} type="video/mp4" />
+              </video>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="flex flex-col items-center justify-center mb-10 p-10 max-w-[1200px] mx-auto">
         <p
           data-aos="fade-up"
@@ -271,6 +341,8 @@ export default function ModernMarketing() {
           this outstanding work.{" "}
         </p>
         <a
+          data-aos="fade-up"
+          data-aos-duration="1000"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeE46ssWvix-2bDxazIViCj7RsPBygzoHj6eKXUxGy1KsPqTg/viewform?vc=0&c=0&w=1&flr=0&pli=1"
           className="p-5 px-10 border-2 border-primary text-xl rounded-lg text-center hover:bg-primary hover:shadow-2xl hover:shadow-primary/50 duration-300 ease-in-out "
         >
