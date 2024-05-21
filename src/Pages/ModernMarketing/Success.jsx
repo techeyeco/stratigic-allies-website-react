@@ -76,7 +76,7 @@ export default function Success() {
                   <img
                     src={item}
                     alt=""
-                    className="w-full h-full p-5 object-contain saturate-0 hover:saturate-100 duration-300 ease-in-out hover:scale-105"
+                    className="w-full h-full p-5 object-contain  duration-300 ease-in-out hover:scale-105"
                   />
                 </div>
               )
@@ -95,7 +95,7 @@ export default function Success() {
                     <img
                       src={item}
                       alt=""
-                      className="w-full h-full p-5 object-contain saturate-0 hover:saturate-100 duration-300 ease-in-out hover:scale-105"
+                      className="w-full h-full p-5 object-contain  duration-300 ease-in-out hover:scale-105"
                     />
                   </div>
                 )
@@ -154,7 +154,7 @@ export default function Success() {
                 <img
                   src={item}
                   alt=""
-                  className="w-full h-full p-5 object-contain saturate-0 hover:saturate-100 duration-300 ease-in-out hover:scale-105"
+                  className="w-full h-full p-5 object-contain  duration-300 ease-in-out hover:scale-105"
                 />
               </div>
             );
