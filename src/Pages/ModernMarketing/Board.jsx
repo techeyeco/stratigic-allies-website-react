@@ -58,12 +58,13 @@ export default function Board() {
       ],
     },
     {
-      name: "Professor Dr. Wasfi Kahwachi",
+      name: "Professor Dr. Ahlam Ibrahim",
       img: img4,
       info: [
-        "PhD in Statistics",
-        "Dean of scientific research",
-        "Tishk International University",
+        "Department of Administration",
+        "College of Administration and Economics",
+        "Strategy Management and Organizational Behaviour",
+        "Salaheddin university - Erbil",
       ],
     },
     {
@@ -214,7 +215,7 @@ export default function Board() {
       >
         Kotler Impact Advisory Board Iraq
       </p>
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
         {board.map((person, index) => {
           return (
             (index == 0 ||

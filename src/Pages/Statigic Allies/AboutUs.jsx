@@ -5,116 +5,12 @@ import vision from "../../assets/vision.png";
 import sLogo from "../../assets/logo/Vertical 01.png";
 import CEOcontact from "./CEOcontact";
 
-import office1 from "../../assets/office one.jpeg";
 import office2 from "../../assets/office two.jpg";
+
+import handShakke from "../../assets/hanshake.jpg";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-const data = [
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-  {
-    title: "Development",
-    detail:
-      "Lorem ipsum dolor sit amet lorem in lore mollis et netus et malesuada ",
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="currentColor"
-        className="bi bi-code-slash"
-        viewBox="0 0 16 16"
-      >
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
-      </svg>
-    ),
-  },
-];
 
 export default function AboutUs() {
   React.useEffect(() => {
@@ -122,9 +18,9 @@ export default function AboutUs() {
   }, []);
 
   return (
-    <section className="text-center flex flex-col " id="about">
+    <section className="text-center flex flex-col overflow-hidden" id="about">
       {/* About */}
-      <div className="p-10  max-w-[1200px] mx-auto ">
+      <div className="p-10 max-w-[1200px] mx-auto ">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -168,7 +64,7 @@ export default function AboutUs() {
           >
             <img
               className="h-96 w-full object-cover hover:scale-105 duration-300 ease-in-out"
-              src={office1}
+              src={handShakke}
               alt=""
             />
           </div>
