@@ -59,7 +59,7 @@ export default function Edition() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto mb-10 p-10">
+    <section className="max-w-[1200px] mx-auto mb-10 p-5 lg:p-10">
       <div className="mb-10">
         <p
           data-aos="fade-up"
@@ -91,7 +91,7 @@ export default function Edition() {
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
+                  className="w-32 md:w-56 lg:w-60 md:h-40 bg-white overflow-hidden mx-auto"
                 >
                   <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                   <img
@@ -122,7 +122,7 @@ export default function Edition() {
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
+                  className="w-32 md:w-56 lg:w-60 md:h-40 bg-white overflow-hidden mx-auto"
                 >
                   <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                   <img
@@ -155,7 +155,7 @@ export default function Edition() {
                     key={index}
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    className="w-48 md:w-56 lg:w-60 h-40 bg-white overflow-hidden mx-auto"
+                    className="w-32 md:w-56 lg:w-60 md:h-40 bg-white overflow-hidden mx-auto"
                   >
                     <p className="bg-primary md:text-xl p-1">{contry?.name}</p>
                     <img

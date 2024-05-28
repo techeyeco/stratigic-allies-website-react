@@ -21,23 +21,23 @@ export default function Navbar() {
       duration: 1500,
       delay: 300,
     },
-    // {
-    //   title: "Bussniess Consulting",
-    //   route: "/consulting",
-    //   translate: "translate-y-5",
-    //   fade: "zoom-out-right",
-    //   duration: 1500,
-    //   delay: 1500,
-    // },
+    {
+      title: "Bussniess Consulting",
+      route: "/consulting",
+      translate: "translate-y-5",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1500,
+    },
 
-    // {
-    //   title: "Bussniess Training",
-    //   route: "/tranining",
-    //   translate: "translate-y-5",
-    //   fade: "zoom-out-left",
-    //   duration: 1500,
-    //   delay: 500,
-    // },
+    {
+      title: "Bussniess Training",
+      route: "/tranining",
+      translate: "translate-y-5",
+      fade: "zoom-out-left",
+      duration: 1500,
+      delay: 500,
+    },
     {
       title: "Essential of Modern Marketing",
       route: "/modernMarketing",
@@ -47,29 +47,29 @@ export default function Navbar() {
       duration: 1500,
       delay: 900,
     },
-    // {
-    //   title: "Our Partners",
-    //   route: "/partners",
-    //   translate: "translate-y-10",
-    //   fade: "zoom-out-right",
-    //   duration: 1500,
-    //   delay: 1200,
-    // },
-    // {
-    //   title: "Gallery",
-    //   route: "/gallery",
-    //   translate: "-translate-y-6",
-    //   fade: "zoom-out",
-    //   duration: 1000,
-    // },
-    // {
-    //   title: "Course in the UK",
-    //   route: "/ukCourse",
-    //   translate: "translate-y-10",
-    //   fade: "zoom-out-left",
-    //   duration: 1500,
-    //   delay: 700,
-    // },
+    {
+      title: "Our Partners",
+      route: "/partners",
+      translate: "translate-y-10",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1200,
+    },
+    {
+      title: "Gallery",
+      route: "/gallery",
+      translate: "-translate-y-6",
+      fade: "zoom-out",
+      duration: 1000,
+    },
+    {
+      title: "Course in the UK",
+      route: "/ukCourse",
+      translate: "translate-y-10",
+      fade: "zoom-out-left",
+      duration: 1500,
+      delay: 700,
+    },
   ];
 
   return (
@@ -116,10 +116,10 @@ export default function Navbar() {
             to="/"
             className="btn btn-ghost text-xl py-8 flex flex-col items-center"
           >
-            <img src={logonav} alt="" className="w-60" />
+            <img src={logonav} alt="" className="w-40" />
           </Link>
           {pathname != "/" && (
-            <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-2">
+            <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-1">
               {data.map((item, index) => {
                 return (
                   <li key={index}>
