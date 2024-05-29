@@ -1,7 +1,7 @@
 import React from "react";
 
-import mission from "../../assets/mission.png";
-import vision from "../../assets/vision.png";
+import mission from "../../assets/mission1.png";
+import vision from "../../assets/vision1.png";
 import sLogo from "../../assets/logo/Vertical 01.png";
 import CEOcontact from "./CEOcontact";
 
@@ -44,6 +44,17 @@ export default function AboutUs() {
           local and international strategic collaborations, we want to become a
           pioneer in supporting corporate development and innovation in Iraq
           while also expanding our knowledge into the worldwide arena.
+          <br />
+          As a Strategic Allies Company, we are proud to be the exclusive
+          partner of
+          <a
+            href="www.kotlerimpact.com"
+            className="border-b-2 border-primary pb-1 hover:border-transparent"
+          >
+            {" "}
+            Kotler Impact in Iraq
+          </a>
+          .
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-20 py-10 ">
           <div
@@ -92,7 +103,7 @@ export default function AboutUs() {
                 development training courses, and networking opportunities.
               </p>
             </div>
-            <div className="overflow-hidden h-full w-max">
+            <div className="overflow-hidden">
               <img
                 className="h-48 w-full object-contain mt-5"
                 src={mission}

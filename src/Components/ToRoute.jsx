@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import sLogo from "../assets/logo/Vertical 01.png";
 
 export default function ToRoute() {
   React.useEffect(() => {
@@ -11,7 +12,7 @@ export default function ToRoute() {
   const data = [
     {
       title: "Bussniess Consulting",
-      route: "/consulting",
+      // route: "/consulting",
       translate: "translate-y-5",
       fade: "zoom-out-right",
       duration: 1500,
@@ -26,16 +27,18 @@ export default function ToRoute() {
       delay: 300,
     },
     {
-      title: "Bussniess Training",
-      route: "/tranining",
+      title: "Essential of Modern Marketing",
+      route: "/modernMarketing",
       translate: "translate-y-5",
+
       fade: "zoom-out-left",
       duration: 1500,
       delay: 500,
     },
+
     {
       title: "Our Partners",
-      route: "/partners",
+      // route: "/partners",
       translate: "translate-y-10",
       fade: "zoom-out-right",
       duration: 1500,
@@ -43,22 +46,22 @@ export default function ToRoute() {
     },
     {
       title: "Gallery",
-      route: "/gallery",
+      // route: "/gallery",
       translate: "-translate-y-6",
       fade: "zoom-out",
       duration: 1000,
     },
     {
       title: "Course in the UK",
-      route: "/ukCourse",
+      // route: "/ukCourse",
       translate: "translate-y-10",
       fade: "zoom-out-left",
       duration: 1500,
       delay: 700,
     },
     {
-      title: "Essential of Modern Marketing",
-      route: "/modernMarketing",
+      title: "Bussniess Training",
+      // route: "/tranining",
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
@@ -68,7 +71,14 @@ export default function ToRoute() {
   ];
   return (
     <section className=" text-center m-10 max-w-[1200px] mx-auto">
-      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary text-center w-max mx-auto overflow-hidden ">
+      <div className="w-max mx-auto">
+        <img
+          className="h-40 w-full object-contain hover:scale-105 duration-300 ease-in-out p-3 pb-5 border-b-4 border-primary"
+          src={sLogo}
+          alt=""
+        />
+      </div>
+      <p className="text-3xl lg:text-4xl font-semibold my-5 text-center w-max mx-auto overflow-hidden ">
         Explore With Us
       </p>
 
