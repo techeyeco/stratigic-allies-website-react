@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import Contact from "../Components/Contact";
 import { Outlet } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -16,7 +17,7 @@ export default function MainLayout() {
       <section>
         <Outlet />
       </section>
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }
