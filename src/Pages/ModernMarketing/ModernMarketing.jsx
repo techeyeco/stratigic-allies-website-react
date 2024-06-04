@@ -155,11 +155,11 @@ export default function ModernMarketing() {
         >
           Prof. Philip Kotler
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-48 mt-20">
           <div
             data-aos={"fade-right"}
             data-aos-duration={1500}
-            className="w-80 lg:w-96 bg-gradient-to-b from-primary border-4 border-white rounded-b-full mx-auto"
+            className="w-80 lg:w-96 h-full bg-gradient-to-b from-primary border-4 border-white rounded-b-full mx-auto"
           >
             <img src={PK} alt="" className="mt-[-50px] rounded-full " />
           </div>

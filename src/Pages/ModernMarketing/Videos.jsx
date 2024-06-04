@@ -3,6 +3,7 @@ import video1 from "../../assets/video/WhatsApp Video 2024-05-14 at 16.23.40_f34
 import video2 from "../../assets/video/video2.mp4";
 import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
+import video5 from "../../assets/video/video5.mp4";
 
 export default function Videos() {
   const [activeVid, setActiveVid] = React.useState(video1);
@@ -18,6 +19,9 @@ export default function Videos() {
     },
     {
       video: video4,
+    },
+    {
+      video: video5,
     },
   ];
 
@@ -63,8 +67,18 @@ export default function Videos() {
           >
             <source src={video4} type="video/mp4" />
           </video>
+        )}{" "}
+        {activeVid == video5 && (
+          <video
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full"
+            controls
+          >
+            <source src={video5} type="video/mp4" />
+          </video>
         )}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {videos?.map((video, index) => (
             <div
               data-aos="fade-up"
@@ -74,7 +88,7 @@ export default function Videos() {
             >
               <video
                 className="w-full h-full"
-                onClick={() => setActiveVid(video.video)}
+                onClick={() => setActiveVid(video?.video)}
               >
                 <source src={video?.video} type="video/mp4" />
               </video>

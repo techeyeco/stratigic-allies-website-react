@@ -48,7 +48,8 @@ export default function AboutUs() {
           As a Strategic Allies Company, we are proud to be the exclusive
           partner of
           <a
-            href="www.kotlerimpact.com"
+            href="https://www.kotlerimpact.com/"
+            target="_.blank"
             className="border-b-2 border-primary pb-1 hover:border-transparent"
           >
             {" "}

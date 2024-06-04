@@ -230,7 +230,7 @@ export default function CEOcontact() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="md:text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="md:text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Research Publications
         </p>
