@@ -78,7 +78,7 @@ export default function Videos() {
             <source src={video5} type="video/mp4" />
           </video>
         )}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center">
           {videos?.map((video, index) => (
             <div
               data-aos="fade-up"
@@ -87,7 +87,7 @@ export default function Videos() {
               className="cursor-pointer"
             >
               <video
-                className="w-full h-full"
+                className="w-full h-auto"
                 onClick={() => setActiveVid(video?.video)}
               >
                 <source src={video?.video} type="video/mp4" />
