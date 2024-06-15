@@ -82,18 +82,22 @@ export default function Contact() {
           Feel free to say hi! and It's easy to find us around
         </p>
         <div className="grid grid-cols-1 lg:flex itmes-center justify-center gap-10 lg:gap-28 px-10 lg:px-20">
-          <form className="flex flex-col itmes-center lg:px-0 gap-5">
+          <form
+            className="flex flex-col itmes-center lg:px-0 gap-5"
+            action="https://formsubmit.co/info@strategic-allies.com"
+            method="POST"
+          >
             <div className="relative z-0 w-full ">
               <input
                 type="email"
-                name="floating_email"
-                id="floating_email"
+                name="email"
+                id="email"
                 className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 focus:border-white/70 peer"
                 placeholder=" "
                 required
               />
               <label
-                htmlFor="floating_email"
+                htmlFor="email"
                 className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-white/70  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Email address
@@ -104,14 +108,14 @@ export default function Contact() {
               <div className="relative z-0 w-full group">
                 <input
                   type="text"
-                  name="floating_first_name"
-                  id="floating_first_name"
+                  name="name"
+                  id="name"
                   className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 focus:border-white/70 peer"
                   placeholder=" "
                   required
                 />
                 <label
-                  htmlFor="floating_first_name"
+                  htmlFor="name"
                   className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white/70  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Full Name
@@ -120,14 +124,14 @@ export default function Contact() {
               <div className="relative z-0 w-full group">
                 <input
                   type="text"
-                  name="floating_first_name"
-                  id="floating_first_name"
+                  id="subject"
+                  name="subject"
                   className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 focus:border-white/70 peer"
                   placeholder=" "
                   required
                 />
                 <label
-                  htmlFor="floating_first_name"
+                  htmlFor="subject"
                   className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white/70 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Subject
@@ -139,14 +143,14 @@ export default function Contact() {
               <div className="relative z-0 w-full mb-5 group">
                 <textarea
                   type="text"
-                  name="floating_first_name"
-                  id="floating_first_name"
+                  name="message"
+                  id="message"
                   className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-white appearance-none  focus:outline-none focus:ring-0 focus:border-white/70 peer"
                   placeholder=" "
                   required
                 />
                 <label
-                  htmlFor="floating_first_name"
+                  htmlFor="message"
                   className="peer-focus:font-medium absolute text-sm  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-white/70  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Message

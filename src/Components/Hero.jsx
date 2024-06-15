@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="p-10 flex flex-col justify-start items-start gap-8 herobg z-10 ">
         <div className="w-max mx-auto md:mr-auto md:ml-0 z-10">
           <img
-            className="h-24 md:h-28 w-full object-contain hover:scale-105 duration-300 ease-in-out "
+            className="h-24 md:h-28 w-max object-contain hover:scale-105 duration-300 ease-in-out "
             src={sLogo}
             alt=""
           />
