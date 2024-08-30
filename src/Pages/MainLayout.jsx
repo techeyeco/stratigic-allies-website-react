@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 export default function MainLayout() {
   const { pathname } = useLocation();
   const [visible, setVisible] = React.useState(false);
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -20,7 +21,6 @@ export default function MainLayout() {
     }
   };
   window.addEventListener("scroll", toggleVisible);
-  console.log(visible);
   return (
     <main className="text-light">
       <Navbar />

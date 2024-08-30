@@ -27,7 +27,7 @@ export default function Videos() {
 
   return (
     <section>
-      <div className="flex flex-col justify-center items-center max-w-[1400px] mx-auto mb-10 p-10 lg:px-20 gap-10">
+      <div className="flex flex-col justify-center items-center max-w-[1200px] mx-auto mb-10 p-10 lg:px-20 gap-10">
         {activeVid == video1 && (
           <video
             data-aos="fade-up"

@@ -38,7 +38,7 @@ const comp = [
   danone,
   shein,
 ];
-const compIraq = [bright, mwm, mas, zom, rudaw];
+const compIraq = [bright, mwm, zom, rudaw];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
   React.useEffect(() => {
