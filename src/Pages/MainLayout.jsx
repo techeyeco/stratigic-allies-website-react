@@ -24,7 +24,7 @@ export default function MainLayout() {
   return (
     <main className="text-light">
       <Navbar />
-      <section className="overflow-y-scroll h-max">
+      <section className=" h-max">
         <Outlet />
         <button
           onClick={() => {

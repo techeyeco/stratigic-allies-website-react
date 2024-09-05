@@ -9,13 +9,20 @@ export default function ToRoute() {
   }, []);
 
   const data = [
+    // {
+    //   title: "Bussniess Consulting",
+    //   // route: "/consulting",
+    //   translate: "translate-y-5",
+    //   fade: "zoom-out-right",
+    //   duration: 1500,
+    //   delay: 1500,
+    // },
     {
-      title: "Bussniess Consulting",
-      // route: "/consulting",
+      title: "Kotler Awards | Iraq",
+      route: "https://kotler-awards-iraq.netlify.app/",
       translate: "translate-y-5",
-      fade: "zoom-out-right",
+      fade: "zoom-out-up",
       duration: 1500,
-      delay: 1500,
     },
     {
       title: "Strategic Allies",
@@ -35,38 +42,38 @@ export default function ToRoute() {
       delay: 500,
     },
 
-    {
-      title: "Our Partners",
-      // route: "/partners",
-      translate: "translate-y-10",
-      fade: "zoom-out-right",
-      duration: 1500,
-      delay: 1200,
-    },
-    {
-      title: "Gallery",
-      // route: "/gallery",
-      translate: "-translate-y-6",
-      fade: "zoom-out",
-      duration: 1000,
-    },
-    {
-      title: "Course in the UK",
-      // route: "/ukCourse",
-      translate: "translate-y-10",
-      fade: "zoom-out-left",
-      duration: 1500,
-      delay: 700,
-    },
-    {
-      title: "Bussniess Training",
-      // route: "/tranining",
-      translate: "-translate-y-5",
-      span: "col-span-3",
-      fade: "zoom-out-up",
-      duration: 1500,
-      delay: 900,
-    },
+    // {
+    //   title: "Our Partners",
+    //   // route: "/partners",
+    //   translate: "translate-y-10",
+    //   fade: "zoom-out-right",
+    //   duration: 1500,
+    //   delay: 1200,
+    // },
+    // {
+    //   title: "Gallery",
+    //   // route: "/gallery",
+    //   translate: "-translate-y-6",
+    //   fade: "zoom-out",
+    //   duration: 1000,
+    // },
+    // {
+    //   title: "Course in the UK",
+    //   // route: "/ukCourse",
+    //   translate: "translate-y-10",
+    //   fade: "zoom-out-left",
+    //   duration: 1500,
+    //   delay: 700,
+    // },
+    // {
+    //   title: "Bussniess Training",
+    //   // route: "/tranining",
+    //   translate: "-translate-y-5",
+    //   span: "col-span-3",
+    //   fade: "zoom-out-up",
+    //   duration: 1500,
+    //   delay: 900,
+    // },
   ];
   const dataMob = [
     {
@@ -84,43 +91,50 @@ export default function ToRoute() {
       fade: "zoom-out-up",
       duration: 1500,
     },
+    // {
+    //   title: "Bussniess Consulting",
+    //   // route: "/consulting",
+    //   translate: "translate-y-5",
+    //   fade: "zoom-out-up",
+    //   duration: 1500,
+    // },
     {
-      title: "Bussniess Consulting",
-      // route: "/consulting",
+      title: "Kotler Awards | Iraq",
+      route: "https://kotler-awards-iraq.netlify.app/",
       translate: "translate-y-5",
       fade: "zoom-out-up",
       duration: 1500,
     },
 
-    {
-      title: "Our Partners",
-      // route: "/partners",
-      translate: "translate-y-10",
-      fade: "zoom-out-up",
-      duration: 1500,
-    },
-    {
-      title: "Gallery",
-      // route: "/gallery",
-      translate: "-translate-y-6",
-      fade: "zoom-out-up",
-      duration: 1000,
-    },
-    {
-      title: "Course in the UK",
-      // route: "/ukCourse",
-      translate: "translate-y-10",
-      fade: "zoom-out-up",
-      duration: 1500,
-    },
-    {
-      title: "Bussniess Training",
-      // route: "/tranining",
-      translate: "-translate-y-5",
-      span: "col-span-3",
-      fade: "zoom-out-up",
-      duration: 1500,
-    },
+    // {
+    //   title: "Our Partners",
+    //   // route: "/partners",
+    //   translate: "translate-y-10",
+    //   fade: "zoom-out-up",
+    //   duration: 1500,
+    // },
+    // {
+    //   title: "Gallery",
+    //   // route: "/gallery",
+    //   translate: "-translate-y-6",
+    //   fade: "zoom-out-up",
+    //   duration: 1000,
+    // },
+    // {
+    //   title: "Course in the UK",
+    //   // route: "/ukCourse",
+    //   translate: "translate-y-10",
+    //   fade: "zoom-out-up",
+    //   duration: 1500,
+    // },
+    // {
+    //   title: "Bussniess Training",
+    //   // route: "/tranining",
+    //   translate: "-translate-y-5",
+    //   span: "col-span-3",
+    //   fade: "zoom-out-up",
+    //   duration: 1500,
+    // },
   ];
   return (
     <section className=" text-center m-10 max-w-[1200px] mx-auto">

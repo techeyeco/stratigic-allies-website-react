@@ -92,7 +92,6 @@ export default function ModernMarketing() {
       title: "Photos",
     },
   ];
-  console.log(tapVideo);
   return (
     <section className="text-center py-10 overflow-hidden">
       <div className="mb-5  md:mb-10">
@@ -109,7 +108,8 @@ export default function ModernMarketing() {
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
-          The World’s first Marketing Book Around Market-specific Success Storie{" "}
+          The World’s first Marketing Book Around Market-specific Success
+          Stories{" "}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-light p-20 overflow-hidden">
@@ -126,7 +126,7 @@ export default function ModernMarketing() {
               />
             </div>
           </div>
-          <div className="bg-bookColor ">
+          <div className="bg-bookColor">
             <div
               data-aos="fade-left"
               data-aos-anchor-placement="top-bottom"
