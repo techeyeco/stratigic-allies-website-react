@@ -1,6 +1,22 @@
 html {
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #347bff;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: 0F0F31;
+}
+
 .herobg {
   position: relative;
   background-image: url("assets/world.png");
