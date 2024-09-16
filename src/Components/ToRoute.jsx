@@ -19,7 +19,7 @@ export default function ToRoute() {
     // },
     {
       title: "Kotler Awards | Iraq",
-      route: "https://kotler-awards-iraq.netlify.app/",
+      route: "https://kotlerawards-iq.com/",
       translate: "translate-y-5",
       fade: "zoom-out-up",
       duration: 1500,
@@ -100,7 +100,7 @@ export default function ToRoute() {
     // },
     {
       title: "Kotler Awards | Iraq",
-      route: "https://kotler-awards-iraq.netlify.app/",
+      route: "https://kotlerawards-iq.com/",
       translate: "translate-y-5",
       fade: "zoom-out-up",
       duration: 1500,

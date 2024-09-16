@@ -4,14 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { pathname } = useLocation();
-  const langHandler = (lang) => {
-    localStorage.setItem("lang", lang);
-    steLang(lang);
-  };
 
-  const [lang, steLang] = React.useState(
-    localStorage.getItem("lang") || localStorage.setItem("lang", "EN")
-  );
   const data = [
     {
       title: "Strategic Allies",
@@ -46,6 +39,13 @@ export default function Navbar() {
       fade: "zoom-out-up",
       duration: 1500,
       delay: 900,
+    },
+    {
+      title: "Kotler Awards | Iraq",
+      route: "https://kotlerawards-iq.com/",
+      translate: "translate-y-5",
+      fade: "zoom-out-up",
+      duration: 1500,
     },
     // {
     //   title: "Our Partners",

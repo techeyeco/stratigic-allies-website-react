@@ -86,6 +86,29 @@ export default function AboutUs() {
       {/* mission, vision */}
       <div className="bg-gradient-to-r from-primary/80 to-primary ">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-24 p-10 ">
+          {/* Vision */}
+          <div
+            className="md:col-span-3 flex flex-col-reverse md:flex-row justify-between items-center"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div className="overflow-hidden h-full w-max">
+              <img
+                className="h-60 w-full object-contain mt-5"
+                src={vision}
+                alt=""
+              />
+            </div>{" "}
+            <div className="basis-1/2">
+              <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
+                Vision
+              </p>
+              <p className="lg:text-xl text-justify ">
+                Driving business success in Iraq and beyond, through strategic
+                global partnerships, sustainability, and competitive advantages.
+              </p>
+            </div>
+          </div>
           {/* Mission */}
           <div
             className="md:col-span-3 flex flex-col md:flex-row justify-between items-center"
@@ -110,29 +133,6 @@ export default function AboutUs() {
                 src={mission}
                 alt=""
               />
-            </div>
-          </div>
-          {/* Vision */}
-          <div
-            className="md:col-span-3 flex flex-col-reverse md:flex-row justify-between items-center"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-          >
-            <div className="overflow-hidden h-full w-max">
-              <img
-                className="h-60 w-full object-contain mt-5"
-                src={vision}
-                alt=""
-              />
-            </div>{" "}
-            <div className="basis-1/2">
-              <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
-                Vision
-              </p>
-              <p className="lg:text-xl text-justify ">
-                Driving business success in Iraq and beyond, through strategic
-                global partnerships, sustainability, and competitive advantages.
-              </p>
             </div>
           </div>
         </div>
