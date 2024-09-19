@@ -143,7 +143,8 @@ export default function Success() {
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
-          Iraq and Kurdistan that expressed their interest in joining
+          Leading companies and organizations operating in Iraq have approved
+          their success stories for inclusion in the EOMM Iraq Edition.{" "}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 ">
           {compIraq.map((item, index) => {
