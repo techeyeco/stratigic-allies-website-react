@@ -21,7 +21,6 @@ import mas from "../../assets/companies/mas.jpg";
 import bright from "../../assets/companies/bright.png";
 import zom from "../../assets/companies/zom.png";
 import rudaw from "../../assets/companies/rudaw.png";
-import rwanga from "../../assets/companies/rwanga.png";
 import moonline from "../../assets/companies/moonline.jpg";
 import boulevard from "../../assets/companies/BOULEVARD LOGO.png";
 
@@ -41,7 +40,7 @@ const comp = [
   danone,
   shein,
 ];
-const compIraq = [bright, mwm, zom, rudaw, rwanga, boulevard, moonline];
+const compIraq = [bright, mwm, zom, rudaw, boulevard, moonline];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
   React.useEffect(() => {
