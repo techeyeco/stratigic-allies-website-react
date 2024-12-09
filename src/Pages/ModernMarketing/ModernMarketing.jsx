@@ -109,7 +109,7 @@ export default function ModernMarketing() {
           data-aos-duration="1000"
         >
           The World’s first Marketing Book Around Market-specific Success
-          Stories{" "}
+          Stories.{" "}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="bg-light p-20 overflow-hidden">
@@ -135,7 +135,7 @@ export default function ModernMarketing() {
             >
               <p>
                 For the first time, the Iraqi edition of Essentials of Modern
-                Marketing will be published in 2024.
+                Marketing will be published in 2025.
                 <br />
                 <br /> Now, there is an opportunity for leading and fruitful
                 corporations and businesses in Iraq and the Kurdistan region to

@@ -65,15 +65,15 @@ export default function ToRoute() {
     //   duration: 1500,
     //   delay: 700,
     // },
-    // {
-    //   title: "Bussniess Training",
-    //   // route: "/tranining",
-    //   translate: "-translate-y-5",
-    //   span: "col-span-3",
-    //   fade: "zoom-out-up",
-    //   duration: 1500,
-    //   delay: 900,
-    // },
+    {
+      title: "CEO Talk",
+      // route: "/tranining",
+      translate: "-translate-y-5",
+      span: "col-span-3",
+      fade: "zoom-out-up",
+      duration: 1500,
+      delay: 900,
+    },
   ];
   const dataMob = [
     {
@@ -135,6 +135,14 @@ export default function ToRoute() {
     //   fade: "zoom-out-up",
     //   duration: 1500,
     // },
+    {
+      title: "CEO Talk",
+      // route: "/tranining",
+      translate: "-translate-y-5",
+      span: "col-span-3",
+      fade: "zoom-out-up",
+      duration: 1500,
+    },
   ];
   return (
     <section className=" text-center m-10 max-w-[1200px] mx-auto">
