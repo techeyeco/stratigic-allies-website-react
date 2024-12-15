@@ -122,7 +122,7 @@ export default function ModernMarketing() {
               <img
                 src={book}
                 alt=""
-                className="w-80 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-80 mx-auto hover:scale-110 duration-300 ease-in-out"
               />
             </div>
           </div>
@@ -225,12 +225,12 @@ export default function ModernMarketing() {
               <img
                 src={kotlerLogo}
                 alt=""
-                className="w-60 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-60 mx-auto hover:scale-110 duration-300 ease-in-out"
               />
               <img
                 src={strategicAllies}
                 alt=""
-                className="w-60 mx-auto hover:scale-110 duration-200 ease-in-out"
+                className="w-60 mx-auto hover:scale-110 duration-300 ease-in-out"
               />
             </div>
           </div>

@@ -333,7 +333,7 @@ export default function Board() {
 key={index}
 className="flex flex-col justify-center items-center"
 >
-<div className="bg-white p-2 rounded-3xl mb-[-50px] z-10 hover:-translate-y-5 duration-200 ease-in-out">
+<div className="bg-white p-2 rounded-3xl mb-[-50px] z-10 hover:-translate-y-5 duration-300 ease-in-out">
   <img
     src={img1}
     alt=""
