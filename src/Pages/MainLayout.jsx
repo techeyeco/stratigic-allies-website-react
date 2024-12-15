@@ -32,7 +32,7 @@ export default function MainLayout() {
           }}
           className={`${
             !visible && "hidden"
-          } fixed w-max z-10 bg-white bottom-0 right-0 m-10 lg:right-[40px] lg:m-20 p-2 rounded-full hover:bg-white/75 duration-200 ease`}
+          } fixed w-max z-10 bg-white bottom-0 right-0 m-10 lg:right-[40px] lg:m-20 p-2 rounded-full hover:bg-white/75 duration-300 ease`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -47,14 +47,14 @@ export default function Navbar() {
       fade: "zoom-out-up",
       duration: 1500,
     },
-    // {
-    //   title: "Our Partners",
-    //   route: "/partners",
-    //   translate: "translate-y-10",
-    //   fade: "zoom-out-right",
-    //   duration: 1500,
-    //   delay: 1200,
-    // },
+    {
+      title: "CEO Talk",
+      route: "/ceotalk",
+      translate: "translate-y-10",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1200,
+    },
     // {
     //   title: "Gallery",
     //   route: "/gallery",
@@ -73,7 +73,9 @@ export default function Navbar() {
   ];
 
   return (
-    (pathname === "/about" || pathname === "/modernMarketing") && (
+    (pathname === "/about" ||
+      pathname === "/modernMarketing" ||
+      pathname === "/ceotalk") && (
       <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
         <div className="navbar-start">
           {pathname != "/" && (

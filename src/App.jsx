@@ -35,6 +35,7 @@ import {
 import PartnersLayout from "./Pages/Partners/PartnersLayout";
 import International from "./Pages/Partners/International";
 import Stratigic from "./Pages/Partners/Stratigic";
+import CEOTalk from "./Components/CEOTalk/CEOTalk";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="modernMarketing" element={<ModernMarketing />} />
+      <Route path="ceotalk" element={<CEOTalk />} />
 
       <Route path="ukCourse" element={<UK />} />
       <Route path="gallery" element={<Gallary />} />

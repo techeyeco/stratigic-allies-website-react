@@ -67,7 +67,7 @@ export default function ToRoute() {
     // },
     {
       title: "CEO Talk",
-      // route: "/tranining",
+      route: "/ceotalk",
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
@@ -137,7 +137,7 @@ export default function ToRoute() {
     // },
     {
       title: "CEO Talk",
-      // route: "/tranining",
+      route: "/ceotalk",
       translate: "-translate-y-5",
       span: "col-span-3",
       fade: "zoom-out-up",
