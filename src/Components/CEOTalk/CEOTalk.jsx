@@ -105,7 +105,7 @@ export default function CEOTalk() {
             />
           </div>
           <p className="text-lg md:col-span-2 text-justify">
-            he CEO Talk Masterclass by Strategic Allies is a groundbreaking
+            The CEO Talk Masterclass by Strategic Allies is a groundbreaking
             initiative designed to bridge the gap between business leaders and
             the younger generation of aspiring professionals. In today’s rapidly
             evolving business environment, it is crucial to create opportunities
