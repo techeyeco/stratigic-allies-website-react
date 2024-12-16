@@ -87,8 +87,11 @@ export default function CEOTalk() {
     },
   ];
   return (
-    <section className="text-center flex flex-col overflow-hidden" id="about">
-      <div className="p-10 max-w-[1200px] mx-auto ">
+    <section
+      className="text-center flex flex-col gap-5 md:gap-10 overflow-hidden"
+      id="about"
+    >
+      <div className="max-w-[1200px] mx-auto p-5 md:p-10">
         <div
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -101,7 +104,7 @@ export default function CEOTalk() {
               alt=""
             />
           </div>
-          <p className="text-lg col-span-2 text-justify">
+          <p className="text-lg md:col-span-2 text-justify">
             he CEO Talk Masterclass by Strategic Allies is a groundbreaking
             initiative designed to bridge the gap between business leaders and
             the younger generation of aspiring professionals. In today’s rapidly
@@ -122,7 +125,7 @@ export default function CEOTalk() {
           levels of corporate leadership.
         </p>
       </div>
-      <div className="max-w-[1200px] mx-auto mb-5 md:mb-10 p-10">
+      <div className="max-w-[1200px] mx-auto p-5 md:p-10">
         <p
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -130,7 +133,7 @@ export default function CEOTalk() {
         >
           Importance of the Program
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 text-justify">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 text-justify">
           <p className="text-lg">
             This masterclass is more than a typical networking event. It is a
             unique opportunity to realize the critical role that senior
@@ -147,14 +150,14 @@ export default function CEOTalk() {
             courses, providing guidance on how to lead effectively, overcome
             challenges, and build sustainable growth.
           </p>
-          <p className="text-lg col-span-3">
+          <p className="text-lg lg:col-span-3">
             For the younger generation, this exposure to high-level corporate
             thinking is critical for shaping their leadership skills and mindset
             for the future
           </p>
         </div>
       </div>
-      <div className="mb-5 md:mb-10">
+      <div className="">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -206,7 +209,7 @@ export default function CEOTalk() {
           </div>
         </div>
       </div>
-      <div className="mb-5 md:mb-10">
+      <div className="">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -253,7 +256,7 @@ export default function CEOTalk() {
           </div>
         </div>
       </div>
-      <div className="mb-5 md:mb-10">
+      <div className="">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -261,9 +264,9 @@ export default function CEOTalk() {
         >
           Event Details
         </p>
-        <div className="bg-light p-10">
-          <div className="max-w-[1400px] mx-auto text-2xl  text-black  flex flex-col gap-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold">
+        <div className="bg-light p-5 md:p-10">
+          <div className="max-w-[1400px] mx-auto text-lg md:text-2xl  text-black flex flex-col gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold text-start">
               <p>
                 <span className="text-primary">Event Name:</span> CEO Talk
               </p>
@@ -275,9 +278,12 @@ export default function CEOTalk() {
                 <span className="text-primary">Event Format:</span> Panel
                 Discussion
               </p>
-              <p className="col-span-3">
+              <p className="md:col-span-2">
                 <span className="text-primary ">Host:</span> : Zanear Jabbar –
                 University Lecturer and CEO of Strategic Allies
+              </p>
+              <p>
+                <span className="text-primary">Venue:</span> Divan Hotel, Erbil
               </p>
             </div>
             <p className="text-justify">
@@ -294,7 +300,7 @@ export default function CEOTalk() {
               practical advice on navigating business challenges and leading
               with impact.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold">
               <p>
                 <span className="text-primary">Venue:</span> Divan Hotel, Erbil
               </p>
@@ -304,11 +310,11 @@ export default function CEOTalk() {
               <p>
                 <span className="text-primary">Time:</span> 5:30 PM – 8:00 PM
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="mb-5 md:mb-10 max-w-[1400px] mx-auto">
+      {/* <div className=" max-w-[1400px] mx-auto">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -333,8 +339,8 @@ export default function CEOTalk() {
             })}
           </ul>
         </div>
-      </div>
-      <div className="mb-5 md:mb-10">
+      </div> */}
+      <div className="">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -342,8 +348,8 @@ export default function CEOTalk() {
         >
           Key Highlights{" "}
         </p>
-        <div className="bg-light p-10 text-justify">
-          <div className="max-w-[1000px] mx-auto text-2xl  text-black  flex flex-col gap-10">
+        <div className="bg-light p-5 md:p-10 text-justify">
+          <div className="max-w-[1000px] mx-auto text-lg md:text-2xl text-black flex flex-col gap-5 md:gap-10">
             <p>
               <span className="font-bold text-primary">
                 Exclusive Audience:
@@ -362,6 +368,20 @@ export default function CEOTalk() {
               attendees with unique insights into the foundational steps and
               strate gies that drive impactful leadership.
             </p>
+            <p className="">
+              Be part of the exclusive{" "}
+              <span className="font-bold text-primary">CEO Talk program</span>,
+              designed to inspire and empower future leaders. Tickets are
+              available now - register to secure yours and reserve
+              your spot today!
+            </p>
+            <a
+              href="https://forms.gle/ER5WPqCLsv3kZUQW6"
+              target="_blank"
+              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center"
+            >
+              Apply Now
+            </a>
           </div>
         </div>
       </div>
