@@ -48,7 +48,7 @@ export default function Navbar() {
       duration: 1500,
     },
     {
-      title: "CEO Talk",
+      title: "The CEO Talk",
       route: "/ceotalk",
       translate: "translate-y-10",
       fade: "zoom-out-right",

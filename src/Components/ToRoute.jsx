@@ -66,7 +66,7 @@ export default function ToRoute() {
     //   delay: 700,
     // },
     {
-      title: "CEO Talk",
+      title: "The CEO Talk",
       route: "/ceotalk",
       translate: "-translate-y-5",
       span: "col-span-3",
@@ -136,7 +136,7 @@ export default function ToRoute() {
     //   duration: 1500,
     // },
     {
-      title: "CEO Talk",
+      title: "The CEO Talk",
       route: "/ceotalk",
       translate: "-translate-y-5",
       span: "col-span-3",
