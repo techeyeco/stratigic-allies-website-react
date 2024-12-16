@@ -71,7 +71,7 @@ export default function Navbar() {
     //   delay: 700,
     // },
   ];
-
+  console.log(pathname);
   return (
     (pathname === "/about" ||
       pathname === "/modernMarketing" ||
@@ -106,7 +106,14 @@ export default function Navbar() {
               >
                 {data.map((item, index) => {
                   return (
-                    <li key={index}>
+                    <li
+                      className={`${
+                        pathname === item.route
+                          ? "bg-primary text-light"
+                          : "hover:bg-primary/50 "
+                      } rounded-lg duration-300`}
+                      key={index}
+                    >
                       <Link to={item.route}>{item.title}</Link>
                     </li>
                   );
@@ -118,14 +125,21 @@ export default function Navbar() {
             to="/"
             className="btn btn-ghost text-xl py-8 flex flex-col items-center"
           >
-            <img src={logonav} alt="" className="w-60" />
+            <img src={logonav} alt="" className="w-40 md:w-60 " />
           </Link>
           {pathname != "/" && (
             <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-5">
               {data.map((item, index) => {
                 return (
-                  <li key={index}>
-                    <Link className="text-lg" to={item.route}>
+                  <li
+                    className={`${
+                      pathname === item.route
+                        ? "bg-primary text-light"
+                        : "hover:bg-primary/50 "
+                    } rounded-lg duration-300`}
+                    key={index}
+                  >
+                    <Link className="" to={item.route}>
                       {item.title}
                     </Link>
                   </li>
