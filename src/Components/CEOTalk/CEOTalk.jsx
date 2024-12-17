@@ -361,7 +361,7 @@ export default function CEOTalk() {
             </p>
             <p className="">
               <span className="font-bold text-primary">Contents:</span> This
-              program offers invaluable learning experiences from real busi ness
+              program offers invaluable learning experiences from real business
               leaders, exploring how they started their journeys, overcame
               challenges, and achieved success. Key topics include vision,
               leadership, innovation, strategy, and empowerment, providing
