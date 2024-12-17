@@ -33,7 +33,7 @@ export default function ToRoute() {
       delay: 300,
     },
     {
-      title: "Essential of Modern Marketing",
+      title: "Essentials of Modern Marketing",
       route: "/modernMarketing",
       translate: "translate-y-5",
 
@@ -84,7 +84,7 @@ export default function ToRoute() {
       duration: 1500,
     },
     {
-      title: "Essential of Modern Marketing",
+      title: "Essentials of Modern Marketing",
       route: "/modernMarketing",
       translate: "translate-y-5",
 
