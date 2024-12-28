@@ -5,6 +5,7 @@ import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
 import video5 from "../../assets/video/video5.mp4";
 import video6 from "../../assets/video/video6.mp4";
+import video7 from "../../assets/video/video7.mp4";
 
 import img1 from "../../assets/video/1.png";
 import img2 from "../../assets/video/2.png";
@@ -12,6 +13,7 @@ import img3 from "../../assets/video/3.png";
 import img4 from "../../assets/video/4.png";
 import img5 from "../../assets/video/5.png";
 import img6 from "../../assets/video/6.png";
+import img7 from "../../assets/video/7.png";
 
 export default function Videos() {
   const [activeVid, setActiveVid] = React.useState(video1);
@@ -39,6 +41,10 @@ export default function Videos() {
     {
       video: video6,
       thumb: img6,
+    },
+    {
+      video: video7,
+      thumb: img7,
     },
   ];
 
@@ -103,6 +109,16 @@ export default function Videos() {
             controls
           >
             <source src={video6} type="video/mp4" />
+          </video>
+        )}
+        {activeVid == video7 && (
+          <video
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="w-full"
+            controls
+          >
+            <source src={video7} type="video/mp4" />
           </video>
         )}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center">
