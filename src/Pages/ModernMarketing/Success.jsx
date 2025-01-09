@@ -24,6 +24,7 @@ import rudaw from "../../assets/companies/rudaw.png";
 import moonline from "../../assets/companies/moonline.jpg";
 import boulevard from "../../assets/companies/BOULEVARD LOGO.png";
 import e from "../../assets/companies/e.jpg";
+import adham from "../../assets/companies/adham.png";
 
 const comp = [
   google,
@@ -42,7 +43,7 @@ const comp = [
   shein,
 ];
 
-const compIraq = [bright, mwm, zom, rudaw, boulevard, moonline, e];
+const compIraq = [bright, mwm, zom, rudaw, boulevard, moonline, e, adham];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
   React.useEffect(() => {

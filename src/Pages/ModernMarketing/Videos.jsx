@@ -1,5 +1,5 @@
 import React from "react";
-import video1 from "../../assets/video/WhatsApp Video 2024-05-14 at 16.23.40_f34723d2.mp4";
+import video1 from "../../assets/video/video1.mp4";
 import video2 from "../../assets/video/video2.mp4";
 import video3 from "../../assets/video/video3.mp4";
 import video4 from "../../assets/video/video4.mp4";
