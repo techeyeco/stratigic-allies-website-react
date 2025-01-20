@@ -265,7 +265,7 @@ export default function ModernMarketing() {
         <Success />
       )}
 
-      <div className="flex flex-col items-center justify-center mb-5 md:mb-10 p-10 max-w-[1200px] mx-auto">
+      {/* <div className="flex flex-col items-center justify-center mb-5 md:mb-10 p-10 max-w-[1200px] mx-auto">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -291,7 +291,7 @@ export default function ModernMarketing() {
             Share Your Success Story
           </a>
         </div>
-      </div>
+      </div> */}
 
       <div className="max-w-[1200px] mx-auto mb-5 md:mb-10 p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-2">
