@@ -25,6 +25,7 @@ import moonline from "../../assets/companies/moonline.jpg";
 import boulevard from "../../assets/companies/BOULEVARD LOGO.png";
 import e from "../../assets/companies/e.jpg";
 import adham from "../../assets/companies/adham.png";
+import shoof from "../../assets/companies/shoof.png";
 
 const comp = [
   google,
@@ -43,7 +44,17 @@ const comp = [
   shein,
 ];
 
-const compIraq = [bright, mwm, zom, rudaw, boulevard, moonline, e, adham];
+const compIraq = [
+  bright,
+  mwm,
+  zom,
+  rudaw,
+  boulevard,
+  moonline,
+  e,
+  adham,
+  shoof,
+];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
   React.useEffect(() => {
@@ -51,7 +62,6 @@ export default function Success() {
   }, []);
   return (
     <section className="max-w-[1200px] mx-auto mb-10 p-10">
-      {" "}
       <div className="mb-10">
         <p
           data-aos="fade-up"
