@@ -73,7 +73,7 @@ export default function SCS() {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+            className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
           >
             SCS{" "}
           </p>
@@ -97,7 +97,7 @@ export default function SCS() {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+            className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
           >
             Course Objectives{" "}
           </p>

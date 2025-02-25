@@ -227,7 +227,7 @@ export default function Board() {
       <p
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="text-xl lg:text-5xl mb-5 pb-5 border-b-4 border-primary mx-auto"
+        className="text-xl lg:text-3xl mb-5 pb-5 border-b-4 border-primary mx-auto"
       >
         Kotler Impact Advisory Board Iraq
       </p>
@@ -357,7 +357,7 @@ className="flex flex-col justify-center items-center"
   />
 </div>
 <div className="bg-primary w-full rounded-2xl p-3 pt-16">
-  <div className="text-lg md:text-xl lg:text-3xl">
+  <div className="text-lg md:text-xl lg:text-2xl">
     <p>Professor Dr. Khalid Mirkhan</p>
   </div>
   <ol className="px-10 list-disc text-start">

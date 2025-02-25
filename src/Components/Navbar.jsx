@@ -55,6 +55,14 @@ export default function Navbar() {
       duration: 1500,
       delay: 1200,
     },
+    {
+      title: "Accounting Solutions",
+      route: "/accountingSolutions",
+      translate: "translate-y-10",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1200,
+    },
     // {
     //   title: "Gallery",
     //   route: "/gallery",
@@ -75,6 +83,7 @@ export default function Navbar() {
   return (
     (pathname === "/about" ||
       pathname === "/modernMarketing" ||
+      pathname === "/accountingSolutions" ||
       pathname === "/ceotalk") && (
       <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
         <div className="navbar-start">
