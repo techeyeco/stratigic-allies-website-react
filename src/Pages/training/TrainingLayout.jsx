@@ -41,7 +41,7 @@
 //     <section className="overflow-hidden">
 //       <div className="max-w-[1200px] mx-auto p-10 my-10">
 //         {" "}
-//         <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+//         <p className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
 //           Business Trainings{" "}
 //         </p>
 //         <p className="lg:text-xl text-justify lg:text-center ">
@@ -122,10 +122,10 @@ import { Link } from "react-router-dom";
 export default function Gallary() {
   return (
     <section className="flex flex-col gap-20 justify-center items-center  h-screen bg-animated">
-      <div className="text-2xl md:text-3xl lg:text-4xl">Coming soon</div>
+      <div className="text-xl md:text-2xl lg:text-3xl">Coming soon</div>
       <Link
         to="../"
-        className="text-2xl md:text-3xl lg:text-4xl underline hover:no-underline"
+        className="text-xl md:text-2xl lg:text-3xl underline hover:no-underline"
       >
         Back To Home
       </Link>

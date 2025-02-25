@@ -98,12 +98,12 @@ export default function ModernMarketing() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-bookColor w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-bookColor w-max mx-auto "
         >
           Essentails of Modern Marketing
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -131,7 +131,7 @@ export default function ModernMarketing() {
               data-aos="fade-left"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
-              className="max-w-[600px] mr-auto text-lg md:text-xl lg:text-2xl  p-10 lg:p-20 text-justify"
+              className="max-w-[600px] mr-auto text-lg md:text-xl lg:text-xl  p-10 lg:p-20 text-justify"
             >
               <p>
                 For the first time, the Iraqi edition of Essentials of Modern
@@ -151,7 +151,7 @@ export default function ModernMarketing() {
         <p
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Prof. Philip Kotler
         </p>
@@ -184,12 +184,12 @@ export default function ModernMarketing() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Essentials of Modern Marketing
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -202,7 +202,7 @@ export default function ModernMarketing() {
               data-aos="fade-right"
               data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
-              className="max-w-[600px] ml-auto text-lg md:text-xl lg:text-2xl  p-16 lg:p-20 text-justify"
+              className="max-w-[600px] ml-auto text-lg md:text-xl lg:text-xl  p-16 lg:p-20 text-justify"
             >
               <p>
                 EOMM is one of the projects that Kotler Impact and Strategic
@@ -244,7 +244,7 @@ export default function ModernMarketing() {
               <button
                 key={index}
                 onClick={() => setAtiveTap(route.route)}
-                className={` md:text-xl lg:text-2xl ${
+                className={` md:text-xl lg:text-xl ${
                   activeTap == route.route
                     ? "bg-primary text-white"
                     : "bg-white text-neutral"
@@ -269,12 +269,12 @@ export default function ModernMarketing() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Share Your Success
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -302,7 +302,7 @@ export default function ModernMarketing() {
                 onClick={() => {
                   setActiveTapMidea(() => route.title);
                 }}
-                className={`md:text-xl lg:text-2xl ${
+                className={`md:text-xl lg:text-xl ${
                   route.title == ActiveTapMidea
                     ? "bg-primary text-white"
                     : "bg-white text-neutral"

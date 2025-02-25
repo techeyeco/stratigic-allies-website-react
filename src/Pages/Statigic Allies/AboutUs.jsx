@@ -100,7 +100,7 @@ export default function AboutUs() {
               />
             </div>{" "}
             <div className="basis-1/2">
-              <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
+              <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
                 Vision
               </p>
               <p className="lg:text-xl text-justify ">
@@ -116,7 +116,7 @@ export default function AboutUs() {
             data-aos-duration="1500"
           >
             <div className="basis-1/2">
-              <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
+              <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-light w-max ">
                 Mission
               </p>
               <p className="lg:text-xl text-justify ">
@@ -138,7 +138,7 @@ export default function AboutUs() {
         </div>
         {/* Commitment Excellence */}
         <div className="p-10 max-w-[1200px] mx-auto ">
-          <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-light w-max mx-auto">
+          <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-light w-max mx-auto">
             Commitment Excellence
           </p>
           <p className="lg:text-xl text-center">

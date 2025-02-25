@@ -77,7 +77,7 @@ export default function Contact() {
       className="bg-gradient-to-r from-primary/80 to-primary p-10 text-white"
     >
       <div className="max-w-[1200px] mx-auto">
-        <p className="font-bold text-4xl text-center mb-3">Contact Us</p>
+        <p className="font-bold text-3xl text-center mb-3">Contact Us</p>
         <p className="text-lg text-center mb-10 px-5 lg:md-0">
           Feel free to say hi! and It's easy to find us around
         </p>

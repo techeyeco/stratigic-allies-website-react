@@ -95,3 +95,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
+.sticky {
+  position: sticky !important;
+}

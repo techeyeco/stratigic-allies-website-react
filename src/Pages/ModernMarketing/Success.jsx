@@ -69,12 +69,12 @@ export default function Success() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Success Stories
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -148,12 +148,12 @@ export default function Success() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Success Stories{" "}
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"

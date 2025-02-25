@@ -129,7 +129,7 @@ export default function CEOTalk() {
         <p
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Importance of the Program
         </p>
@@ -161,7 +161,7 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Program Goals
         </p>
@@ -213,7 +213,7 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Expected Outcomes
         </p>
@@ -260,12 +260,12 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Event Details
         </p>
         <div className="bg-light p-5 md:p-10">
-          <div className="max-w-[1400px] mx-auto text-lg md:text-2xl  text-black flex flex-col gap-10">
+          <div className="max-w-[1400px] mx-auto text-lg md:text-xl  text-black flex flex-col gap-10">
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold text-start">
               <p>
                 <span className="text-primary">Event Name:</span> CEO Talk
@@ -318,7 +318,7 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Agenda
         </p>
@@ -330,7 +330,7 @@ export default function CEOTalk() {
                   data-aos="fade-left"
                   data-aos-duration={agenda.duration}
                   key={index}
-                  className="text-3xl text-start my-8"
+                  className="text-2xl text-start my-8"
                 >
                   <span className="font-semibold">{agenda.time}:</span>{" "}
                   {agenda.title}
@@ -344,12 +344,12 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Key Highlights{" "}
         </p>
         <div className="bg-light p-5 md:p-10 text-justify">
-          <div className="max-w-[1000px] mx-auto text-lg md:text-2xl text-black flex flex-col gap-5 md:gap-10">
+          <div className="max-w-[1000px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 md:gap-10">
             <p>
               <span className="font-bold text-primary">
                 Exclusive Audience:
