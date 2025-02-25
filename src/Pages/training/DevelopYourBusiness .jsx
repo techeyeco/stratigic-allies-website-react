@@ -64,7 +64,7 @@ export default function DevelopYourBusiness() {
       className="md:m-10 my-20 max-w-[1200px] mx-auto overflow-hidden"
       id="DevelopYourBusiness"
     >
-      <p className="text-2xl lg:text-4xl font-bold mb-5 pb-5 border-b-4 border-primary w-max ">
+      <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max ">
         Develop Your Business
       </p>
       <div className="flex flex-col justify-center items-center gap-5">
@@ -98,7 +98,7 @@ export default function DevelopYourBusiness() {
               >
                 <div
                   className="bg-primary flex items-center justify-center m-[-30px] p-5 w-16 
-                            h-16 text-3xl text-white rounded-full z-10"
+                            h-16 text-2xl text-white rounded-full z-10"
                 >
                   <div className="p-2 rounded-full z-10 ">
                     <p className="flex items-center justify-center">
@@ -108,7 +108,7 @@ export default function DevelopYourBusiness() {
                   </div>
                 </div>
                 <div className="card-body items-center text-center flex flex-col items-center gap-10 p-10">
-                  <p className="card-title flex items-center gap-4 text-2xl">
+                  <p className="card-title flex items-center gap-4 text-xl">
                     {item.title}
                   </p>
                   <p>{item.detail}</p>
@@ -119,7 +119,7 @@ export default function DevelopYourBusiness() {
         })}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
-        <p className="lg:text-2xl text-justify ">
+        <p className="lg:text-xl text-justify ">
           The primary purpose of this program is to create long-term value for
           businesses and employers while also promoting growth. By learning
           about the four key components of every company's or business's
@@ -134,7 +134,7 @@ export default function DevelopYourBusiness() {
         </div>
       </div>
       <div className="mt-10 md:mt-20">
-        <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
+        <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
           Sponsors
         </p>
         <p className="lg:text-xl text-justify ">

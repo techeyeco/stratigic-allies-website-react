@@ -69,7 +69,7 @@ export default function Product() {
   return (
     <section className="text-center p-10 max-w-[1200px] mx-auto">
       {" "}
-      <p className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+      <p className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         Products
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-5">

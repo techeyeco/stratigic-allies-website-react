@@ -99,7 +99,7 @@ export default function Peshang() {
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div>
-          <p className="md:text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+          <p className="md:text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
             What makes us Greate to work for
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -111,7 +111,7 @@ export default function Peshang() {
                      flex flex-col justify-center items-center "
             >
               <div className="card-body flex flex-col items-start gap-3 p-14">
-                <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
+                <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
                   Peshang
                 </p>
                 <p className="lg:text-xl text-justify  ">
@@ -131,7 +131,7 @@ export default function Peshang() {
             >
               <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
                 <div className="flex flex-col gap-2">
-                  <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
+                  <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
                     Sponsorship
                   </p>
                   <p className="lg:text-xl text-justify  ">
@@ -143,7 +143,7 @@ export default function Peshang() {
                   </p>
                 </div>
                 <div className="bg-primary flex flex-col w-full gap-5 p-5 rounded-lg">
-                  <p className="text-3xl font-bold">We are open to work</p>
+                  <p className="text-2xl font-bold">We are open to work</p>
                   {/* <p className="text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     <br />
@@ -163,7 +163,7 @@ export default function Peshang() {
                      flex flex-col justify-center items-center "
             >
               <div className="card-body flex flex-col items-start gap-3 p-14">
-                <p className="text-2xl lg:text-3xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
+                <p className="text-xl lg:text-2xl font-bold mb-3 pb-3 border-b-4 border-primary w-max ">
                   Certificated Course
                 </p>
                 <p className="lg:text-xl text-justify  ">
@@ -223,7 +223,7 @@ export default function Peshang() {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+            className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
           >
             Course Objectives{" "}
           </p>
@@ -258,7 +258,7 @@ export default function Peshang() {
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="50"
-            className="text-2xl lg:text-3xl font-bold mb-10 border-b-4 border-primary w-max "
+            className="text-xl lg:text-2xl font-bold mb-10 border-b-4 border-primary w-max "
           >
             Course Organization{" "}
           </p>

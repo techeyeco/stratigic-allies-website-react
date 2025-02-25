@@ -20,7 +20,7 @@ export default function ToRoute() {
     {
       title: "Kotler Awards | Iraq",
       route: "https://kotlerawards-iq.com/",
-      translate: "translate-y-5",
+      translate: "translate-y-5 translate-x-5",
       fade: "zoom-out-up",
       duration: 1500,
     },
@@ -33,9 +33,9 @@ export default function ToRoute() {
       delay: 300,
     },
     {
-      title: "Essentials of Modern Marketing",
+      title: "Essentials of Modern Marketing ",
       route: "/modernMarketing",
-      translate: "translate-y-5",
+      translate: "translate-y-5 -translate-x-5",
 
       fade: "zoom-out-left",
       duration: 1500,
@@ -57,19 +57,22 @@ export default function ToRoute() {
     //   fade: "zoom-out",
     //   duration: 1000,
     // },
-    // {
-    //   title: "Course in the UK",
-    //   // route: "/ukCourse",
-    //   translate: "translate-y-10",
-    //   fade: "zoom-out-left",
-    //   duration: 1500,
-    //   delay: 700,
-    // },
+
+    {
+      title: "Accounting Solutions",
+      route: "/accountingSolutions",
+      translate: "translate-y-10 translate-x-40",
+      // span: "col-span-3",
+      fade: "zoom-out-up",
+      duration: 1500,
+      delay: 900,
+    },
+
     {
       title: "The CEO Talk",
       route: "/ceotalk",
-      translate: "-translate-y-5",
-      span: "col-span-3",
+      translate: "translate-y-10 translate-x-52",
+      // span: "col-span-3",
       fade: "zoom-out-up",
       duration: 1500,
       delay: 900,
@@ -79,14 +82,12 @@ export default function ToRoute() {
     {
       title: "Strategic Allies",
       route: "/about",
-      translate: "-translate-y-5",
       fade: "zoom-out-up",
       duration: 1500,
     },
     {
       title: "Essentials of Modern Marketing",
       route: "/modernMarketing",
-      translate: "translate-y-5",
 
       fade: "zoom-out-up",
       duration: 1500,
@@ -101,7 +102,6 @@ export default function ToRoute() {
     {
       title: "Kotler Awards | Iraq",
       route: "https://kotlerawards-iq.com/",
-      translate: "translate-y-5",
       fade: "zoom-out-up",
       duration: 1500,
     },
@@ -138,15 +138,21 @@ export default function ToRoute() {
     {
       title: "The CEO Talk",
       route: "/ceotalk",
-      translate: "-translate-y-5",
       span: "col-span-3",
+      fade: "zoom-out-up",
+      duration: 1500,
+    },
+    {
+      title: "Accounting Solutions",
+      route: "/accountingSolutions",
+      // span: "col-span-3",
       fade: "zoom-out-up",
       duration: 1500,
     },
   ];
   return (
     <section className=" text-center m-10 max-w-[1200px] mx-auto">
-      <p className="text-3xl lg:text-4xl font-semibold my-5 text-center w-max mx-auto overflow-hidden ">
+      <p className="text-2xl lg:text-3xl font-semibold my-5 text-center w-max mx-auto overflow-hidden ">
         Explore With Us
       </p>
 
