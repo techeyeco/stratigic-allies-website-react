@@ -1,9 +1,11 @@
 import React from "react";
 
-import ceoTalkLogo from "../../assets/CEOTalk/ceoTalk logo.png";
+import ceoTalkLogo from "../../assets/CEOTalk/ceoTalk logo new.png";
 import goals from "../../assets/CEOTalk/goals.png";
 import outcome from "../../assets/CEOTalk/outcome.png";
 import Aos from "aos";
+import "aos/dist/aos.css";
+
 export default function CEOTalk() {
   React.useEffect(() => {
     Aos.init();
@@ -67,28 +69,9 @@ export default function CEOTalk() {
     },
   ];
 
-  const agendas = [
-    {
-      time: "5:30 PM - 5:45 PM",
-      title: "Registration and Networking",
-      duration: 1000,
-    },
-    { time: "5:45 PM - 5:50 PM", title: "Organizer Speech", duration: 1100 },
-    {
-      time: "5:50 PM - 6:50 PM",
-      title: "Panel Speech and Discussion",
-      duration: 1200,
-    },
-    { time: "6:50 PM - 7:10 PM", title: "Coffee Break", duration: 1300 },
-    {
-      time: "7:10 PM – 8:00 PM",
-      title: "Q&A Session and Networking",
-      duration: 1400,
-    },
-  ];
   return (
     <section
-      className="text-center flex flex-col gap-5 md:gap-10 overflow-hidden"
+      className="text-center flex flex-col gap-5  overflow-hidden"
       id="about"
     >
       <div className="max-w-[1200px] mx-auto p-5 md:p-10">
@@ -115,7 +98,7 @@ export default function CEOTalk() {
         </div>
         <p
           className="lg:text-xl text-justify lg:text-center"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
@@ -133,7 +116,7 @@ export default function CEOTalk() {
         >
           Importance of the Program
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 text-justify">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  text-justify">
           <p className="text-lg">
             This masterclass is more than a typical networking event. It is a
             unique opportunity to realize the critical role that senior
@@ -283,12 +266,12 @@ export default function CEOTalk() {
                 University Lecturer and CEO of Strategic Allies
               </p>
               <p>
-                <span className="text-primary">Venue:</span> Divan Hotel, Erbil
+                {/* <span className="text-primary">Venue:</span> Divan Hotel, Erbil */}
               </p>
             </div>
             <p className="text-justify">
               The CEO Talk will be conducted in a{" "}
-              <span className="font-bold">panel format</span>, featuring 2-3
+              <span className="font-bold">panel format</span>, featuring 1-3
               esteemed CEOs or senior managers from powerful and successful
               companies.{" "}
             </p>
@@ -349,12 +332,12 @@ export default function CEOTalk() {
           Key Highlights{" "}
         </p>
         <div className="bg-light p-5 md:p-10 text-justify">
-          <div className="max-w-[1000px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 md:gap-10">
+          <div className="max-w-[1000px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 ">
             <p>
               <span className="font-bold text-primary">
                 Exclusive Audience:
               </span>{" "}
-              Limited to 50-100 participants.
+              Limited to 100-250 participants.
             </p>
             <p>
               <span className="font-bold text-primary">Language: </span> Kurdish
@@ -375,13 +358,14 @@ export default function CEOTalk() {
               available now - register to secure yours and reserve
               your spot today!
             </p>
-            <a
-              href="https://forms.gle/ER5WPqCLsv3kZUQW6"
-              target="_blank"
-              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center"
+            <button
+              disabled
+              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center disabled:bg-primary/80 disabled:shadow-none"
             >
-              Apply Now
-            </a>
+              <a href="https://forms.gle/ER5WPqCLsv3kZUQW6" target="_blank">
+                Apply Now
+              </a>
+            </button>
           </div>
         </div>
       </div>
