@@ -5,6 +5,16 @@ import goals from "../../assets/CEOTalk/goals.png";
 import outcome from "../../assets/CEOTalk/outcome.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { images1, images2, images3, images4, images5 } from "./images";
+import video from "../../assets/accounting sloutions/video v2.mp4";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
 
 export default function CEOTalk() {
   React.useEffect(() => {
@@ -108,6 +118,16 @@ export default function CEOTalk() {
           levels of corporate leadership.
         </p>
       </div>
+      <video
+        data-aos="fade-up"
+        autoPlay
+        muted
+        data-aos-duration="1000"
+        className="w-full"
+        controls
+      >
+        <source src={video} type="video/mp4" />
+      </video>
       <div className="max-w-[1200px] mx-auto p-5 md:p-10">
         <p
           data-aos="fade-down"
@@ -283,46 +303,9 @@ export default function CEOTalk() {
               practical advice on navigating business challenges and leading
               with impact.
             </p>
-            {/* <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold">
-              <p>
-                <span className="text-primary">Venue:</span> Divan Hotel, Erbil
-              </p>
-              <p>
-                <span className="text-primary">Date:</span> 11.1. 2025
-              </p>
-              <p>
-                <span className="text-primary">Time:</span> 5:30 PM – 8:00 PM
-              </p>
-            </div> */}
           </div>
         </div>
       </div>
-      {/* <div className=" max-w-[1400px] mx-auto">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
-          Agenda
-        </p>
-        <div>
-          <ul className="list-disc">
-            {agendas.map((agenda, index) => {
-              return (
-                <li
-                  data-aos="fade-left"
-                  data-aos-duration={agenda.duration}
-                  key={index}
-                  className="text-2xl text-start my-8"
-                >
-                  <span className="font-semibold">{agenda.time}:</span>{" "}
-                  {agenda.title}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div> */}
       <div className="">
         <p
           data-aos="fade-up"
@@ -369,6 +352,167 @@ export default function CEOTalk() {
           </div>
         </div>
       </div>
+      <section className="max-w-[1200px] p-5 mx-auto flex flex-col gap-5">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+        >
+          Gallery
+        </p>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images1.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            reverseDirection: true, // Moves slides in reverse
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images2.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images3.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            reverseDirection: true, // Moves slides in reverse
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images4.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images5.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </section>
     </section>
   );
 }
