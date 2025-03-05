@@ -8,17 +8,6 @@ import manaeger from "../../assets/accounting sloutions/manager.png";
 import { RiGuideLine } from "react-icons/ri";
 import { MdMenuBook } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import { images1, images2, images3, images4, images5 } from "./images";
-import video from "../../assets/accounting sloutions/video v2.mp4";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-
-// import required modules
-import { Pagination, Autoplay, Keyboard } from "swiper/modules";
 
 const data = [
   {
@@ -126,14 +115,6 @@ export default function AccountingSolutions() {
           consulting, and training services to help businesses enhance financial
           efficiency, compliance, and growth.
         </p>
-        <video
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="w-full"
-          controls
-        >
-          <source src={video} type="video/mp4" />
-        </video>
       </div>
       <div className="max-w-[1200px] mx-auto p-5 overflow-hidden">
         <p
@@ -181,71 +162,6 @@ export default function AccountingSolutions() {
           })}
         </div>
       </div>
-      <section className="max-w-[1200px] p-5 mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          loop={true}
-          slidesPerView={2.5}
-          centeredSlides={true}
-          spaceBetween={24}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {images1.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  className="w-full h-[250px] md:h-[300px] object-cover"
-                  src={image}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </section>
-      <section className="max-w-[1200px] p-5 mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            reverseDirection: true, // Moves slides in reverse
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          loop={true}
-          slidesPerView={2.5}
-          centeredSlides={true}
-          spaceBetween={24}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {images2.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  className="w-full h-[250px] md:h-[300px] object-cover"
-                  src={image}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </section>
 
       <div className="flex flex-col gap-5 md:gap-10 py-10 relative">
         <div className="">
@@ -318,103 +234,6 @@ export default function AccountingSolutions() {
           </div>
         </div>
       </div>
-      <section className="max-w-[1200px] p-5 mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          loop={true}
-          slidesPerView={2.5}
-          centeredSlides={true}
-          spaceBetween={24}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {images3.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  className="w-full h-[250px] md:h-[300px] object-cover"
-                  src={image}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </section>
-      <section className="max-w-[1200px] p-5 mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            reverseDirection: true, // Moves slides in reverse
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          loop={true}
-          slidesPerView={2.5}
-          centeredSlides={true}
-          spaceBetween={24}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {images4.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  className="w-full h-[250px] md:h-[300px] object-cover"
-                  src={image}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </section>
-      <section className="max-w-[1200px] p-5 mx-auto">
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          loop={true}
-          slidesPerView={2.5}
-          centeredSlides={true}
-          spaceBetween={24}
-          modules={[Pagination, Autoplay, Keyboard]}
-          className="mySwiper"
-        >
-          {images5.map((image, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <img
-                  className="w-full h-[250px] md:h-[300px] object-cover"
-                  src={image}
-                  alt=""
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </section>
     </section>
   );
 }
