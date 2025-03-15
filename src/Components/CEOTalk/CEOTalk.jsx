@@ -8,6 +8,12 @@ import "aos/dist/aos.css";
 import { images1, images2, images3, images4, images5 } from "./images";
 import video from "../../assets/accounting sloutions/video v2.mp4";
 
+import img1 from "../../assets/CEOTalk/company/1.png";
+import img2 from "../../assets/CEOTalk/company/2.png";
+import img3 from "../../assets/CEOTalk/company/3.png";
+import img4 from "../../assets/CEOTalk/company/4.png";
+import img5 from "../../assets/CEOTalk/company/5.png";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,6 +21,8 @@ import "swiper/css/pagination";
 // import required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, Keyboard } from "swiper/modules";
+
+const comp = [img1, img3, img4, img5];
 
 export default function CEOTalk() {
   React.useEffect(() => {
@@ -161,22 +169,13 @@ export default function CEOTalk() {
         </div>
       </div>
       <div className="">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
+        <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto ">
           Program Goals
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-between my-5">
           <div className="bg-light">
-            <div
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] ml-auto p-10"
-            >
+            <div className="max-w-[600px] ml-auto p-10">
               <img
                 src={goals}
                 alt=""
@@ -185,21 +184,11 @@ export default function CEOTalk() {
             </div>
           </div>
           <div className="bg-primary">
-            <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] mr-auto p-10"
-            >
+            <div className="max-w-[600px] mr-auto p-10">
               <ul className="list-decimal">
                 {goalsText.map((goal, index) => {
                   return (
-                    <li
-                      data-aos="fade-left"
-                      data-aos-duration={goal.duration}
-                      key={index}
-                      className="py-2"
-                    >
+                    <li key={index} className="py-2">
                       <p className="text-justify">
                         <span className="font-semibold">{goal.title}</span>:{" "}
                         {goal.details}
@@ -213,11 +202,7 @@ export default function CEOTalk() {
         </div>
       </div>
       <div className="">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
+        <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto ">
           Expected Outcomes
         </p>
 
@@ -227,12 +212,7 @@ export default function CEOTalk() {
               <ul className="list-decimal">
                 {outcomeText.map((goal, index) => {
                   return (
-                    <li
-                      data-aos="fade-right"
-                      data-aos-duration={goal.duration}
-                      key={index}
-                      className="py-2"
-                    >
+                    <li key={index} className="py-2">
                       <p className="text-justify">
                         <span className="font-semibold">{goal.title}</span>:{" "}
                         {goal.details}
@@ -244,12 +224,7 @@ export default function CEOTalk() {
             </div>
           </div>
           <div className="bg-light">
-            <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] mr-auto p-10"
-            >
+            <div className="max-w-[600px] mr-auto p-10">
               <img
                 src={outcome}
                 alt=""
@@ -268,7 +243,7 @@ export default function CEOTalk() {
           Event Details
         </p>
         <div className="bg-light p-5 md:p-10">
-          <div className="max-w-[1400px] mx-auto text-lg md:text-xl  text-black flex flex-col gap-10">
+          <div className="max-w-[1200px] mx-auto text-lg md:text-xl  text-black flex flex-col gap-10">
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold text-start">
               <p>
                 <span className="text-primary">Event Name:</span> CEO Talk
@@ -315,7 +290,7 @@ export default function CEOTalk() {
           Key Highlights{" "}
         </p>
         <div className="bg-light p-5 md:p-10 text-justify">
-          <div className="max-w-[1000px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 ">
+          <div className="max-w-[1200px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 ">
             <p>
               <span className="font-bold text-primary">
                 Exclusive Audience:
@@ -512,6 +487,42 @@ export default function CEOTalk() {
             );
           })}
         </Swiper>
+      </section>
+      <section className="max-w-[1200px] p-5 mx-auto flex flex-col gap-5">
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-xl lg:text-3xl font-bold  pb-5 border-b-4 border-primary w-max mx-auto "
+          >
+            Participated Companies
+          </p>
+          <p
+            className=" lg:text-xl text-center m-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Companies that already joined the CEO Talk
+          </p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-5">
+          {comp.map((item, index) => {
+            return (
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="w-full h-full bg-white overflow-hidden mx-auto p-2"
+              >
+                <img
+                  src={item}
+                  alt=""
+                  className="w-full h-20 md:h-60  object-contain  duration-300 ease-in-out hover:scale-105"
+                />
+              </div>
+            );
+          })}
+        </div>
       </section>
     </section>
   );

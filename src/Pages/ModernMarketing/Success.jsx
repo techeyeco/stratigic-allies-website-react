@@ -27,6 +27,7 @@ import e from "../../assets/companies/e.jpg";
 import adham from "../../assets/companies/adham.png";
 import shoof from "../../assets/companies/shoof.png";
 import alhayat from "../../assets/companies/alhayat.jpg";
+import vara from "../../assets/companies/vara.png";
 
 const comp = [
   google,
@@ -56,6 +57,7 @@ const compIraq = [
   adham,
   shoof,
   alhayat,
+  vara,
 ];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
