@@ -165,7 +165,7 @@ export default function AccountingSolutions() {
 
       <div className="flex flex-col gap-5 md:gap-10 py-10 relative">
         <div className="">
-          <div className="max-w-[1400px] mx-auto p-5 py-10 flex flex-col items-center gap-20">
+          <div className="max-w-[1200px] mx-auto p-5 py-10 flex flex-col items-center gap-20">
             <div className="sticky top-5">
               <p
                 data-aos="fade-up"
