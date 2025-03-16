@@ -312,15 +312,17 @@ export default function CEOTalk() {
             <p className="">
               Be part of the exclusive{" "}
               <span className="font-bold text-primary">CEO Talk program</span>,
-              designed to inspire and empower future leaders. Tickets are
-              available now - register to secure yours and reserve
-              your spot today!
+              designed to inspire and empower future leaders.
             </p>
             <button
-              disabled
-              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center disabled:bg-primary/80 disabled:shadow-none"
+              disabled={true}
+              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center disabled:bg-primary/50 disabled:shadow-none"
             >
-              <a href="https://forms.gle/ER5WPqCLsv3kZUQW6" target="_blank">
+              <a
+                disabled={true}
+                // href="https://forms.gle/ER5WPqCLsv3kZUQW6"
+                target="_blank"
+              >
                 Apply Now
               </a>
             </button>
