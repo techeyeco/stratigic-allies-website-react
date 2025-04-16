@@ -23,13 +23,16 @@ import zom from "../../assets/companies/zom.png";
 import rudaw from "../../assets/companies/rudaw.png";
 import moonline from "../../assets/companies/moonline.jpg";
 import boulevard from "../../assets/companies/BOULEVARD LOGO.png";
-import e from "../../assets/companies/e.jpg";
+import e from "../../assets/companies/e.png";
 import adham from "../../assets/companies/adham.png";
 import shoof from "../../assets/companies/shoof.png";
-import alhayat from "../../assets/companies/alhayat.jpg";
+import alhayat from "../../assets/companies/alhayat.png";
 import vara from "../../assets/companies/vara.png";
 import cambridge from "../../assets/companies/cambridge.png";
 import barco from "../../assets/companies/barco.png";
+import saffin from "../../assets/companies/saffin.png";
+import alKhayat from "../../assets/companies/alKhayat.png";
+import HALGORD from "../../assets/companies/HALGORD.png";
 
 const comp = [
   google,
@@ -62,6 +65,9 @@ const compIraq = [
   vara,
   cambridge,
   barco,
+  saffin,
+  alKhayat,
+  HALGORD,
 ];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
