@@ -173,7 +173,7 @@ export default function CEOcontact() {
               data-aos="fade-left"
               data-aos-duration="1500"
               data-aos-delay="50"
-              className="text-lg md:text-xl lg:text-2xl pb-3 mb-4 border-b-4 border-primary w-max mx-auto md:mx-0 font-bold"
+              className="text-lg md:text-xl lg:text-xl pb-3 mb-4 border-b-4 border-primary w-max mx-auto md:mx-0 font-bold"
             >
               Zanear Jabbar Ssali
             </p>
@@ -181,7 +181,7 @@ export default function CEOcontact() {
               return (
                 <p
                   key={index}
-                  className="lg:text-xl mt-2"
+                  className="lg:text-lg mt-2"
                   data-aos={items.fade}
                   data-aos-duration={items.duration}
                   data-aos-delay={items.delay}
@@ -230,7 +230,7 @@ export default function CEOcontact() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="md:text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="md:text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Research Publications
         </p>
@@ -252,7 +252,7 @@ export default function CEOcontact() {
                   >
                     <div
                       className="bg-primary flex items-center justify-center my-[-30px] p-5 w-14 h-14
-                               text-2xl text-white rounded-full border border-4 border-neutral z-10"
+                               text-xl text-white rounded-full border border-4 border-neutral z-10"
                     >
                       <div className="z-10">{index + 1}</div>
                     </div>
@@ -276,7 +276,7 @@ export default function CEOcontact() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="md:text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="md:text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Foreign Direct Investment
         </p>

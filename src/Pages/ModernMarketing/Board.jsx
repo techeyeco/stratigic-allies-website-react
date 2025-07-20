@@ -18,6 +18,8 @@ import img16 from "../../assets/Board/img16.png";
 import img17 from "../../assets/Board/img17.png";
 import img18 from "../../assets/Board/img18.png";
 import img19 from "../../assets/Board/img19.png";
+import img20 from "../../assets/Board/img20.jpg";
+import img21 from "../../assets/Board/img21.jpg";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -57,16 +59,16 @@ export default function Board() {
         "Tishk International University",
       ],
     },
-    {
-      name: "Professor Dr. Ahlam Ibrahim",
-      img: img4,
-      info: [
-        "Department of Administration",
-        "College of Administration and Economics",
-        "Strategy Management and Organizational Behaviour",
-        "Salaheddin university - Erbil",
-      ],
-    },
+    // {
+    //   name: "Professor Dr. Ahlam Ibrahim",
+    //   img: img4,
+    //   info: [
+    //     "Department of Administration",
+    //     "College of Administration and Economics",
+    //     "Strategy Management and Organizational Behaviour",
+    //     "Salaheddin university - Erbil",
+    //   ],
+    // },
     {
       name: "Assistant Professor Dr. Rizgar Saed Hussein",
       img: img5,
@@ -84,16 +86,16 @@ export default function Board() {
         "Publishes in peer-reviewed, marketing, and journalism fields",
       ],
     },
-    {
-      name: "Professor Dr. Mahabat Nuri",
-      img: img7,
-      info: [
-        "Head of Department of Administration",
-        "Specific Specialization: Marketing management",
-        "College of Administration and Economics",
-        "Salaheddin University - Erbil",
-      ],
-    },
+    // {
+    //   name: "Professor Dr. Mahabat Nuri",
+    //   img: img7,
+    //   info: [
+    //     "Head of Department of Administration",
+    //     "Specific Specialization: Marketing management",
+    //     "College of Administration and Economics",
+    //     "Salaheddin University - Erbil",
+    //   ],
+    // },
     {
       name: "Mr. Rezhwan Mohammed",
       img: img8,
@@ -195,8 +197,22 @@ export default function Board() {
       ],
     },
     {
+      name: "Mr. Mustafa Halgurd Amin",
+      img: img20,
+      info: [
+        "CEO of Veneto",
+        "MSc in Business Administration at Near East University",
+      ],
+    },
+    {
+      name: "Mr. Ali Abdullah Ahmed",
+      img: img21,
+      info: ["Lecturer at Erbil Technical Management Collage - EPU"],
+    },
+    {
       name: "Zanear Jabbar Ssali",
       img: img19,
+      col: "col-span-5",
       info: [
         "Chair of the Kotler Impact Advisory Board Iraq",
         "PhD Candidate in Business Administration",
@@ -211,7 +227,7 @@ export default function Board() {
       <p
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="text-xl lg:text-5xl mb-5 pb-5 border-b-4 border-primary mx-auto"
+        className="text-xl lg:text-3xl mb-5 pb-5 border-b-4 border-primary mx-auto"
       >
         Kotler Impact Advisory Board Iraq
       </p>
@@ -228,23 +244,23 @@ export default function Board() {
                 key={index}
                 data-aos="fade-up"
                 data-aos-duration="1000"
-                className="flex flex-col justify-start items-center bg-neutral/50 text-light-content backdrop-blur-2xl w-full "
+                className={`flex flex-col justify-start items-center bg-neutral/50 text-light-content backdrop-blur-2xl w-full`}
               >
                 <div className="relative w-full">
                   <img
                     src={person.img}
                     alt={person.name}
-                    className="object-cover w-full h-80"
+                    className="object-cover w-full h-80 saturate-0	"
                   />
                   <div className="absolute bg-primary w-max p-1 bottom-[10px] left-[10px] ">
                     <p className="">{person.name}</p>
                   </div>
                 </div>
-                <div className="p-3 bg-pr">
-                  <ol className="px-10 list-disc text-start">
+                <div className="p-3 me-auto">
+                  <ol className="px-5 list-disc text-start">
                     {person.info.map((info) => {
                       return (
-                        <li key={index} className=" lg:text-lg mt-2">
+                        <li key={index} className=" text-sm mt-2">
                           {info}
                         </li>
                       );
@@ -272,23 +288,23 @@ export default function Board() {
                   key={index}
                   data-aos="fade-up"
                   data-aos-duration="1000"
-                  className="flex flex-col justify-start items-center bg-neutral/50 text-light-content backdrop-blur-2xl w-full "
+                  className={`"flex flex-col justify-start items-center bg-neutral/50 text-light-content backdrop-blur-2xl w-full `}
                 >
                   <div className="relative w-full">
                     <img
                       src={person.img}
                       alt={person.name}
-                      className="object-cover w-full h-80"
+                      className="object-cover w-full h-80 saturate-0"
                     />
                     <div className="absolute bg-primary w-max p-1 bottom-[10px] left-[10px] ">
                       <p className="">{person.name}</p>
                     </div>
                   </div>
-                  <div className="p-3 bg-pr">
-                    <ol className="px-10 list-disc text-start">
+                  <div className="p-3 me-auto">
+                    <ol className="px-5 list-disc text-start">
                       {person.info.map((info) => {
                         return (
-                          <li key={index} className="lg:text-lg mt-2">
+                          <li key={index} className="text-sm mt-2">
                             {info}
                           </li>
                         );
@@ -341,7 +357,7 @@ className="flex flex-col justify-center items-center"
   />
 </div>
 <div className="bg-primary w-full rounded-2xl p-3 pt-16">
-  <div className="text-lg md:text-xl lg:text-3xl">
+  <div className="text-lg md:text-xl lg:text-2xl">
     <p>Professor Dr. Khalid Mirkhan</p>
   </div>
   <ol className="px-10 list-disc text-start">

@@ -77,7 +77,7 @@
 //       <p
 //         data-aos="fade-down"
 //         data-aos-duration="1000"
-//         className="text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto"
+//         className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto"
 //       >
 //         Business Consulting
 //       </p>
@@ -98,7 +98,7 @@
 //                             rounded-lg hover:border-primary hover:drop-shadow duration-300 ease-in-out"
 //               >
 //                 {item.icon}
-//                 <p className="text-2xl text-primary font-bold ">{item.title}</p>
+//                 <p className="text-xl text-primary font-bold ">{item.title}</p>
 //                 <p>{item.dec}</p>
 //               </div>
 //             </div>
@@ -121,10 +121,10 @@ import { Link } from "react-router-dom";
 export default function Gallary() {
   return (
     <section className="flex flex-col gap-20 justify-center items-center  h-screen bg-animated">
-      <div className="text-2xl md:text-3xl lg:text-4xl">Coming soon</div>
+      <div className="text-xl md:text-2xl lg:text-3xl">Coming soon</div>
       <Link
         to="../"
-        className="text-2xl md:text-3xl lg:text-4xl underline hover:no-underline"
+        className="text-xl md:text-2xl lg:text-3xl underline hover:no-underline"
       >
         Back To Home
       </Link>
