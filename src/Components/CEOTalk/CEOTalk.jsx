@@ -1,9 +1,29 @@
 import React from "react";
 
-import ceoTalkLogo from "../../assets/CEOTalk/ceoTalk logo.png";
+import ceoTalkLogo from "../../assets/CEOTalk/ceoTalk logo new.png";
 import goals from "../../assets/CEOTalk/goals.png";
 import outcome from "../../assets/CEOTalk/outcome.png";
 import Aos from "aos";
+import "aos/dist/aos.css";
+import { images1, images2, images3, images4, images5 } from "./images";
+import video from "../../assets/accounting sloutions/video v2.mp4";
+
+import img1 from "../../assets/CEOTalk/company/1.png";
+import img2 from "../../assets/CEOTalk/company/2.png";
+import img3 from "../../assets/CEOTalk/company/3.png";
+import img4 from "../../assets/CEOTalk/company/4.png";
+import img5 from "../../assets/CEOTalk/company/5.png";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
+
+const comp = [img1, img3, img4, img5];
+
 export default function CEOTalk() {
   React.useEffect(() => {
     Aos.init();
@@ -67,28 +87,9 @@ export default function CEOTalk() {
     },
   ];
 
-  const agendas = [
-    {
-      time: "5:30 PM - 5:45 PM",
-      title: "Registration and Networking",
-      duration: 1000,
-    },
-    { time: "5:45 PM - 5:50 PM", title: "Organizer Speech", duration: 1100 },
-    {
-      time: "5:50 PM - 6:50 PM",
-      title: "Panel Speech and Discussion",
-      duration: 1200,
-    },
-    { time: "6:50 PM - 7:10 PM", title: "Coffee Break", duration: 1300 },
-    {
-      time: "7:10 PM – 8:00 PM",
-      title: "Q&A Session and Networking",
-      duration: 1400,
-    },
-  ];
   return (
     <section
-      className="text-center flex flex-col gap-5 md:gap-10 overflow-hidden"
+      className="text-center flex flex-col gap-5  overflow-hidden"
       id="about"
     >
       <div className="max-w-[1200px] mx-auto p-5 md:p-10">
@@ -115,7 +116,7 @@ export default function CEOTalk() {
         </div>
         <p
           className="lg:text-xl text-justify lg:text-center"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
         >
@@ -125,15 +126,25 @@ export default function CEOTalk() {
           levels of corporate leadership.
         </p>
       </div>
+      <video
+        data-aos="fade-up"
+        autoPlay
+        muted
+        data-aos-duration="1000"
+        className="w-full"
+        controls
+      >
+        <source src={video} type="video/mp4" />
+      </video>
       <div className="max-w-[1200px] mx-auto p-5 md:p-10">
         <p
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Importance of the Program
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 text-justify">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  text-justify">
           <p className="text-lg">
             This masterclass is more than a typical networking event. It is a
             unique opportunity to realize the critical role that senior
@@ -158,22 +169,13 @@ export default function CEOTalk() {
         </div>
       </div>
       <div className="">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
+        <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto ">
           Program Goals
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 justify-between my-5">
           <div className="bg-light">
-            <div
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] ml-auto p-10"
-            >
+            <div className="max-w-[600px] ml-auto p-10">
               <img
                 src={goals}
                 alt=""
@@ -182,21 +184,11 @@ export default function CEOTalk() {
             </div>
           </div>
           <div className="bg-primary">
-            <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] mr-auto p-10"
-            >
+            <div className="max-w-[600px] mr-auto p-10">
               <ul className="list-decimal">
                 {goalsText.map((goal, index) => {
                   return (
-                    <li
-                      data-aos="fade-left"
-                      data-aos-duration={goal.duration}
-                      key={index}
-                      className="py-2"
-                    >
+                    <li key={index} className="py-2">
                       <p className="text-justify">
                         <span className="font-semibold">{goal.title}</span>:{" "}
                         {goal.details}
@@ -210,11 +202,7 @@ export default function CEOTalk() {
         </div>
       </div>
       <div className="">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
+        <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto ">
           Expected Outcomes
         </p>
 
@@ -224,12 +212,7 @@ export default function CEOTalk() {
               <ul className="list-decimal">
                 {outcomeText.map((goal, index) => {
                   return (
-                    <li
-                      data-aos="fade-right"
-                      data-aos-duration={goal.duration}
-                      key={index}
-                      className="py-2"
-                    >
+                    <li key={index} className="py-2">
                       <p className="text-justify">
                         <span className="font-semibold">{goal.title}</span>:{" "}
                         {goal.details}
@@ -241,12 +224,7 @@ export default function CEOTalk() {
             </div>
           </div>
           <div className="bg-light">
-            <div
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              className="max-w-[600px] mr-auto p-10"
-            >
+            <div className="max-w-[600px] mr-auto p-10">
               <img
                 src={outcome}
                 alt=""
@@ -260,12 +238,12 @@ export default function CEOTalk() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Event Details
         </p>
         <div className="bg-light p-5 md:p-10">
-          <div className="max-w-[1400px] mx-auto text-lg md:text-2xl  text-black flex flex-col gap-10">
+          <div className="max-w-[1200px] mx-auto text-lg md:text-xl  text-black flex flex-col gap-10">
             <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold text-start">
               <p>
                 <span className="text-primary">Event Name:</span> CEO Talk
@@ -283,12 +261,12 @@ export default function CEOTalk() {
                 University Lecturer and CEO of Strategic Allies
               </p>
               <p>
-                <span className="text-primary">Venue:</span> Divan Hotel, Erbil
+                {/* <span className="text-primary">Venue:</span> Divan Hotel, Erbil */}
               </p>
             </div>
             <p className="text-justify">
               The CEO Talk will be conducted in a{" "}
-              <span className="font-bold">panel format</span>, featuring 2-3
+              <span className="font-bold">panel format</span>, featuring 1-3
               esteemed CEOs or senior managers from powerful and successful
               companies.{" "}
             </p>
@@ -300,61 +278,24 @@ export default function CEOTalk() {
               practical advice on navigating business challenges and leading
               with impact.
             </p>
-            {/* <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-5 font-semibold">
-              <p>
-                <span className="text-primary">Venue:</span> Divan Hotel, Erbil
-              </p>
-              <p>
-                <span className="text-primary">Date:</span> 11.1. 2025
-              </p>
-              <p>
-                <span className="text-primary">Time:</span> 5:30 PM – 8:00 PM
-              </p>
-            </div> */}
           </div>
         </div>
       </div>
-      {/* <div className=" max-w-[1400px] mx-auto">
-        <p
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
-        >
-          Agenda
-        </p>
-        <div>
-          <ul className="list-disc">
-            {agendas.map((agenda, index) => {
-              return (
-                <li
-                  data-aos="fade-left"
-                  data-aos-duration={agenda.duration}
-                  key={index}
-                  className="text-3xl text-start my-8"
-                >
-                  <span className="font-semibold">{agenda.time}:</span>{" "}
-                  {agenda.title}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div> */}
       <div className="">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Key Highlights{" "}
         </p>
         <div className="bg-light p-5 md:p-10 text-justify">
-          <div className="max-w-[1000px] mx-auto text-lg md:text-2xl text-black flex flex-col gap-5 md:gap-10">
+          <div className="max-w-[1200px] mx-auto text-lg md:text-xl text-black flex flex-col gap-5 ">
             <p>
               <span className="font-bold text-primary">
                 Exclusive Audience:
               </span>{" "}
-              Limited to 50-100 participants.
+              Limited to 100-250 participants.
             </p>
             <p>
               <span className="font-bold text-primary">Language: </span> Kurdish
@@ -371,20 +312,220 @@ export default function CEOTalk() {
             <p className="">
               Be part of the exclusive{" "}
               <span className="font-bold text-primary">CEO Talk program</span>,
-              designed to inspire and empower future leaders. Tickets are
-              available now - register to secure yours and reserve
-              your spot today!
+              designed to inspire and empower future leaders.
             </p>
-            <a
-              href="https://forms.gle/ER5WPqCLsv3kZUQW6"
-              target="_blank"
-              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center"
+            <button
+              disabled={true}
+              className="w-full bg-primary  p-2 rounded-lg text-light font-semibold hover:shadow-lg duration-300 text-center disabled:bg-primary/50 disabled:shadow-none"
             >
-              Apply Now
-            </a>
+              <a
+                disabled={true}
+                // href="https://forms.gle/ER5WPqCLsv3kZUQW6"
+                target="_blank"
+              >
+                Apply Now
+              </a>
+            </button>
           </div>
         </div>
       </div>
+      <section className="max-w-[1200px] p-5 mx-auto flex flex-col gap-5">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+        >
+          Gallery
+        </p>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images1.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            reverseDirection: true, // Moves slides in reverse
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images2.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images3.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            reverseDirection: true, // Moves slides in reverse
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images4.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <Swiper
+          pagination={{
+            dynamicBullets: true,
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          keyboard={{
+            enabled: true,
+          }}
+          loop={true}
+          slidesPerView={2.5}
+          centeredSlides={true}
+          spaceBetween={24}
+          modules={[Pagination, Autoplay, Keyboard]}
+          className="mySwiper"
+        >
+          {images5.map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img
+                  className="w-full h-[250px] md:h-[300px] object-cover"
+                  src={image}
+                  alt=""
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </section>
+      <section className="max-w-[1200px] p-5 mx-auto flex flex-col gap-5">
+        <div>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="text-xl lg:text-3xl font-bold  pb-5 border-b-4 border-primary w-max mx-auto "
+          >
+            Participated Companies
+          </p>
+          <p
+            className=" lg:text-xl text-center m-3"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Companies that already joined the CEO Talk
+          </p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 items-center gap-5">
+          {comp.map((item, index) => {
+            return (
+              <div
+                key={index}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                className="w-full h-full bg-white overflow-hidden mx-auto p-2"
+              >
+                <img
+                  src={item}
+                  alt=""
+                  className="w-full h-20 md:h-60  object-contain  duration-300 ease-in-out hover:scale-105"
+                />
+              </div>
+            );
+          })}
+        </div>
+      </section>
     </section>
   );
 }

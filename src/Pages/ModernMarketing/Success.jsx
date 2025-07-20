@@ -1,3 +1,4 @@
+
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -23,9 +24,16 @@ import zom from "../../assets/companies/zom.png";
 import rudaw from "../../assets/companies/rudaw.png";
 import moonline from "../../assets/companies/moonline.jpg";
 import boulevard from "../../assets/companies/BOULEVARD LOGO.png";
-import e from "../../assets/companies/e.jpg";
+import e from "../../assets/companies/e.png";
 import adham from "../../assets/companies/adham.png";
 import shoof from "../../assets/companies/shoof.png";
+import alhayat from "../../assets/companies/alhayat.png";
+import vara from "../../assets/companies/vara.png";
+import cambridge from "../../assets/companies/cambridge.png";
+import barco from "../../assets/companies/barco.png";
+import saffin from "../../assets/companies/saffin.png";
+import alKhayat from "../../assets/companies/alKhayat.png";
+import HALGORD from "../../assets/companies/HALGORD.png";
 
 const comp = [
   google,
@@ -54,6 +62,13 @@ const compIraq = [
   e,
   adham,
   shoof,
+  alhayat,
+  vara,
+  cambridge,
+  barco,
+  saffin,
+  alKhayat,
+  HALGORD,
 ];
 export default function Success() {
   const [moreComp, setMoreComp] = React.useState(false);
@@ -62,16 +77,17 @@ export default function Success() {
   }, []);
   return (
     <section className="max-w-[1200px] mx-auto mb-10 p-10">
+      {" "}
       <div className="mb-10">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Success Stories
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"
@@ -145,12 +161,12 @@ export default function Success() {
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-2xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
+          className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto "
         >
           Success Stories{" "}
         </p>
         <p
-          className="text-xl lg:text-2xl text-center m-5"
+          className="text-xl lg:text-xl text-center m-5"
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
           data-aos-duration="1000"

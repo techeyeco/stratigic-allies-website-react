@@ -12,7 +12,7 @@ export default function ourworks() {
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-delay="50"
-          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+          className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
         >
           Peshang
         </p>
@@ -33,7 +33,7 @@ export default function ourworks() {
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-delay="50"
-          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
+          className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max "
         >
           Certificated Course
         </p>
@@ -54,7 +54,7 @@ export default function ourworks() {
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-delay="50"
-          className="text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max  "
+          className="text-xl lg:text-2xl font-bold mb-5 pb-5 border-b-4 border-primary w-max  "
         >
           Sponsorship.
         </p>
@@ -70,7 +70,7 @@ export default function ourworks() {
           Plan Organization, The Book Café, and Rebaz Foundation.
         </p>
       </div>
-      <p className="md:text-3xl lg:text-5xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
+      <p className="md:text-2xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max mx-auto">
         What makes us Greate to work for
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -81,7 +81,7 @@ export default function ourworks() {
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
             <div className="flex flex-col gap-2">
               <CiCoinInsert size={50} />
-              <p className="card-title gap-4 text-2xl font-bold">
+              <p className="card-title gap-4 text-xl font-bold">
                 Successful Managers
               </p>
               <p></p>
@@ -96,13 +96,13 @@ export default function ourworks() {
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
             <div className="flex flex-col gap-2">
               <CiCoinInsert size={50} />
-              <p className="card-title gap-4 text-2xl font-bold">
+              <p className="card-title gap-4 text-xl font-bold">
                 Successful Managers
               </p>
               <p></p>
             </div>
             <div className="bg-primary flex flex-col w-full gap-5 p-5 rounded-lg">
-              <p className="text-3xl font-bold">We are open to work</p>
+              <p className="text-2xl font-bold">We are open to work</p>
 
               <HiOutlineArrowLongRight size={50} className="self-end" />
             </div>
@@ -116,7 +116,7 @@ export default function ourworks() {
           <div className="card-body  flex flex-col items-start gap-10 md:gap-20 p-14">
             <div className="flex flex-col gap-2">
               <CiCoinInsert size={50} />
-              <p className="card-title gap-4 text-2xl font-bold">
+              <p className="card-title gap-4 text-xl font-bold">
                 Successful Managers
               </p>
               <p></p>
