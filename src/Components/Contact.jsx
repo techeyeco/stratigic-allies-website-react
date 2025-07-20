@@ -216,7 +216,8 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="text-lg ">
-                Iraq, Erbil, 60m, Appellate <br /> Court St. HMH Building
+                Office 1210, Phoenix Tower,
+                <br />  Erbil, Kurdistan Region, Iraq
               </p>
             </div>
 
