@@ -216,7 +216,7 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="text-lg ">
-                Office 1210, Phoenix Tower,
+               Phoenix Tower,
                 <br />  Erbil, Kurdistan Region, Iraq
               </p>
             </div>
