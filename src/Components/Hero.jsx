@@ -1,26 +1,3 @@
-import React from "react";
-import ToRoute from "./ToRoute";
-import sLogo from "../assets/logo/Vertical 01.png";
-
-export default function Hero() {
-  return (
-    <section className="text-start max-w-[1200px] mx-auto my-20">
-      <div className="p-10 flex flex-col justify-start items-start gap-8 herobg z-10 ">
-        <div className="z-10">
-          <img
-            className="h-24 md:h-28 w-max object-contain hover:scale-105 duration-300 ease-in-out "
-            src={sLogo}
-            alt=""
-          />
-        </div>
-        <div className="text-7xl font-bold z-10">
-          <p>Sustain </p>
-          <p>Your </p>
-          <p>Success </p>
-        </div>
-        <p className="z-10"></p>
-      </div>
-      <ToRoute />
-    </section>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:373e8398148a2369f7c0033ade2e945751c9c63e90089b247caff888e11f0494
+size 780
