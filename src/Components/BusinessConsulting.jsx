@@ -73,7 +73,7 @@
 //     Aos.init();
 //   }, []);
 //   return (
-//     <section className="text-center p-10 max-w-[1200px] mx-auto" id="busTrain">
+//     <section className="text-center p-10 max-w-[1600px] mx-auto" id="busTrain">
 //       <p
 //         data-aos="fade-down"
 //         data-aos-duration="1000"
@@ -109,7 +109,7 @@
 //         <img
 //           src={dbc}
 //           alt=""
-//           className="rounded-xl h-96 object-cover hover:rounded-3xl duration-300 ease-in-out"
+//           className="rounded-lg h-96 object-cover hover:rounded-lg duration-300 ease-in-out"
 //         />
 //       </div>
 //     </section>

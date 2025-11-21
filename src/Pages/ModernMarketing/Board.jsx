@@ -223,7 +223,7 @@ export default function Board() {
   ];
 
   return (
-    <section className="max-w-[1200px] mx-auto p-10">
+    <section className="max-w-[1600px] mx-auto p-10">
       <p
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -349,14 +349,14 @@ export default function Board() {
 key={index}
 className="flex flex-col justify-center items-center"
 >
-<div className="bg-white p-2 rounded-3xl mb-[-50px] z-10 hover:-translate-y-5 duration-300 ease-in-out">
+<div className="bg-white p-2 rounded-lg mb-[-50px] z-10 hover:-translate-y-5 duration-300 ease-in-out">
   <img
     src={img1}
     alt=""
-    className="rounded-2xl w-60 h-50 object-cover"
+    className="rounded-lg w-60 h-50 object-cover"
   />
 </div>
-<div className="bg-primary w-full rounded-2xl p-3 pt-16">
+<div className="bg-primary w-full rounded-lg p-3 pt-16">
   <div className="text-lg md:text-xl lg:text-2xl">
     <p>Professor Dr. Khalid Mirkhan</p>
   </div>

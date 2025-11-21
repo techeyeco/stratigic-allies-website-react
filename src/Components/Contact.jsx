@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const transitionLarge =
@@ -75,14 +74,14 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-r from-primary/80 to-primary p-10 text-white"
+      className="bg-gradient-to-r from-primary/80 to-primary p-5 md:p-10 text-white"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-[1600px] mx-auto">
         <p className="font-bold text-3xl text-center mb-3">Contact Us</p>
         <p className="text-lg text-center mb-10 px-5 lg:md-0">
           Feel free to say hi! and It's easy to find us around
         </p>
-        <div className="grid grid-cols-1 lg:flex itmes-center justify-center gap-10 lg:gap-28 px-10 lg:px-20">
+        <div className="grid grid-cols-1 lg:flex itmes-center justify-center gap-10 lg:gap-28 lg:px-10 lg:px-20">
           <form
             className="flex flex-col itmes-center lg:px-0 gap-5"
             action="https://formsubmit.co/info@strategic-allies.com"
@@ -217,7 +216,8 @@ export default function Contact() {
                 </svg>
               </div>
               <p className="text-lg ">
-                Iraq, Erbil, 60m, Appellate <br /> Court St. HMH Building
+                Phoenix tower, level 12, office 1210,
+                <br /> Erbil, Kurdistan Region, Iraq
               </p>
             </div>
 

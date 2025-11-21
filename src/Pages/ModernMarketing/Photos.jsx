@@ -17,7 +17,7 @@ const images = [img1, img2, img4, img3];
 
 export default function Photos() {
   return (
-    <section className="max-w-[1200px] mx-auto">
+    <section className="max-w-[1600px] mx-auto">
       <Swiper
         pagination={{
           dynamicBullets: true,

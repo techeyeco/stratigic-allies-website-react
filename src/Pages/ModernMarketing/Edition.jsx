@@ -59,7 +59,7 @@ export default function Edition() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto mb-10 p-5 lg:p-10">
+    <section className="max-w-[1600px] mx-auto mb-10 p-5 lg:p-10">
       <div className="mb-10">
         <p
           data-aos="fade-up"

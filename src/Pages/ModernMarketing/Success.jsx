@@ -1,4 +1,3 @@
-
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -76,7 +75,7 @@ export default function Success() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto mb-10 p-10">
+    <section className="max-w-[1600px] mx-auto mb-10 p-10">
       {" "}
       <div className="mb-10">
         <p

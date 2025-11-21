@@ -4,7 +4,7 @@ import sLogo from "../assets/logo/Vertical 01.png";
 
 export default function Hero() {
   return (
-    <section className="text-start max-w-[1200px] mx-auto my-20">
+    <section className="text-start max-w-[1600px] mx-auto my-20">
       <div className="p-10 flex flex-col justify-start items-start gap-8 herobg z-10 ">
         <div className="z-10">
           <img

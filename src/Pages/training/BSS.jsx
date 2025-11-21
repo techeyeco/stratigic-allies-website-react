@@ -37,26 +37,26 @@ const second = [
     title: "Learn how to cope with challenging customers.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
   {
     title: "Recognizing the value of negotiating abilities in sales.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
   {
     title: "Improve communication abilities in customer service.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
   {
     title:
       "Recognize ways for maintaining professionalism in customer service.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
 ];
 
@@ -65,7 +65,7 @@ export default function BSS() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto md:m-10 my-20 overflow-hidden">
+    <section className="max-w-[1600px] mx-auto md:m-10 my-20 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div className="">

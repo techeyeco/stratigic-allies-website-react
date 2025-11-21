@@ -53,7 +53,7 @@ export default function Navbar() {
       translate: "translate-y-10",
       fade: "zoom-out-right",
       duration: 1500,
-      delay: 1200,
+      delay: 1600,
     },
     {
       title: "Accounting Solutions",
@@ -61,7 +61,15 @@ export default function Navbar() {
       translate: "translate-y-10",
       fade: "zoom-out-right",
       duration: 1500,
-      delay: 1200,
+      delay: 1600,
+    },
+    {
+      title: "Business Development",
+      route: "/businessDevelopment",
+      translate: "translate-y-10",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1600,
     },
     // {
     //   title: "Gallery",
@@ -79,65 +87,31 @@ export default function Navbar() {
     //   delay: 700,
     // },
   ];
-  console.log(pathname);
   return (
-    (pathname === "/about" ||
-      pathname === "/modernMarketing" ||
-      pathname === "/accountingSolutions" ||
-      pathname === "/ceotalk") && (
-      <nav className="navbar bg-base-100 max-w-[1200px] mx-auto ">
-        <div className="navbar-start">
-          {pathname != "/" && (
-            <div className="dropdown">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost lg:hidden"
+    <nav className="navbar bg-base-100 max-w-[1600px] mx-auto ">
+      <div className="navbar-start">
+        {pathname != "/" && (
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabIndex={0}
-                className="menu menu-md dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 bg-neutral "
-              >
-                {data.map((item, index) => {
-                  return (
-                    <li
-                      className={`${
-                        pathname === item.route
-                          ? "bg-primary text-light"
-                          : "hover:bg-primary/50 "
-                      } rounded-lg duration-300`}
-                      key={index}
-                    >
-                      <Link to={item.route}>{item.title}</Link>
-                    </li>
-                  );
-                })}
-              </ul>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-          )}
-          <Link
-            to="/"
-            className="btn btn-ghost text-xl py-8 flex flex-col items-center"
-          >
-            <img src={logonav} alt="" className="w-40 md:w-60 " />
-          </Link>
-          {pathname != "/" && (
-            <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-5">
+            <ul
+              tabIndex={0}
+              className="menu menu-md dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52 bg-neutral "
+            >
               {data.map((item, index) => {
                 return (
                   <li
@@ -148,16 +122,41 @@ export default function Navbar() {
                     } rounded-lg duration-300`}
                     key={index}
                   >
-                    <Link className="" to={item.route}>
-                      {item.title}
-                    </Link>
+                    <Link to={item.route}>{item.title}</Link>
                   </li>
                 );
               })}
             </ul>
-          )}
-        </div>
-        {/* <div className="navbar-end flex items-center gap-5">
+          </div>
+        )}
+        <Link
+          to="/"
+          className="btn btn-ghost text-xl py-8 flex flex-col items-center"
+        >
+          <img src={logonav} alt="" className="w-40 md:w-60 " />
+        </Link>
+        {pathname != "/" && (
+          <ul className="menu menu-horizontal px-2 flex-nowrap hidden lg:flex flex-nowarp flex-row lg:items-center gap-5">
+            {data.map((item, index) => {
+              return (
+                <li
+                  className={`${
+                    pathname === item.route
+                      ? "bg-primary text-light"
+                      : "hover:bg-primary/50 "
+                  } rounded-lg duration-300`}
+                  key={index}
+                >
+                  <Link className="" to={item.route}>
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+      {/* <div className="navbar-end flex items-center gap-5">
         <button
           className={`${lang === "KU" ? "font-bold" : ""}`}
           onClick={() => langHandler("KU")}
@@ -170,9 +169,8 @@ export default function Navbar() {
         >
           EN
         </button>
-        <a className="btn btn-outline rounded-xl px-9">Login</a>
+        <a className="btn btn-outline rounded-lg px-9">Login</a>
       </div> */}
-      </nav>
-    )
+    </nav>
   );
 }

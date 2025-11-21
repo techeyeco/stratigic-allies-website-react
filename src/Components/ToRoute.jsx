@@ -42,14 +42,14 @@ export default function ToRoute() {
       delay: 500,
     },
 
-    // {
-    //   title: "Our Partners",
-    //   // route: "/partners",
-    //   translate: "translate-y-10",
-    //   fade: "zoom-out-right",
-    //   duration: 1500,
-    //   delay: 1200,
-    // },
+    {
+      title: "Business Development Center",
+      route: "/businessDevelopment",
+      translate: "translate-y-5 translate-x-5",
+      fade: "zoom-out-right",
+      duration: 1500,
+      delay: 1600,
+    },
     // {
     //   title: "Gallery",
     //   // route: "/gallery",
@@ -61,7 +61,7 @@ export default function ToRoute() {
     {
       title: "Accounting Solutions",
       route: "/accountingSolutions",
-      translate: "translate-y-10 translate-x-40",
+      translate: "translate-y-10",
       // span: "col-span-3",
       fade: "zoom-out-up",
       duration: 1500,
@@ -71,7 +71,7 @@ export default function ToRoute() {
     {
       title: "The CEO Talk",
       route: "/ceotalk",
-      translate: "translate-y-10 translate-x-52",
+      translate: "translate-y-5 -translate-x-5",
       // span: "col-span-3",
       fade: "zoom-out-up",
       duration: 1500,
@@ -147,11 +147,16 @@ export default function ToRoute() {
       route: "/accountingSolutions",
       // span: "col-span-3",
       fade: "zoom-out-up",
+    },
+    {
+      title: "Business Development Center",
+      route: "/businessDevelopment",
       duration: 1500,
+      fade: "zoom-out-up",
     },
   ];
   return (
-    <section className=" text-center m-10 max-w-[1200px] mx-auto">
+    <section className=" text-center m-10 max-w-[1600px] mx-auto">
       <p className="text-2xl lg:text-3xl font-semibold my-5 text-center w-max mx-auto overflow-hidden ">
         Explore With Us
       </p>
@@ -176,7 +181,7 @@ export default function ToRoute() {
                 data-aos-duration={route.duration}
               >
                 <div
-                  className={`border border-primary rounded-2xl text-lg  w-72 md:w-96 lg:w-52 h-20  
+                  className={`border border-primary rounded-lg text-lg  w-72 md:w-96 lg:w-52 h-20  
                  flex flex-col justify-center items-center ${
                    !route.route
                      ? "bg-gray-500 border-transparent cursor-auto"
@@ -210,7 +215,7 @@ export default function ToRoute() {
                 data-aos-duration={route.duration}
               >
                 <div
-                  className={`border border-primary rounded-2xl text-lg  w-72 md:w-96 lg:w-52 h-20  
+                  className={`border border-primary rounded-lg text-lg  w-72 md:w-96 lg:w-52 h-20  
                  flex flex-col justify-center items-center ${
                    !route.route
                      ? "bg-gray-500 border-transparent cursor-auto"

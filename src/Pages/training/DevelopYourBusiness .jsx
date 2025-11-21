@@ -61,7 +61,7 @@ export default function DevelopYourBusiness() {
 
   return (
     <section
-      className="md:m-10 my-20 max-w-[1200px] mx-auto overflow-hidden"
+      className="md:m-10 my-20 max-w-[1600px] mx-auto overflow-hidden"
       id="DevelopYourBusiness"
     >
       <p className="text-xl lg:text-3xl font-bold mb-5 pb-5 border-b-4 border-primary w-max ">
@@ -149,10 +149,10 @@ export default function DevelopYourBusiness() {
                 data-aos="fade-up"
                 data-aos-duration="1500"
                 key={index}
-                className="w-full h-48 overflow-hidden rounded-xl bg-light flex justify-center items-center"
+                className="w-full h-48 overflow-hidden rounded-lg bg-light flex justify-center items-center"
               >
                 <img
-                  className="rounded-xl object-contain hover:scale-105 duration-300 ease-in-out"
+                  className="rounded-lg object-contain hover:scale-105 duration-300 ease-in-out"
                   src={pic}
                   alt=""
                 />

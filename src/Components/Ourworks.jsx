@@ -4,7 +4,7 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 export default function ourworks() {
   return (
-    <section className="text-center p-10 max-w-[1200px] mx-auto">
+    <section className="text-center p-10 max-w-[1600px] mx-auto">
       {" "}
       {/* 1 */}
       <div>

@@ -40,7 +40,7 @@ const second = [
     title: "Gain understanding of the planning function and business strategy.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
   {
     title: "Improve teamwork skills.",
@@ -95,7 +95,7 @@ export default function Peshang() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto p-10 overflow-hidden">
+    <section className="max-w-[1600px] mx-auto p-10 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div>

@@ -97,7 +97,7 @@ export default function AccountingSolutions() {
 
   return (
     <section className="text-center py-10 flex flex-col gap-5 md:gap-10">
-      <div className="max-w-[1200px] mx-auto overflow-hidden">
+      <div className="max-w-[1600px] mx-auto overflow-hidden">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -116,7 +116,7 @@ export default function AccountingSolutions() {
           efficiency, compliance, and growth.
         </p>
       </div>
-      <div className="max-w-[1200px] mx-auto p-5 overflow-hidden">
+      <div className="max-w-[1600px] mx-auto p-5 overflow-hidden">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -165,7 +165,7 @@ export default function AccountingSolutions() {
 
       <div className="flex flex-col gap-5 md:gap-10 py-10 relative">
         <div className="">
-          <div className="max-w-[1200px] mx-auto p-5 py-10 flex flex-col items-center gap-20">
+          <div className="max-w-[1600px] mx-auto p-5 py-10 flex flex-col items-center gap-20">
             <div className="sticky top-5">
               <p
                 data-aos="fade-up"
@@ -193,7 +193,7 @@ export default function AccountingSolutions() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 md:gap-10   max-w-[1200px] mx-auto p-10 mb-5 md:mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 md:gap-10   max-w-[1600px] mx-auto p-10 mb-5 md:mb-10">
         <div className="flex flex-col gap-5 items-center">
           <div className="bg-white rounded-lg w-80 ">
             <img src={manaeger} alt="" className="rounded-lg" />
@@ -218,16 +218,16 @@ export default function AccountingSolutions() {
               data-aos-duration="1500"
               className="flex flex-col mt-5 gap-2 rounded-lg text-sm lg:text-md"
             >
-              <div className=" border-2 border-primary p-2 rounded-xl lg:w-max">
+              <div className=" border-2 border-primary p-2 rounded-lg lg:w-max">
                 +964 774 055 25 25{" "}
               </div>
-              <div className=" border-2 border-primary p-2 rounded-xl lg:w-max">
+              <div className=" border-2 border-primary p-2 rounded-lg lg:w-max">
                 +964 750 305 48 64{" "}
               </div>
-              <div className=" border-2 border-primary p-2 rounded-xl lg:w-max">
+              <div className=" border-2 border-primary p-2 rounded-lg lg:w-max">
                 info@strategic-allies.com{" "}
               </div>
-              <div className=" border-2 border-primary p-2 rounded-xl lg:w-max">
+              <div className=" border-2 border-primary p-2 rounded-lg lg:w-max">
                 Iraq, Erbil, 60m, Appellate Court St. HMH Building
               </div>
             </div>

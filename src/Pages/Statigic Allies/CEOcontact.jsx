@@ -48,7 +48,7 @@ export default function CEOcontact() {
       title: "Lecturer at Erbil Technical Management College at EPU",
       fade: "fade-left",
       duration: 1500,
-      delay: 1200,
+      delay: 1600,
     },
   ];
   const research = [
@@ -150,7 +150,7 @@ export default function CEOcontact() {
 
   return (
     <section className="overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 md:gap-10 justify-center items-center  max-w-[1200px] mx-auto p-10 mb-5 md:mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-10 md:gap-10 justify-center items-center  max-w-[1600px] mx-auto p-10 mb-5 md:mb-10">
         <div className="flex-col gap-5 hidden lg:flex">
           <div className="bg-white rounded-lg">
             <img src={CEO} alt="" className="w-60 lg:w-96 rounded-lg" />
@@ -196,13 +196,13 @@ export default function CEOcontact() {
               data-aos-delay="1400"
               className="flex flex-wrap mt-5 gap-2 justify-center lg:justify-start items-center rounded-lg text-sm lg:text-md"
             >
-              <div className="border-2 border-primary p-2 rounded-xl w-max">
+              <div className="border-2 border-primary p-2 rounded-lg w-max">
                 +964 750 4618 463
               </div>
-              <div className="border-2 border-primary p-2 rounded-xl w-max">
+              <div className="border-2 border-primary p-2 rounded-lg w-max">
                 zanear.ssali@epu.edu.iq
               </div>
-              <div className="border-2 border-primary p-2 rounded-xl w-max">
+              <div className="border-2 border-primary p-2 rounded-lg w-max">
                 zanear.ssali@strategic-allies.com
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function CEOcontact() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto p-10 mb-5 md:mb-10">
+      <div className="max-w-[1600px] mx-auto p-10 mb-5 md:mb-10">
         {" "}
         <p
           data-aos="fade-up"

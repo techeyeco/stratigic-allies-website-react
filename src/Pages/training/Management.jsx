@@ -38,7 +38,7 @@ const second = [
     title: "practical steps in planning process.",
     fade: "fade-up",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Management() {
     Aos.init();
   }, []);
   return (
-    <section className="max-w-[1200px] mx-auto md:m-10 my-20 overflow-hidden">
+    <section className="max-w-[1600px] mx-auto md:m-10 my-20 overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-10 md:gap-20">
         {/* 1 */}
         <div className="">

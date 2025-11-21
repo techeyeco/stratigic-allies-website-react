@@ -1,4 +1,3 @@
-
 import React from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -32,7 +31,7 @@ const infoPK = [
     title:
       "Professor of International Marketing at the J.L. Kellogg School of Management For over 50 years.",
     fade: "fade-left",
-    duration: 1200,
+    duration: 1600,
     delay: 600,
   },
   {
@@ -54,7 +53,7 @@ const infoPK = [
       "Kotler’s book Marketing Management is the most widely used textbook in marketing around the world.",
     fade: "fade-left",
     duration: 1500,
-    delay: 1200,
+    delay: 1600,
   },
   {
     title: "He is known around the world as the “father of modern marketing.”",
@@ -148,7 +147,7 @@ export default function ModernMarketing() {
           </div>
         </div>
       </div>
-      <div className="max-w-[1200px] mx-auto mb-5 md:mb-10 p-10">
+      <div className="max-w-[1600px] mx-auto mb-5 md:mb-10 p-10">
         <p
           data-aos="fade-down"
           data-aos-duration="1000"
@@ -238,7 +237,7 @@ export default function ModernMarketing() {
         </div>
       </div>
 
-      <div className="max-w-[1200px] mx-auto mb-5 md:mb-10 p-10">
+      <div className="max-w-[1600px] mx-auto mb-5 md:mb-10 p-10">
         <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-center gap-2">
           {tap.map((route, index) => {
             return (
@@ -266,7 +265,7 @@ export default function ModernMarketing() {
         <Success />
       )}
 
-      {/* <div className="flex flex-col items-center justify-center mb-5 md:mb-10 p-10 max-w-[1200px] mx-auto">
+      {/* <div className="flex flex-col items-center justify-center mb-5 md:mb-10 p-10 max-w-[1600px] mx-auto">
         <p
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -294,7 +293,7 @@ export default function ModernMarketing() {
         </div>
       </div> */}
 
-      <div className="max-w-[1200px] mx-auto mb-5 md:mb-10 p-10">
+      <div className="max-w-[1600px] mx-auto mb-5 md:mb-10 p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-2">
           {tapVideo?.map((route, index) => {
             return (
