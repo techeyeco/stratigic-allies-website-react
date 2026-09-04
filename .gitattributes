@@ -1,12 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c01f8c7c0d6b1e32d1975644f196400c41b50b54e5a346d3584cacf5bd706e6e
-size 91
-*.js !text !filter !merge !diff
-*.jsx !text !filter !merge !diff
-*.css !text !filter !merge !diff
-*.json !text !filter !merge !diff
-*.html !text !filter !merge !diff
-*.md !text !filter !merge !diff
-*.yml !text !filter !merge !diff
-*.yaml !text !filter !merge !diff
-*.ini !text !filter !merge !diff
+﻿*.jsx !filter !diff !merge text
+*.js !filter !diff !merge text
+*.css !filter !diff !merge text
+*.json !filter !diff !merge text
+*.html !filter !diff !merge text
+*.md !filter !diff !merge text
+*.yml !filter !diff !merge text
+*.yaml !filter !diff !merge text
+*.ini !filter !diff !merge text
