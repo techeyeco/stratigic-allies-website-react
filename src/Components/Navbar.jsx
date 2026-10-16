@@ -1,4 +1,3 @@
-import React from "react";
 import logonav from "../assets/logo/logonav.png";
 import { Link, useLocation } from "react-router-dom";
 
@@ -71,13 +70,13 @@ export default function Navbar() {
       duration: 1500,
       delay: 1600,
     },
-    // {
-    //   title: "Gallery",
-    //   route: "/gallery",
-    //   translate: "-translate-y-6",
-    //   fade: "zoom-out",
-    //   duration: 1000,
-    // },
+    {
+      title: "B2B",
+      route: "/B2B",
+      translate: "-translate-y-6",
+      fade: "zoom-out",
+      duration: 1000,
+    },
     // {
     //   title: "Course in the UK",
     //   route: "/ukCourse",

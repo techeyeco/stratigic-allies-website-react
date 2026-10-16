@@ -11,6 +11,8 @@ import Peshang from "./Pages/training/Peshang";
 
 import ModernMarketing from "./Pages/ModernMarketing/ModernMarketing";
 
+import B2B from "./Pages/B2B/index";
+
 import Gallary from "./Pages/Gallary/Gallary";
 
 import UK from "./Pages/UK/UK";
@@ -46,6 +48,7 @@ const router = createBrowserRouter(
         </Route>
 
         <Route path="modernMarketing" element={<ModernMarketing />} />
+        <Route path="B2B" element={<B2B />} />
         <Route path="ceotalk" element={<CEOTalk />} />
 
         <Route path="ukCourse" element={<UK />} />
@@ -58,8 +61,8 @@ const router = createBrowserRouter(
           <Route path="leadershipCourses" element={<LeadershipCourses />} />
         </Route>
       </Route>
-    </Route>
-  )
+    </Route>,
+  ),
 );
 
 function App() {
