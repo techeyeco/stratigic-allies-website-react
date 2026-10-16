@@ -6,10 +6,9 @@ import outcome from "../../assets/CEOTalk/outcome.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { images1, images2, images3, images4, images5 } from "./images";
-import video from "../../assets/accounting sloutions/video v2.mp4";
+const video = "https://www.youtube.com/embed/8aWmfs3i93Y";
 
 import img1 from "../../assets/CEOTalk/company/1.png";
-import img2 from "../../assets/CEOTalk/company/2.png";
 import img3 from "../../assets/CEOTalk/company/3.png";
 import img4 from "../../assets/CEOTalk/company/4.png";
 import img5 from "../../assets/CEOTalk/company/5.png";
@@ -126,16 +125,18 @@ export default function CEOTalk() {
           levels of corporate leadership.
         </p>
       </div>
-      <video
-        data-aos="fade-up"
-        autoPlay
-        muted
-        data-aos-duration="1000"
-        className="w-full"
-        controls
-      >
-        <source src={video} type="video/mp4" />
-      </video>
+
+      <div className="w-full">
+        <iframe
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="w-full aspect-video"
+          src={video}
+          title="CEO Talk video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
       <div className="max-w-[1600px] mx-auto p-5 md:p-10">
         <p
           data-aos="fade-down"

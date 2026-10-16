@@ -1,13 +1,13 @@
 import React from "react";
 import video1 from "../../assets/video/video1.mp4";
-import video2 from "../../assets/video/video2.mp4";
+const video2 = "https://www.youtube.com/embed/u0S44JFB9LI";
 import video3 from "../../assets/video/video3.mp4";
-import video4 from "../../assets/video/video4.mp4";
+const video4 = "https://www.youtube.com/embed/7zEr8ittsvg?si=eZpfpO-dAhG30xFd";
 import video5 from "../../assets/video/video5.mp4";
-import video6 from "../../assets/video/video6.mp4";
-import video7 from "../../assets/video/video7.mp4";
-import video8 from "../../assets/video/video8.mp4";
-import video9 from "../../assets/video/video9.mp4";
+const video6 = "https://www.youtube.com/embed/osVoONlveJU?si=bqXN5USz7sUDLxfa";
+const video7 = "https://www.youtube.com/embed/OD8xfI-mbjY?si=V6s1JBpBgXtF9u8-";
+const video8 = "https://www.youtube.com/embed/ErrjgW0vQew?si=T2UETAzJiB3faxE-";
+const video9 = "https://www.youtube.com/embed/AavgyNLF2Xs?si=puwpfd-RsL96XAYY";
 
 import img1 from "../../assets/video/1.png";
 import img2 from "../../assets/video/2.png";
@@ -63,96 +63,16 @@ export default function Videos() {
   return (
     <section>
       <div className="flex flex-col justify-center items-center max-w-[1600px] mx-auto mb-10 p-10 lg:px-20 gap-10">
-        {activeVid == video1 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video1} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video2 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video2} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video3 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video3} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video4 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video4} type="video/mp4" />
-          </video>
-        )}{" "}
-        {activeVid == video5 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video5} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video6 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video6} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video7 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video7} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video8 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video8} type="video/mp4" />
-          </video>
-        )}
-        {activeVid == video9 && (
-          <video
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            className="w-full"
-            controls
-          >
-            <source src={video9} type="video/mp4" />
-          </video>
-        )}
+        <iframe
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="w-full aspect-video"
+          src={activeVid}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 items-center justify-center">
           {videos?.map((video, index) => (
             <div
