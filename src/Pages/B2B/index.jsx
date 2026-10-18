@@ -5,18 +5,16 @@ import "aos/dist/aos.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Keyboard } from "swiper/modules";
 
 // --- Replace these with your real asset paths ---
-import bookCover from "../../assets/B2B/bookcover.jpg";
-import kotlerImpactLogo from "../../assets/kotlerlogo.png";
+import bookCover from "../../assets/B2B/bookcover.png";
+import kotlerImpactLogo from "../../assets/kotlerlogo-white.png";
 import strategicAllies from "../../assets/logo/Vertical 01.png";
 import phoenixTower from "../../assets/B2B/phoneix-tower.jpg";
 
 import authorKotler from "../../assets/PK.png";
-import authorPfoertsch from "../../assets/PK.png";
 import authorZanear from "../../assets/CEO1.png";
+import drWaldemar from "../../assets/B2B/drWaldemar.png";
 
 import siemens from "../../assets/B2B/siemens.png";
 import lenovo from "../../assets/B2B/lenovo.png";
@@ -49,7 +47,7 @@ export default function B2BBrandManagement() {
     {
       name: "Dr. Waldemar Pfoertsch",
       title: "B2B Branding Expert",
-      img: authorPfoertsch,
+      img: drWaldemar,
     },
     {
       name: "Zanear Jabbar Ssali",
@@ -178,11 +176,11 @@ export default function B2BBrandManagement() {
               brands onto the global stage through Strategic Allies&apos;
               exclusive partnership with Kotler Impact.
             </p>
-            <div className="flex items-center gap-8 mt-4">
+            <div className="flex items-center gap-8 mt-4 ">
               <img
                 src={kotlerImpactLogo}
                 alt="Kotler Impact"
-                className="h-12 object-contain"
+                className="h-12 object-contain "
               />
               <img
                 src={strategicAllies}
@@ -223,11 +221,13 @@ export default function B2BBrandManagement() {
               data-aos-delay={index * 150}
               className="flex flex-col items-center gap-4 p-4 rounded-2xl bg-gradient-to-br from-primary to-secondary hover:shadow-xl duration-300 ease-in-out"
             >
-              <img
-                src={author.img}
-                alt={author.name}
-                className="w-32 md:w-40 h-32 md:h-40 rounded-full object-cover border-4 border-white shadow-md"
-              />
+              <div className="w-32 md:w-40 h-32 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-md ">
+                <img
+                  src={author.img}
+                  alt={author.name}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
               <p className="text-lg font-semibold">{author.name}</p>
               <p className="text-sm">{author.title}</p>
             </div>
@@ -430,7 +430,7 @@ function AdvisoryBoard({ board }) {
             <img
               src={person.img}
               alt={person.name}
-              className="w-28 h-28 rounded-full object-cover saturate-0 border-4 border-light shadow-md"
+              className="w-28 h-28 rounded-full object-cover object-top saturate-0 border-4 border-light shadow-md"
             />
             <p className="font-semibold">{person.name}</p>
             <div>
