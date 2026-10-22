@@ -27,11 +27,11 @@ import fedex from "../../assets/B2B/fedex.png";
 import tataSteel from "../../assets/B2B/tata-steel.png";
 import google from "../../assets/B2B/google.png";
 
-import board1 from "../../assets/board/img5.png";
-import board2 from "../../assets/board/img16.png";
-import board3 from "../../assets/board/img3.png";
-import board4 from "../../assets/board/img19.png";
-import board5 from "../../assets/board/img22.jpg";
+import board1 from "../../assets/Board/img5.png";
+import board2 from "../../assets/Board/img16.png";
+import board3 from "../../assets/Board/img3.png";
+import board4 from "../../assets/Board/img19.png";
+import board5 from "../../assets/Board/img22.jpg";
 
 export default function B2BBrandManagement() {
   React.useEffect(() => {
